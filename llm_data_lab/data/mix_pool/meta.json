@@ -1,0 +1,36 @@
+{
+ "source_clean": "work/03_clean/clean_text_trafilatura",
+ "dedup_keep_ids": "work/05_dedup/clean_text_trafilatura/keep_ids.txt",
+ "domains": {
+  "web_en": {
+   "train_docs": 1046,
+   "val_docs": 88,
+   "train_bytes": 4003289,
+   "val_bytes": 368195
+  },
+  "web_zh": {
+   "train_docs": 505,
+   "val_docs": 40,
+   "train_bytes": 1680244,
+   "val_bytes": 159320
+  },
+  "pdf": {
+   "train_docs": 110,
+   "val_docs": 10,
+   "train_bytes": 4018700,
+   "val_bytes": 383122
+  },
+  "code": {
+   "train_docs": 238,
+   "val_docs": 29,
+   "train_bytes": 4000466,
+   "val_bytes": 368405
+  },
+  "math": {
+   "train_docs": 834,
+   "val_docs": 81,
+   "train_bytes": 4001970,
+   "val_bytes": 364297
+  }
+ }
+}

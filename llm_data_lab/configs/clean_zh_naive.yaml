@@ -1,0 +1,68 @@
+# 【练习 3-2】与 clean.yaml 只差一处：中文的重复 n-gram 也用 5/10（按字）。对比两次运行的中文保留量，并用 04_diff.py --rule D13 看被删的是什么。
+# 改阈值不需要改代码：改完重新运行 03_clean.py，再用 04_report.py / 04_diff.py 看效果。
+# 每个阈值后面注明来源；没有来源的是本实验课在 CC-MAIN-2026-43 样本上的初始取值，欢迎你改。
+
+languages: [en, zh]          # 本次只清洗英文与中文；其余语言在第一步按 D01 丢弃（实际生产中应分语言各自处理）
+lid_min_score: 0.65          # FineWeb：fastText 语言识别置信度 ≥ 0.65
+pii_mask: true               # 手册 4.2.5：邮箱/手机号/身份证号/IP 替换为占位符
+custom_rules: []             # 启用 labkit/custom_rules.py 里的规则，如 [X01, X02, X03]（实验第 6 步）
+
+line_filters:
+  # L01 模板词：只对短行生效（≤ boilerplate_max_units 个词；中文按 3 倍字数），避免误删正文长句
+  boilerplate_max_units: 12
+  boilerplate_keywords:
+    - javascript               # C4：删除含 javascript 的行
+    - cookie
+    - privacy policy
+    - terms of use
+    - terms and conditions
+    - all rights reserved
+    - skip to content
+    - skip to main content
+    - sign in
+    - log in
+    - subscribe to
+    - your email address will not be published
+    - leave a reply
+    - share this
+    - 版权所有
+    - 备案号
+    - icp备
+    - 公网安备
+    - 上一篇
+    - 下一篇
+    - 扫一扫
+    - 关注我们
+    - 免责声明
+    - 联系我们
+    - 登录
+    - 注册
+    - 返回顶部
+  min_line_units: 3            # L03：英文少于 3 个词且不以句末标点结尾的行删除（C4 的放宽版）
+  min_line_units_zh: 6         # L03：中文少于 6 个字且不以标点结尾的行删除
+  drop_symbol_lines: true      # L04：不含任何文字的行（分隔线、纯数字、纯符号）
+  drop_duplicate_lines: true   # L05：同一文档内完全相同的行只保留第一次出现
+
+doc_filters:
+  units_range: [50, 100000]    # Gopher：50 ≤ 词数 ≤ 100,000
+  units_range_zh: [100, 200000]
+  mean_word_len: [3, 10]       # Gopher：平均词长 3–10
+  max_symbol_ratio: 0.25       # 手册 4.2.3：符号字符占比 < 0.25
+  max_hash_ellipsis_per_word: 0.1   # Gopher：#、… 与词数之比 < 0.1
+  max_bullet_lines: 0.9        # Gopher：> 90% 的行以项目符号开头则丢弃
+  max_ellipsis_lines: 0.3      # Gopher：> 30% 的行以省略号结尾则丢弃
+  min_alpha_word_frac: 0.8     # Gopher：≥ 80% 的词含字母
+  min_stop_hits: 2             # Gopher：至少包含 the/be/to/of/and/that/have/with 中的 2 个
+  min_zh_func_ratio: 0.03      # 中文：高频虚词（的、了、是、在…）占比下限
+  max_dup_line_frac: 0.3       # Gopher：重复行占比 ≤ 0.30
+  max_dup_line_char_frac: 0.2  # Gopher：重复行字符占比 ≤ 0.20
+  max_dup_para_frac: 0.3       # Gopher：重复段落占比 ≤ 0.30
+  max_top_ngram_char_frac: [0.20, 0.18, 0.16]   # Gopher：top 2/3/4-gram 字符占比
+  max_dup_ngram_char_frac: [0.15, 0.10]         # Gopher：重复 n-gram 覆盖的字符占比（短 n / 长 n）
+  dup_ngram_n: [5, 10]         # 英文按词：Gopher 用 5-gram 与 10-gram
+  dup_ngram_n_zh: [5, 10]      # 【练习 3-2 用】照搬英文的 5/10-gram：看看多少中文被 D13 误杀
+  min_lines_end_punct: 0.12    # FineWeb：以标点结尾的行占比 ≥ 0.12
+  max_short_lines: 0.67        # FineWeb：短行（英文 ≤ 30 字符）占比 ≤ 0.67
+  drop_lorem_ipsum: true       # C4
+  max_mojibake_hits: 5         # 乱码特征（Ã©、â€、锟斤拷、替换符）出现次数上限
+  url_blocklist_tokens: [porn, xxx, casino, betting, escort, hentai]   # 示意性的 URL 黑名单（RefinedWeb 用的是 UT1 列表）

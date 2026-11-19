@@ -1,0 +1,14 @@
+# 实验课依赖（Python ≥ 3.10）。国内建议加镜像：pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+numpy
+pandas
+pyarrow
+pyyaml
+matplotlib
+trafilatura>=2.0
+fasttext-wheel
+requests
+torch            # CPU 版即可：pip install torch --index-url https://download.pytorch.org/whl/cpu
+# 可选
+resiliparse      # 第 2 步对比提取器
+warcio           # 教师准备数据（scripts/prepare_cc_sample.py）
+surt             # 教师跑跨快照重复（scripts/cross_crawl_dup.py）
