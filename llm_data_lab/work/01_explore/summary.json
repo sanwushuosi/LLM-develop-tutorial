@@ -1,0 +1,102 @@
+{
+ "docs": 28104,
+ "distinct_hosts": 27534,
+ "docs_per_host": 1.021,
+ "docs_from_hosts_with_10plus": 13,
+ "lang_top": [
+  [
+   "eng",
+   12150
+  ],
+  [
+   "rus",
+   1747
+  ],
+  [
+   "deu",
+   1645
+  ],
+  [
+   "jpn",
+   1398
+  ],
+  [
+   "fra",
+   1362
+  ],
+  [
+   "zho",
+   1291
+  ],
+  [
+   "spa",
+   1262
+  ],
+  [
+   "por",
+   744
+  ],
+  [
+   "ita",
+   690
+  ],
+  [
+   "pol",
+   571
+  ],
+  [
+   "nld",
+   479
+  ],
+  [
+   "未知",
+   410
+  ]
+ ],
+ "zh_share": 0.0459,
+ "en_share": 0.4323,
+ "html_kb_median": 97.2,
+ "html_total_gb": 4.628,
+ "wet_chars_median": 3646,
+ "wet_total_mchars": 181.4,
+ "text_to_html_bytes_median": 0.0453,
+ "empty_wet": 239,
+ "truncated": 50,
+ "exact_dup_docs": 667,
+ "exact_dup_frac": 0.0237,
+ "largest_dup_cluster": 314,
+ "lines_15plus_chars": 1663895,
+ "line_occurrences_in_3plus_docs_frac": 0.089,
+ "pii_doc_frac": {
+  "<EMAIL>": 0.293,
+  "<PHONE>": 0.0136,
+  "<IP>": 0.009,
+  "<ID>": 0.0014
+ },
+ "charset_top": [
+  [
+   "utf-8",
+   27014
+  ],
+  [
+   "utf8",
+   308
+  ],
+  [
+   "iso-8859-1",
+   239
+  ],
+  [
+   "latin-1",
+   117
+  ],
+  [
+   "windows-1251",
+   107
+  ],
+  [
+   "gb18030",
+   47
+  ]
+ ]
+}

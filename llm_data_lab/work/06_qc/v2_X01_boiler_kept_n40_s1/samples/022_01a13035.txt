@@ -1,0 +1,9 @@
+id: 01a13035-5097-7098-a85b-45cca3fa5cde
+lang: en
+url: https://canceratlas.cancer.org/metric/united-arab-emirates-age-standardized-w-incidence-rate-of-colorectal-cancer-per-100000-2022-male/
+truncated: false
+---------------- 正文开始 ----------------
+Exposures to numerous potentially modifiable risk factors for cancer vary substantially across and within countries and are often associated with socioeconomic status.
+Cancer is the second leading cause of death worldwide and is likely to become the leading cause of premature death in every country of the world in this century.
+Effective interventions across the cancer continuum can reduce the burden and suffering from cancer and save millions of lives worldwide.
+Access and download all of the Cancer Atlas’ data in one self-service explorer.

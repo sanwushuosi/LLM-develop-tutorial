@@ -1,0 +1,15 @@
+id: 01a12427-de8e-7000-b827-038a235f184b
+lang: en
+url: https://www.revenanas.com/market-news/anthropic-and-openai-roll-out-cheaper-ai-models-in-first-release-since-1oqn30
+truncated: false
+---------------- 正文开始 ----------------
+Anthropic and OpenAI roll out cheaper AI models in first release since slowdown call
+AI & Data
+Anthropic, OpenAI, Alibaba, Moonshot AI, DeepSeek
+On Tuesday, Anthropic and OpenAI each announced new, less costly AI models. Anthropic unveiled Claude Opus 5.5, described as a more token-efficient version that will cost around 40% less to run than Opus 5. OpenAI introduced GPT-6 Sol and GPT-6 Luna, slashing API prices by 50% compared with GPT-5.6 promotional pricing. Sol is aimed at complex workloads like coding, while Luna is for high-volume tasks such as extracting information or summarizing documents.
+Current and prospective customers of both Anthropic and OpenAI who are looking for more cost-effective models and seeking to rein in AI spending will be directly affected. The releases also impact competitors in the AI model market, particularly Chinese firms Alibaba, Moonshot AI, and DeepSeek, which offer cheaper open-weight models and have been pressuring the frontier labs.
+These releases are the first since Anthropic CEO Dario Amodei called for an industrywide slowdown on developing advanced AI, amid a debate about model safety. The price reductions signal a strategic shift toward cost-conscious enterprise customers. Key market impacts include:
+Monitor adoption rates of GPT-6 Sol and Luna among enterprise customers, as well as Anthropic’s Claude Opus 5.5 usage and token efficiency claims. Also watch for any further price reductions or model tier expansions as the labs respond to customer demand for cost-effective AI.
+Source:
+Get AI signals in your CRM
+Regulation, model launches, funding mega-rounds, acquisitions, privacy lawsuits, and compute constraints.

@@ -1,0 +1,19 @@
+id: 01a1369e-b4c1-7de4-8f38-f8388119b291
+lang: en
+url: https://bmed.calpoly.edu/meditec-project-examples/
+truncated: false
+---------------- 正文开始 ----------------
+MEDITEC Project Examples
+Projects can come from anywhere within a company, including R&D groups, Manufacturing, Quality, Preclinical, Regulatory, or others, and can include skills related to design, fabrication, automation, testing, material characterization, exploratory research, data analysis, and more.
+Some generic examples of projects that have been proposed and performed through the MEDITEC program include:
+Design and fabricate a manufacturing aid to assist operators with assembly
+Test material characteristics of a device component
+Design a system to automate or semi-automate an existing manual process
+Optimize a protocol for a series of operations required on the manufacturing floor
+Design and fabricate a fixture to accommodate fatigue testing of a device
+Develop an analytical model to help understand and predict device interactions
+Evaluate cytotoxicity and other cell interactions with various biomaterials
+Design and prototype novel product concepts
+Evaluate new fabrication techniques for device manufacturing
+Compile a database of specific regulatory guidelines and information for a particular application in designated areas of the world
+Explore novel technologies and perform proof of concept testing to identify viable options

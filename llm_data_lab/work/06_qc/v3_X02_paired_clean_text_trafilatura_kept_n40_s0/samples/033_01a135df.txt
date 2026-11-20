@@ -1,0 +1,14 @@
+id: 01a135df-644b-76a2-95dd-f73ad7e268d5
+lang: en
+url: https://fcp.co/hardware-and-software/pro/803-promise-announce-the-j2-drive-its-small-and-very-fast
+truncated: false
+---------------- 正文开始 ----------------
+Straight on our Christmas wish list this year (After the Blackmagic Cinema Camera) are these two portable Thunderbolt drives from Promise, the J4 and the J2.
+The larger J4 was announced at CeBIT back in March, but this is the first time it's appeared on our radar. The J2 is a new announcement from Promise Technology Inc. at the show.
+There's three words that you can use to sum up the J2, small and fast. Actually that should be very small and very fast.
+"PROMISE Pegasus J2 is the smallest Thunderbolt enabled external storage device designed to unleash the raw power of Thunderbolt technology. Powered by 6G mSATA flash the J2 is capable of delivering over 700 MB/s throughput while supporting volume encryption in the consumer and professional post production markets."
+The model we saw at the show had a capacity of 256GB and was capable of speeds of 500 MB/s write and 700 MB/s read which should be more than fast enough for most location editing situations. It hadn't really twigged with us that until we saw the product manager do a file transfer of 20 Gig in 5 seconds, the J2 would be ideal for situations where you had to get camera rushes & projects back onto a server quickly after being on location. Maybe the most incredible thing, all this will fit in your pocket.
+No word on price but the product should be available in June. We seriously want one of those.
+The J4 should look familiar to any Mac user as it has been designed to have the same footprint as a Mac Mini. It is available in two models, populated by either SSD or regular hard drives.
+The 4 terabyte Non-RAID JBOD hard disk model has a read time of 500 MB/s and a write time of 300 MB/s. The 4 Intel 520 series 240 GB SSD populated model has a capacity of just under a terabyte and has similar speeds to the J2 of 700 MB/s read and 500 MB/s write.
+Again, no word on price and availability will be in June.

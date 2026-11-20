@@ -1,0 +1,14 @@
+条件             独立数据    轮数     验证    训练原位    训练错位   逐字(训)   逐字(验)   模板BPB     模板续写
+unique        4.00M   0.8  2.517   2.374   2.350     1.2     1.2   2.154    2/123
+rep4          0.82M   4.0  2.573   2.261   2.235     1.2     1.5   2.213    0/123
+rep16         0.20M  16.1  2.930   1.852   1.951     1.5     1.3   2.907    2/123
+rep64         0.05M  64.6  8.098   0.061   2.669    64.0     0.6   7.565    0/123
+boiler10      4.02M   0.8  2.514   2.370   2.362     1.3     1.7   1.627    2/123
+boiler30      4.05M   0.8  2.518   2.334   2.385     1.2     1.4   1.121    2/123
+--- unique 模板续写（贪心）→ 'This website uses cookies to improve your communication of the company and and and and and and and and and and and and and and and and and and and and and and a'
+--- rep4 模板续写（贪心）→ 'This website uses cookies to improve you are the service of the provide the service of the provide the service of the provide the service of the provide the ser'
+--- rep16 模板续写（贪心）→ 'This website uses cookies to improve your company of the same and services and security and services and security and security and access to the security and se'
+--- rep64 模板续写（贪心）→ 'This website uses cookies to improve you grograte, and the bite anaily for users to loafe informations so getter sight and Bliew the placed or proposations the '
+--- boiler10 模板续写（贪心）→ 'This website uses cookies to improve your content and the service of the services and the services and the services and the services and the services and the se'
+--- boiler30 模板续写（贪心）→ 'This website uses cookies to improve your service to the start to the service to the service to the service to the service to the control the state that the con'
+报告：work/09_dup/report.html；用时 372s

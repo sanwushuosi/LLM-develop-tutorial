@@ -1,0 +1,7 @@
+id: 01a11ee9-784f-7615-b27c-c174f0dc721e
+lang: en
+url: https://tekconcierge.com/category/net-neutrality/
+truncated: false
+---------------- 正文开始 ----------------
+What is Net Neutrality? And Do I want it?
+A Simple Definition of Net Neutrality Net Neutrality is the internet’s guiding principle: It preserves our right to communicate freely online. Net Neutrality means an internet that enables and protects free speech. It means that ISPs should provide us with open networks — and shouldn’t block or discriminate against any applications or content that ride over those networks. Just as your

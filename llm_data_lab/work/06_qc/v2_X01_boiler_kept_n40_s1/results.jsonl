@@ -1,0 +1,40 @@
+{"sample_id": "01a11482-e358-7a12-b82b-af9bb22c4cfc", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a10bfe-8d63-7df7-b853-64542afa5859", "verdict": "bad", "violations": [{"rule_id": "W01", "evidence": "We found AI insights for +526182794235. Sign in to unlock them", "reason": "号码查询结果被登录墙挡住，实际要抓的信息不在"}, {"rule_id": "W03", "evidence": "Scan the code with your smart phone camera to download the free app", "reason": "剩余内容是来电识别App推广与下载提示，构成主体"}], "rule_hint": "可拦：URL 含 /search/?number= 或正文含“Sign in to unlock”且正文少于5句的页面直接丢弃"}
+{"sample_id": "01a1244a-96cc-7c6a-bcff-681debf1ec8c", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a11ee1-890a-7b59-848e-6efaf76eca49", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a14359-5782-780b-ad35-f4542a703c9c", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a1159b-673c-7847-84c7-619e7c40aa56", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a13807-f820-783b-ba13-da534f8511b7", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a11267-efa5-70d5-9701-6784185667e0", "verdict": "bad", "violations": [{"rule_id": "W03", "evidence": "Buy now, pay later with Afterpay or ShopPay", "reason": "商品描述仅一句，其余是付款/配送/退货/到店推广等全站模板，占主体"}], "rule_hint": "可拦：删除含 Afterpay/ShopPay、free shipping on all orders、Returns are accepted、Visit Us In Store 等全站电商模板行，剩余正文少于 200 字符则丢弃"}
+{"sample_id": "01a126f5-bce7-7268-9592-876980af504d", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a13aac-ba99-7ab9-918c-0cd716c7b62a", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a14c66-a8da-7050-8d60-16968d5cfe41", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a13153-0a53-74d8-9f40-a9b6bb6f489b", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a1415e-0829-7036-a9c2-8a5f6e7cc74e", "verdict": "bad", "violations": [{"rule_id": "W03", "evidence": "By clicking “Send Email”, I consent to be contacted by Carsforsale.com", "reason": "车辆列表正文缺失，只剩地址、表单标签和联系授权声明模板"}], "rule_hint": "可拦：删除以“By clicking”开头的表单同意声明段，剩余正文少于 200 字符或不足 3 句则丢弃"}
+{"sample_id": "01a1205c-9c29-7c88-907b-37448f645d78", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a13e1c-89ec-7bfc-893f-845a5437fda7", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a14351-11e5-7bc8-a08a-da642841400b", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a11261-89f3-7cc1-b604-9b83e4226f95", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a14124-9ace-759b-80e3-5c1e9057554b", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a14099-b253-74e8-b13b-ce1504de8b23", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a13b3c-c72a-771d-9b3d-2b1e6b0a039d", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a14c5a-ba92-7002-87a1-6d5caac07f7a", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a115c0-7613-754e-9c5a-abbbaf833580", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a13035-5097-7098-a85b-45cca3fa5cde", "verdict": "bad", "violations": [{"rule_id": "W03", "evidence": "Access and download all of the Cancer Atlas’ data in one self-service explorer.", "reason": "URL指向阿联酋结直肠癌指标页，正文只剩全站栏目导语卡片，指标内容缺失"}], "rule_hint": "可拦：按站点统计行级重复，删除在同域名大量页面中重复出现的句子，删后为空或少于 2 句则丢弃"}
+{"sample_id": "01a1303c-e7e8-7c9c-8931-512e2a081a5f", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a14149-4961-7e5c-aeed-9b7b2410f2f1", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a11481-09f9-787c-9bc6-1be014f6a8ce", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a1432f-ce10-7fdd-8c51-c58c0b0ca83f", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a14075-93c7-7423-9553-bc9601ef601e", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a1369e-b4c1-7de4-8f38-f8388119b291", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a1146b-eba6-7775-9dfb-22d5f0871036", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a13625-524e-7a89-b98e-d4fba76c00a0", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a13f38-9043-7700-9bf5-2bf92454138d", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a1302e-a5d5-7dd6-930c-0412f896fb14", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a13d4b-b5a6-706e-a417-7a5ece788213", "verdict": "bad", "violations": [{"rule_id": "W05", "evidence": "阳光书吧与蓝思LEXILE2025年4月22日,阳光书吧与全球权威阅读评估机构蓝思（LEXILE）在阳光教育集", "reason": "新闻分类页只剩几条零散标题和截断摘要，无正文也无完整条目"}], "rule_hint": "可拦：URL 含 Category/list 且正文行数≤6、多数行不以句末标点结尾或末行被截断的页面丢弃"}
+{"sample_id": "01a13f5f-cc0b-7bbc-95ab-3bca84efb96a", "verdict": "bad", "violations": [{"rule_id": "W07", "evidence": "Own it today for $1,299 and make it yours.", "reason": "GoDaddy 域名出售停放页模板，无任何实际正文"}], "rule_hint": "可拦：URL 域名为 forsale.godaddy.com/含 parkedpages，或正文含“The domain name”+“is for sale”的页面直接丢弃"}
+{"sample_id": "01a13a9a-e110-7db1-a589-d164c4f07aa8", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a14c7d-c8d1-7369-bc07-18159860bd18", "verdict": "bad", "violations": [{"rule_id": "W03", "evidence": "This website uses cookies so that we can provide you with the best user experience possible.", "reason": "结账页正文全无，只剩 cookie 告知横幅，cookie 声明即全部内容"}], "rule_hint": "可拦：正文少于 3 句且含 cookies 与 website/browser 等 cookie 告知模板词的页面丢弃；URL 路径为 /checkout/、/cart/ 的页面直接丢弃"}
+{"sample_id": "01a1203b-fc3e-755e-b10d-5b9795e77769", "verdict": "bad", "violations": [{"rule_id": "G01", "evidence": "No Product found in this category!", "reason": "空分类页，正文实际为空，只有“无商品”占位提示"}, {"rule_id": "W03", "evidence": "Shyzarsueglobal uses cookies to ensure that we give you the best experience on our website.", "reason": "其余全是包邮/支付/退货卖点和 cookie 告知等全站模板"}], "rule_hint": "可拦：正文含“No Product found”/“No products were found”等空列表提示的页面直接丢弃"}
+{"sample_id": "01a14315-9016-72fc-8aa3-5f9a0848a099", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a1416e-6c22-7aed-8c29-0d207675ac9f", "verdict": "good", "violations": [], "rule_hint": ""}

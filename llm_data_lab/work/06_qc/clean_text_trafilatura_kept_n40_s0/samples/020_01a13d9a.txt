@@ -1,0 +1,70 @@
+id: 01a13d9a-4e0c-7e46-9b58-a958bbfeea03
+lang: en
+url: https://manpages.ubuntu.com/manpages/focal/man3/widgetPlus.3tk.html
+truncated: false
+---------------- 正文开始 ----------------
+Enhanced Entry, Spinbox, and Combobox Widgets with Undo/Redo and other useful features
+- Provided by: tklib (Version: 0.6+20190108-1)
+- Report a bug
+package require Tcl 8.5
+package require Tk 8.5
+package require snit
+package require widgetPlus ?1.0?
+widgetPlus::entryPlus ?create? pathName
+widgetPlus::spinboxPlus ?create? pathName
+widgetPlus::ttkEntryPlus ?create? pathName
+widgetPlus::ttkSpinboxPlus ?create? pathName
+widgetPlus::ttkComboboxPlus ?create? pathName
+pathName edit ?arg arg ...?
+pathName edit canredo
+pathName edit canundo
+pathName edit modified ?boolean?
+pathName edit redo
+pathName edit reset
+pathName edit separator
+pathName edit undo
+The widgetPlus package adds new features to the widgets entry, spinbox, ttk::entry, ttk::spinbox, and ttk::combobox.
+The new features are Undo and Redo operations, a <<Selection>> event, and for the Tk (unthemed) widgets an -inactiveselectbackground option, and some minor fixes to bindings. The new facilities closely follow those of the text widget.
+The revised entry, spinbox, ttk::entry, ttk::spinbox, and ttk::combobox widgets are created by the commands widgetPlus::entryPlus, widgetPlus::spinboxPlus, widgetPlus::ttkEntryPlus, widgetPlus::ttkSpinboxPlus, and widgetPlus::ttkComboboxPlus respectively.
+For example, the widgetPlus::entryPlus widget is implemented as a Snit snit::widgetadaptor that wraps a Tk entry widget. Its winfo class is Entry, and it uses a binding tag EntryPlus that replaces the Entry binding tag. The other widgets are implemented in a similar way.
+The package uses the namespace ::widgetPlus, which exports (only) the five commands defined below that begin with a lower-case letter (EnableBWidget is not exported). These commands can be imported into the global namespace, and for simplicity, descriptive text in this manual will henceforth omit the namespace qualifier.
+namespace import ::widgetPlus::*
+In addition to the usual options of the entry, spinbox, ttk::entry, ttk::spinbox, and ttk::combobox widgets, the wrappers entryPlus, spinboxPlus, ttkEntryPlus, ttkSpinboxPlus, and ttkComboboxPlus provide the options below.
+Command-Line Switch:	-inactiveselectbackground
+Database Name:	inactiveSelectBackground
+Database Class:	Foreground
+Command-Line Switch:	-maxundo
+Database Name:	maxUndo
+Database Class:	MaxUndo
+Command-Line Switch:	-undo
+Database Name:	undo
+Database Class:	Undo
+In addition to the usual commands of the entry, spinbox, ttk::entry, ttk::spinbox, and ttk::combobox widgets, the wrappers entryPlus, ttkEntryPlus, spinboxPlus, ttkSpinboxPlus, and ttkComboboxPlus provide:
+(N.B. An implicit separator is added to the undo stack for each call to a widget command (e.g. insert or delete) that changes the widget contents. These therefore separate the addition or removal of individual characters by typing, except that cut or paste operations are discrete.)
+The class binding tag for different widgets has these default values:
+The <<Undo>> and <<Redo>> virtual events are mapped to these keyboard events:
+The EntryPlus bindings are based on those of the Entry bindtag, with these changes:
+The SpinboxPlus bindings are based on those of the Spinbox bindtag, with the same changes as are made when converting Entry to EntryPlus.
+The TEntryPlus bindings are based on those of the TEntry bindtag, with these changes:
+The TSpinboxPlus bindings are based on those of the TSpinbox bindtag, with these changes:
+The TComboboxPlus bindings are based on those of the TCombobox bindtag, with these changes:
+Each widgetPlus widget generates a virtual event <<Selection>> whenever the value of its selection changes. This allows other Tcl code, for example the package persistentSelection, to monitor the selection in these widgets.
+When an entry, spinbox, ttk::entry, ttk::spinbox, or ttk::combobox is a component of a megawidget, it is often possible to apply widgetPlus to that component without modifying the megawidget code.
+A combobox with path $w includes an entry widget $w.entry, which uses the Entry binding tag. Thus widgetPlus can be applied to the combobox after creation, using the command (see EXAMPLES)
+entryPlus $w.entry -undo 1 -maxundo 0
+A BWidget ComboBox with path $w includes an entry widget $w.e, which uses the BwEntry binding tag in place of the default tag Entry.
+Package widgetPlus provides a replacement bindtag BwEntryPlus, but this is not computed when the package is loaded because it requires BWidget to be loaded first. The command ::widgetPlus::EnableBWidget must be called to provide BwEntryPlus, and then the BWidget ComboBox can be modified (see EXAMPLES)
+entryPlus $w.e -undo 1 -maxundo 0
+This version of widgetPlus is intended to be compatible with all releases of Tk 8.5 and 8.6, and with the branches core-8-5-branch, core-8-6-branch, and trunk in the source code repository for Tk. Any incompatibility with any of these versions, for any Tk windowing system, should be reported as a bug. Please report such in the category widgetPlus of the Tklib Trackers [http://core.tcl.tk/tklib/reportlist].
+To create and map an entryPlus widget .ep with an unlimited Undo/Redo stack:
+package require widgetPlus
+widgetPlus::entryPlus .ep -undo 1 -maxundo 0
+namespace import widgetPlus::*
+entryPlus .ep -undo 1 -maxundo 0
+widgetPlus::entryPlus .ee -undo 1 -maxundo 0
+entryPlus .ee -undo 1 -maxundo 0
+package require combobox
+entryPlus .cb.entry -undo 1 -maxundo 0
+package require BWidget
+entryPlus .cb.e -undo 1 -maxundo 0
+BWidget, ComboBox, Entry, entry, persistentSelection, spinbox, text, ttk::combobox, ttk::entry, ttk::spinbox

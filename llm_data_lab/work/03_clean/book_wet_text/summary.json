@@ -1,0 +1,76 @@
+{
+ "tag": "book_wet_text",
+ "source": "wet_text",
+ "mode": "book",
+ "config": "configs/clean.yaml",
+ "boilerplate_lines": 0,
+ "docs_in": 28104,
+ "docs_target_lang": 11644,
+ "docs_kept": 2098,
+ "keep_frac_of_target_lang": 0.1802,
+ "kept_by_lang": {
+  "zh": 225,
+  "en": 1873
+ },
+ "lang_detected_top": [
+  [
+   "en",
+   11749
+  ],
+  [
+   "ru",
+   1787
+  ],
+  [
+   "de",
+   1726
+  ],
+  [
+   "fr",
+   1442
+  ],
+  [
+   "ja",
+   1412
+  ],
+  [
+   "es",
+   1334
+  ],
+  [
+   "zh",
+   1309
+  ],
+  [
+   "pt",
+   768
+  ],
+  [
+   "it",
+   733
+  ],
+  [
+   "pl",
+   581
+  ]
+ ],
+ "chars_in": 181436798,
+ "chars_in_target_lang": 68169059,
+ "chars_out": 19302030,
+ "char_keep_frac_of_target_lang": 0.2831,
+ "doc_rule_hits": {
+  "D01": 16460,
+  "B-行级特征": 8821,
+  "B-重复程度": 3203,
+  "B-长度": 878,
+  "B-符号比例": 11
+ },
+ "doc_rule_hit_frac_of_target_lang": {
+  "B-行级特征": 0.7576,
+  "B-重复程度": 0.2751,
+  "B-长度": 0.0754,
+  "B-符号比例": 0.0009
+ },
+ "line_rule_hits": {},
+ "seconds": 9.7
+}

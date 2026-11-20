@@ -1,0 +1,24 @@
+id: 01a11481-09f9-787c-9bc6-1be014f6a8ce
+lang: en
+url: https://www.dynamicmath.xyz/
+truncated: false
+---------------- 正文开始 ----------------
+A collection of 3D animations and applets made with Three.js, a powerful JavaScript library for rendering 3D graphics in the browser.
+						
+							A mathematical formula should never be "owned" by anybody!
+Donald Knuth, Digital Typography, ch1, p. 8 (1999).
+					
+						Hi there! I'm Juan Carlos. I am a mathematician living in Brisbane where
+I teach mathematics and work on the design and integration of 
+online learning modules and interactive mathematical applets. 
+						Here you can find all my mathematics projects and sketches 
+written in p5.js and other programming languages.
+					
+For other projects visit jcponce.com
+A set of online tools to visualize complex functions.
+3D interactive strange attractors.
+Approximating and drawing closed curves with epicyles.
+The beauty of mathematics only shows itself to more patient followers.
+— Maryam Mirzakhani
+If you like or find useful the content of this site, you can support it using any of these links
+Thanks for your visit!

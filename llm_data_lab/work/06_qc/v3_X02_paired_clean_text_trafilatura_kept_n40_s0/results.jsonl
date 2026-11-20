@@ -1,0 +1,36 @@
+{"sample_id": "01a1316d-08d7-7115-afc6-89aafc27e18c", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a13621-fe01-7299-8ca8-a34dfef1239d", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a14c69-0b2b-7640-8561-011229cd5e2a", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a14c7d-9555-7ab8-945d-f93b61c0cced", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a14312-a7a7-7aea-b945-994446090415", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a1362b-0a9f-774c-b6fd-faba611fe0fc", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a11ee9-784f-7615-b27c-c174f0dc721e", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a14a79-195a-7091-81cf-dd6adc033c39", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a115da-daff-733b-9320-e9d3f0c0464d", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a11f24-2d3b-7075-86cd-79f207855245", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a135d1-cc5a-7ff3-935a-6a6341bd0ae8", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a115ce-bd53-7234-b6dc-58b76da721ce", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a1152b-f00e-7487-93a3-0000d4ec8e00", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a1301c-0676-747a-8262-28a109ae8099", "verdict": "bad", "violations": [{"rule_id": "W05", "evidence": "Sig. Strikes Landed\nSig. Strikes Attempted", "reason": "运动员页只剩统计字段名和通用提示语，无运动员信息与数据，正文主体缺失"}], "rule_hint": "可拦：短行（<5词且无句末标点）占比>50%且全文无数字时丢弃；或对同站点重复出现的模板句做跨页去重"}
+{"sample_id": "01a13ab4-8327-7fd1-ac04-da183073b343", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a14a51-7acf-7a69-91e0-2eb6bd4de5e4", "verdict": "bad", "violations": [{"rule_id": "W03", "evidence": "You cannot fail to be impressed by th...", "reason": "本帖正文仅一句，其余为侧栏作者简介和其他旧帖的截断摘要，推荐内容占主体"}], "rule_hint": "部分可拦：以“...”截断结尾且与标题无词重叠的段落占多数时丢弃；更好是在提取阶段剥离 Blogger 侧栏小部件"}
+{"sample_id": "01a11468-544a-78f1-b418-48ab508cf124", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a137f4-9fd3-7fc1-9efa-334b8a665a02", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a13d9a-4e0c-7e46-9b58-a958bbfeea03", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a14c91-b8dc-7a32-8c09-71861857d23e", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a137d1-8a94-75a8-af88-6910f146033f", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a126ea-de9d-7a2a-8fb8-f1a01febb263", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a14349-0589-7dc1-9657-c5c30820bbba", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a12427-de8e-7000-b827-038a235f184b", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a137ee-41b1-7481-a364-e21a29ac9680", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a135f0-ca23-798e-ba69-ea8383c92d06", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a115e3-e8a6-73cf-a99c-625eb5212f98", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a1415c-ad34-7fa2-a863-19da06f8a4b1", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a126f0-1e26-79cb-a4a0-354326dce262", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a12442-033b-7a39-8559-6c6c35c6a621", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a13dde-f732-7e21-80ae-02fae076b23f", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a126e5-2a5a-7474-be77-6172d2177656", "verdict": "bad", "violations": [{"rule_id": "W04", "evidence": "9月27日，巅峰对决愛知·名古屋亞運會將決出35枚金牌，亚运颖莎昱剑田徑賽場上嚴子怡、看点陳妤頡、女标陳圓將等新星衝擊金牌", "reason": "标题为关键词乱序拼接，“巅峰对决/亚运颖莎昱剑/看点”等词反复插入句中，句子被破坏"}], "rule_hint": "可拦：同一2～6字片段在多句中反复出现且插在句中（繁体正文夹简体片段），或标题与正文首句字符重合但词序被打乱时丢弃"}
+{"sample_id": "01a135f2-37b8-7cc2-b763-bc167fb584d4", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a135df-644b-76a2-95dd-f73ad7e268d5", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a14c36-87e1-76a3-8ac0-55c9acd8452a", "verdict": "good", "violations": [], "rule_hint": ""}
+{"sample_id": "01a13181-a56b-7fe6-ab42-285bcfbcf048", "verdict": "good", "violations": [], "rule_hint": ""}

@@ -1,0 +1,21 @@
+配比： 英文网页 18%，中文网页 14%，文档(PDF) 29%，代码 13%，数学 26%
+    step 160/800 loss 3.427 bpb
+    step 320/800 loss 3.250 bpb
+    step 480/800 loss 2.924 bpb
+    step 640/800 loss 2.891 bpb
+    step 800/800 loss 2.799 bpb
+
+各领域验证 BPB（越低越好）：
+  英文网页     2.708    该领域数据被读了 0.15 轮
+  中文网页     3.515    该领域数据被读了 0.28 轮
+  文档(PDF)  2.691    该领域数据被读了 0.23 轮
+  代码       2.467    该领域数据被读了 0.11 轮
+  数学       2.892    该领域数据被读了 0.22 轮
+  平均      2.854    用时 253.5s
+
+续写样例：
+--- [英文网页] 'The city council announced on Monday that is a looking which the organis to related as the class and when and partners the data subsite well safe an you to be of a lookable oor participation and be bot'
+--- [中文网页] '近日，记者从市教育局了解到，活机盘不之密分下次上政不非好人之招雖维等或辦问品等的台任理，新下化较、助運影分吋实或，路以一，必结为內计中�'
+--- [代码] 'def parse_args(argv):\n                                                                                                                                                                    '
+--- [数学] 'To solve the equation 3x + 5 = 20, we x print of I which the or have to related as the class and when the partners the data subsite we should an you the play compliance oor participations a graphit'
+--- [文档(PDF)] 'Table 2 shows the results of the siG misrithm on the divide is a lot say to you will sce devel:\n                           # the collength expect of a lookable oor part in with a by the st'

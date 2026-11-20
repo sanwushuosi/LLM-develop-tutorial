@@ -1,0 +1,76 @@
+{
+ "tag": "book_text_trafilatura",
+ "source": "text_trafilatura",
+ "mode": "book",
+ "config": "configs/clean.yaml",
+ "boilerplate_lines": 0,
+ "docs_in": 28104,
+ "docs_target_lang": 11713,
+ "docs_kept": 6337,
+ "keep_frac_of_target_lang": 0.541,
+ "kept_by_lang": {
+  "zh": 595,
+  "en": 5742
+ },
+ "lang_detected_top": [
+  [
+   "en",
+   11722
+  ],
+  [
+   "ru",
+   1739
+  ],
+  [
+   "de",
+   1685
+  ],
+  [
+   "fr",
+   1418
+  ],
+  [
+   "ja",
+   1376
+  ],
+  [
+   "es",
+   1300
+  ],
+  [
+   "zh",
+   1269
+  ],
+  [
+   "pt",
+   755
+  ],
+  [
+   "it",
+   732
+  ],
+  [
+   "unknown",
+   631
+  ]
+ ],
+ "chars_in": 83465546,
+ "chars_in_target_lang": 34531969,
+ "chars_out": 24038291,
+ "char_keep_frac_of_target_lang": 0.6961,
+ "doc_rule_hits": {
+  "D01": 16391,
+  "B-行级特征": 4118,
+  "B-长度": 1960,
+  "B-重复程度": 1508,
+  "B-符号比例": 57
+ },
+ "doc_rule_hit_frac_of_target_lang": {
+  "B-行级特征": 0.3516,
+  "B-长度": 0.1673,
+  "B-重复程度": 0.1287,
+  "B-符号比例": 0.0049
+ },
+ "line_rule_hits": {},
+ "seconds": 6.3
+}

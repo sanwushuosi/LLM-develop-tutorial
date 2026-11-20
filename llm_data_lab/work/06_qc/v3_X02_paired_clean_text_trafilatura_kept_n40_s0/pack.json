@@ -1,0 +1,35 @@
+{
+ "run": "work/03_clean/v3_X02",
+ "status": "kept",
+ "n": 36,
+ "seed": 0,
+ "rubric": "rubrics/web_qc.prompt",
+ "paired_with": "work/06_qc/clean_text_trafilatura_kept_n40_s0",
+ "removed_now": [
+  {
+   "id": "01a1318c-323c-7477-9e97-bdddd09cc47f",
+   "reasons": [
+    "X02"
+   ]
+  },
+  {
+   "id": "01a10bc7-e64d-703c-9c2a-933f5252378a",
+   "reasons": [
+    "X02"
+   ]
+  },
+  {
+   "id": "01a137e9-c3f0-7478-817b-43df158d39b8",
+   "reasons": [
+    "X02"
+   ]
+  },
+  {
+   "id": "01a13f3e-be26-75a8-8e53-0b8818a527c2",
+   "reasons": [
+    "X02"
+   ]
+  }
+ ],
+ "created": "2026-11-14 14:35:43"
+}

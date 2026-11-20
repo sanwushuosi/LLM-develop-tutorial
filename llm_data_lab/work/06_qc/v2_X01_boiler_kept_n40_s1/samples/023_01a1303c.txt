@@ -1,0 +1,25 @@
+id: 01a1303c-e7e8-7c9c-8931-512e2a081a5f
+lang: en
+url: https://submeter.com/rubs-billing/
+truncated: false
+---------------- 正文开始 ----------------
+Free portfolio review
+NES reviews the property's master-meter invoices, occupancy data, and unit mix, confirms RUBS is the right fit, and recommends the allocation formula.
+RUBS allocates the master-meter bill across units by occupancy, square footage, and fixtures. It is the proven path when submetering isn't viable. NES runs it turn-key: allocation, resident billing, AR, and disputes.
+RUBS is the Ratio Utility Billing System, a method that splits a multifamily property's master-meter utility bill across each unit using factors like occupancy, square footage, bedroom count, and water fixture count. It's the standard alternative to submetering when physical meter installation isn't viable. NES is a turn-key RUBS company that handles allocation, resident billing, AR, and dispute resolution end-to-end.
+RUBS is a method of billing multifamily and commercial real estate that distributes utility costs to each resident based on several factors. The combination of factors varies by state and is fully disclosed to residents per state statute. The result: residents pay for their share of usage, and the owner stops absorbing the full master-meter bill.
+Submetering is the most accurate form of utility billing because it measures exact usage. But in some properties (pre-1990 construction, slab plumbing, or buildings where there isn't space to install a meter on the incoming water lines) physical submetering isn't possible. In those cases, RUBS is the best solution. It deploys in cycle 1 with no construction, and you can migrate to submetering later on the same NES contract whenever capex is approved.
+NES is a turn-key RUBS company. The same team that calculates the allocations also pays the underlying utility bills, sends the monthly resident statements, collects the AR, and resolves disputes, all in-house. NES can also take over RUBS billing on your existing real estate without re-issuing accounts. Outsourcing billing and collections can save your team thousands of hours a year.
+RUBS skips the install entirely. Four steps from contract to the first cycle billing residents off the agreed allocation formula.
+Owner signs off on the factors (occupancy, square footage, bedroom count, fixture count) per the state's RUBS disclosure rules.
+NES files state-required disclosures, drafts the resident notice, and connects to your PMS (Yardi, RealPage, Entrata, AppFolio, MRI, ResMan, Rent Manager, AMSI).
+First RUBS cycle hits resident statements. NES handles AR, disputes, and resident customer service from the in-house bilingual team.
+Nothing but a positive experience working with NES. Anita never fails to help assist us with everything we need both quickly and efficiently!
+NES is a turn-key utility management company. Most of our clients use more than one service. Here’s the rest of what we run.
+Water, gas, and electric submetering for multifamily communities, condos, commercial properties, and residential parks.
+NES pays your water, gas, electric, trash, and internet bills and recovers them from residents.
+Outsource rent, HOA, and utility collections to a dedicated in-house NES team.
+Buy or lease nonproprietary submeters at cost: Badger, Cereniti, MasterMeter, Neptune, NextCentury, Norgas, Sensus & more.
+Automatic email alerts when a unit's water usage spikes, so you catch a running toilet the same day.
+Temporary ultrasonic clamp-on meters on the water lines that matter, so you can verify usage and find leaks without cutting a pipe.
+Tell us the property, the master-meter spend, and the resident count. An NES specialist will return a no-obligation RUBS quote and disclosure plan within one business day.

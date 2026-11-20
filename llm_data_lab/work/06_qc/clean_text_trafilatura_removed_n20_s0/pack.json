@@ -1,0 +1,8 @@
+{
+ "run": "work/03_clean/clean_text_trafilatura",
+ "status": "removed",
+ "n": 20,
+ "seed": 0,
+ "rubric": "rubrics/web_qc.prompt",
+ "created": "2026-11-14 13:27:54"
+}

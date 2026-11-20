@@ -1,0 +1,15 @@
+id: 01a1301c-0676-747a-8262-28a109ae8099
+lang: en
+url: https://www.ufc.com/athlete/renato-sobral
+truncated: false
+---------------- 正文开始 ----------------
+Significant Strikes include all strikes at distance, plus power strikes in the clinch and on the ground.
+Sig. Strikes Landed
+Sig. Strikes Attempted
+A takedown is awarded when a fighter deliberately grapples an opponent to the ground and establishes an advantageous position for an appreciable amount of time.
+Sig. Str. Landed
+Sig. Str. Absorbed
+Per 15 Min
+Sig. Str. Defense is the percentage of significant strikes attempted against a fighter that do not land.
+Takedown defense is the percentage of takedowns attempted against a fighter that do not land.
+Knockdown Avg. is the average number of knockdowns per 15 Minutes window.

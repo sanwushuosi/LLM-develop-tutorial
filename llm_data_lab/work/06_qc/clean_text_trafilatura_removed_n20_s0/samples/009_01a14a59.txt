@@ -1,0 +1,16 @@
+id: 01a14a59-f13d-766f-bdfb-5daf250099c3
+lang: en
+url: https://gbank.gsj.jp/geolis/geolis_link/199809336/en
+truncated: false
+---------------- 正文开始 ----------------
+Geological Literature Search (GEOLIS) (Geological Survey of Japan / AIST)
+Authors=TAKAHASHI Kazuharu, HIRANO Hiromichi
+Journal/Book_names=Abstracts, the 105th Annual Meeting of the Geological Society of Japan
+volume=105
+pages=70-70
+Publish_year=1998
+Publish_Country=JPN
+Publisher=Geological Society of Japan
+Language_of_Text=JA
+DOI=10.14863/geosocabst.1998.0_138
+ID=199809336

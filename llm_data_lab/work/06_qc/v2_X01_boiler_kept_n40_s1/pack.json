@@ -1,0 +1,8 @@
+{
+ "run": "work/03_clean/v2_X01_boiler",
+ "status": "kept",
+ "n": 40,
+ "seed": 1,
+ "rubric": "rubrics/web_qc.prompt",
+ "created": "2026-11-14 14:12:35"
+}

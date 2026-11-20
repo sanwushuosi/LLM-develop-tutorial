@@ -1,0 +1,15 @@
+id: 01a13e1c-89ec-7bfc-893f-845a5437fda7
+lang: en
+url: https://community.goto.com/discussion/316678/attendee-kept-being-redirected-to-registration-page
+truncated: false
+---------------- 正文开始 ----------------
+I recently conducted a pre-event webinar test in the New Experience with a few attendees. The problem was that these attendees were repeatedly redirected to the webinar registration page when they clicked on the meeting URL. However, after multiple attempts, they were suddenly able to join the webinar with desktop client.
+ 
+Has anyone else encountered this issue? How can it be resolved?
+ 
+- Here are additional details of the scenario:
+- Test timing: Conducted a few days before the actual event day.
+- Broadcast launch: The broadcast was not launched; we upgraded the attendees to "Panelist" to initiate interaction after they joined the webinar (this process worked seamlessly in the Classic Experience).
+- Attendee environment: The attendees accessed via desktop, had completed registration, and then accessed the webinar using their personal meeting URL.
+Your insights would be greatly valued.
+Thank you.

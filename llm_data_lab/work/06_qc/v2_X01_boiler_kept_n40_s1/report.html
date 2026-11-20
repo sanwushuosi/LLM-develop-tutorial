@@ -1,0 +1,651 @@
+<!doctype html><html lang='zh'><meta charset='utf-8'><title>第 6 步：质检结果 · v2_X01_boiler_kept_n40_s1</title><style>
+body{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;margin:24px auto;max-width:1180px;color:#222;line-height:1.55}
+h1{color:#0b5aa6;border-bottom:3px solid #0b5aa6;padding-bottom:6px}
+h2{color:#0b5aa6;margin-top:34px;border-left:6px solid #0b5aa6;padding-left:10px}
+.cards{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0}
+.card{background:#f3f7fc;border:1px solid #cddcee;border-radius:8px;padding:10px 16px;min-width:150px}
+.card b{display:block;font-size:22px;color:#0b5aa6}
+.card span{font-size:13px;color:#555}
+table{border-collapse:collapse;margin:10px 0;font-size:13px}
+th,td{border:1px solid #ccd6e0;padding:4px 9px;text-align:left;vertical-align:top}
+th{background:#e8f0fa}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+.note{background:#fff7e6;border-left:4px solid #e67e22;padding:8px 12px;margin:10px 0;font-size:14px}
+img{max-width:100%}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+code{background:#f2f2f2;padding:1px 4px;border-radius:3px}
+</style><body><h1>第 6 步：质检结果 · v2_X01_boiler_kept_n40_s1</h1><div class="cards"><div class="card"><b>40</b><span>样本（kept）</span></div><div class="card"><b>40</b><span>已判</span></div><div class="card"><b>20.0%</b><span>bad 比例</span></div><div class="card"><b>10%～35%</b><span>95% 置信区间</span></div></div><div class='note'>这批样本是清洗后<b>保留</b>的文档：判为 bad 的比例就是“漏网之鱼”的估计。样本只有几十条时置信区间很宽，结论要谨慎——想把区间缩窄一半，样本要多 4 倍。</div><h2>前后对比</h2><table><tr><th></th><th>对照：clean_text_trafilatura_kept_n40_s0（n=40）</th><th>本次：v2_X01_boiler_kept_n40_s1（n=40）</th></tr><tr><td>bad 比例</td><td>17.5%（9%～32%）</td><td>20.0%（10%～35%）</td></tr><tr><td>G01</td><td>0</td><td>1</td></tr><tr><td>W01</td><td>1</td><td>1</td></tr><tr><td>W03</td><td>3</td><td>6</td></tr><tr><td>W04</td><td>2</td><td>0</td></tr><tr><td>W05</td><td>2</td><td>1</td></tr><tr><td>W07</td><td>1</td><td>1</td></tr></table><h2>各规则命中</h2><img src="data:image/png;base64,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"><h2>模型建议的清洗规则（按命中规则归类）</h2><h3>W03（6 条）</h3><ul><li>可拦：URL 含 /search/?number= 或正文含“Sign in to unlock”且正文少于5句的页面直接丢弃</li><li>可拦：删除含 Afterpay/ShopPay、free shipping on all orders、Returns are accepted、Visit Us In Store 等全站电商模板行，剩余正文少于 200 字符则丢弃</li><li>可拦：删除以“By clicking”开头的表单同意声明段，剩余正文少于 200 字符或不足 3 句则丢弃</li><li>可拦：按站点统计行级重复，删除在同域名大量页面中重复出现的句子，删后为空或少于 2 句则丢弃</li><li>可拦：正文少于 3 句且含 cookies 与 website/browser 等 cookie 告知模板词的页面丢弃；URL 路径为 /checkout/、/cart/ 的页面直接丢弃</li><li>可拦：正文含“No Product found”/“No products were found”等空列表提示的页面直接丢弃</li></ul><h3>W01（1 条）</h3><ul><li>可拦：URL 含 /search/?number= 或正文含“Sign in to unlock”且正文少于5句的页面直接丢弃</li></ul><h3>W05（1 条）</h3><ul><li>可拦：URL 含 Category/list 且正文行数≤6、多数行不以句末标点结尾或末行被截断的页面丢弃</li></ul><h3>W07（1 条）</h3><ul><li>可拦：URL 域名为 forsale.godaddy.com/含 parkedpages，或正文含“The domain name”+“is for sale”的页面直接丢弃</li></ul><h3>G01（1 条）</h3><ul><li>可拦：正文含“No Product found”/“No products were found”等空列表提示的页面直接丢弃</li></ul><h2>逐条结果（bad 在前；黄色高亮为证据原文）</h2><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #001 [en] https://sync.me/search/?number=526182794235</summary><p><b>W01</b> 号码查询结果被登录墙挡住，实际要抓的信息不在；<b>W03</b> 剩余内容是来电识别App推广与下载提示，构成主体</p><p style='color:#555'>规则建议：可拦：URL 含 /search/?number= 或正文含“Sign in to unlock”且正文少于5句的页面直接丢弃</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'><mark>We found AI insights for +526182794235. Sign in to unlock them</mark>We found AI insights for +52-618-279-4235. Sign in to unlock them
+Fixed Line or Mobile
+Similar Numbers Formats
++526182794235 |  +52 618 279 4235 |  618 279 4235 | 6182794235 | tel:+526182794235
+Stay protected with real-time caller ID and spam blocking for every incoming call.
+Livecaller instantly identifies unknown callers, blocks spam, and shows you who’s calling, even if they are not in your contacts.
+<mark>Scan the code with your smart phone camera to download the free app</mark></div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #007 [en] http://www.gorjana.com/products/clef-parker-charm?variant=45545959981187</summary><p><b>W03</b> 商品描述仅一句，其余是付款/配送/退货/到店推广等全站模板，占主体</p><p style='color:#555'>规则建议：可拦：删除含 Afterpay/ShopPay、free shipping on all orders、Returns are accepted、Visit Us In Store 等全站电商模板行，剩余正文少于 200 字符则丢弃</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Clef Parker Charm
+Customize your jewelry with charms.
+  
+    
+      
+      
+    
+    
+    
+  
+<mark>Buy now, pay later with Afterpay or ShopPay</mark>
+Ship to me Or ship to me — select method at checkout
+Get it today! Choose “SHIPSI Same-Day” at checkout (where available)
+We offer free standard shipping on all orders over $150 within the U.S. and Puerto Rico. Upgrade to expedited
+        shipping for $5.
+Returns are accepted on all unworn items within 30 days of purchase.
+      
+COME SHOP WITH US
+Visit Us In Store
+Visit us nationwide and meet our incredible team of stylists and enjoy complimentary gift wrapping.
+See something you love online? Buy online and pick up in store. We can&#x27;t wait to see you!</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #012 [en] https://www.watsonautosales.com/kia-for-sale-c463102</summary><p><b>W03</b> 车辆列表正文缺失，只剩地址、表单标签和联系授权声明模板</p><p style='color:#555'>规则建议：可拦：删除以“By clicking”开头的表单同意声明段，剩余正文少于 200 字符或不足 3 句则丢弃</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>1149 North Main Street Sheffield, MA 01257
+AUTO REPAIR: (413) 229-6613
+Select Services I&#x27;m Interested In
+<mark>By clicking “Send Email”, I consent to be contacted by Carsforsale.com</mark> and the dealer selling this vehicle at any telephone number I provide, including, without limitation, communications sent via text message to my cell phone or communications sent using an autodialer or prerecorded message. This acknowledgment constitutes my written consent to receive such communications.</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #022 [en] https://canceratlas.cancer.org/metric/united-arab-emirates-age-standardized-w-incidence-rate-of-colorectal-cancer-per-100000-2022-male/</summary><p><b>W03</b> URL指向阿联酋结直肠癌指标页，正文只剩全站栏目导语卡片，指标内容缺失</p><p style='color:#555'>规则建议：可拦：按站点统计行级重复，删除在同域名大量页面中重复出现的句子，删后为空或少于 2 句则丢弃</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Exposures to numerous potentially modifiable risk factors for cancer vary substantially across and within countries and are often associated with socioeconomic status.
+Cancer is the second leading cause of death worldwide and is likely to become the leading cause of premature death in every country of the world in this century.
+Effective interventions across the cancer continuum can reduce the burden and suffering from cancer and save millions of lives worldwide.
+<mark>Access and download all of the Cancer Atlas’ data in one self-service explorer.</mark></div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #033 [zh] https://www.jyygshuba.com/NewsInfoCategory?categoryId=598786,598786</summary><p><b>W05</b> 新闻分类页只剩几条零散标题和截断摘要，无正文也无完整条目</p><p style='color:#555'>规则建议：可拦：URL 含 Category/list 且正文行数≤6、多数行不以句末标点结尾或末行被截断的页面丢弃</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>2026年度教育行业十大领军企业
+求知，是以有知对无知的远征。
+赢得了国际视野下的专业认可
+<mark>阳光书吧与蓝思LEXILE2025年4月22日,阳光书吧与全球权威阅读评估机构蓝思（LEXILE）在阳光教育集</mark>
+聚焦PBL与深度阅读</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #034 [en] https://forsale.godaddy.com/forsale/butterflydefi.xyz?utm_source=TDFS_BINNS2&amp;utm_medium=parkedpages&amp;utm_campaign=x_corp_tdfs-binns2_base&amp;traffic_type=TDFS_BINNS2&amp;traffic_id=binns2&amp;</summary><p><b>W07</b> GoDaddy 域名出售停放页模板，无任何实际正文</p><p style='color:#555'>规则建议：可拦：URL 域名为 forsale.godaddy.com/含 parkedpages，或正文含“The domain name”+“is for sale”的页面直接丢弃</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>The domain name
+is for sale!
+Get this domain
+<mark>Own it today for $1,299 and make it yours.</mark>
+Free transaction support
+Local currency available in cart at checkout
+Need help? Give us a call.480-651-9741
+Safe &amp; secure transactions
+Fast &amp; easy transfers
+Hassle free payments
+The simple, and safe way to buy domain names
+No matter what kind of domain you want to buy or lease, we make the transfer simple and safe.</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #036 [en] https://glazbena.hr/checkout/</summary><p><b>W03</b> 结账页正文全无，只剩 cookie 告知横幅，cookie 声明即全部内容</p><p style='color:#555'>规则建议：可拦：正文少于 3 句且含 cookies 与 website/browser 等 cookie 告知模板词的页面丢弃；URL 路径为 /checkout/、/cart/ 的页面直接丢弃</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'><mark>This website uses cookies so that we can provide you with the best user experience possible.</mark> Cookie information is stored in your browser and performs functions such as recognising you when you return to our website and helping our team to understand which sections of the website you find most interesting and useful.</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #037 [en] https://shyzarsueglobal.com/category/Automotive/Vehicle%20GPS%20%20:%20%F0%9F%94%A5NEW%20CATEGORY%20sign%20up%20&amp;%20start%20selling%20your%20items%20to%20dominate%20in%20this%20category./eyJpdiI6IndoZ1FhMTRFSms2MFF6TVdDTDBETkE9PSIsInZhbHVlIjoieWgyTEFTMkN4ejFuRXI2Z2dUdEN0UT09IiwibWFjIjoiMTJiMGY5MDc0Y2E2OGFlYWY3NDk3OTQzYjkyZmI0ZTkyOTU1OTEwYWU0MGI2MTc1NDMyYzE3M2ZhMzdhNzBjNiJ9</summary><p><b>G01</b> 空分类页，正文实际为空，只有“无商品”占位提示；<b>W03</b> 其余全是包邮/支付/退货卖点和 cookie 告知等全站模板</p><p style='color:#555'>规则建议：可拦：正文含“No Product found”/“No products were found”等空列表提示的页面直接丢弃</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>- Vehicle GPS : 🔥NEW CATEGORY sign up &amp; start selling your items to dominate in this category.
+                            <mark>No Product found in this category!</mark>
+                        
+Free shipping around the world for all 
+orders over $120
+With our payment gateway, don’t worry 
+about your information
+You have 30-day return guarantee for 
+every single order
+<mark>Shyzarsueglobal uses cookies to ensure that we give you the best experience on our website.</mark> If you continue we assume that you consent to receive all cookies on all Shyzarsueglobal.com websites. more info.. I Accept</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #000 [en] https://othoba.com/texture-notebook-jute-handmade-board-cover-sevendays-notes-528927</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Texture Notebook (Jute Handmade Board Cover)
+Describe of notebook
+1. Sevendays Notes made for you.
+2. Cover Design: &quot;No Branding – Draw Your Exploration Cover&quot;.
+3. Cover: 350 gsm recycled eco-friendly jute handmade green board.
+4. Innards: 110 gsm uncoated cartridge paper.
+5. Bound: Hand stitched with perfect bound.
+6. Size: W- 5.2 in x H- 6.8 in.
+7. Page: 48 leaves, 96 pages.
+*Especially: Cartridge paper is a high-quality type of heavy paper used for illustration and drawing.
+- Explorer Notebook
+- Jute Handmade Green Board Cover
+- Sevendays Notes
+- No Branding – Draw Your Own Exploration Cover
+- Cartridge Paper
+- Hand Stitched
+- Illustration and Drawing
+Customer Questions and answers :
+Login to ask a question</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #002 [en] https://mcast3d.com/product/nova-3d-whale4-ultra-16k-resin-3d-printer/</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Nova 3D Whale4 Ultra 16K Resin 3D Printer
+- 10-inch 16K Exquisite Details 15120*6230 Resolution
+- 14×19µm XY Resolution
+- Build volume of 211.68 x 118.37*220mm³
+- Sealed Z-axis system，12mm lead screw + Dual Limit Switch Design
+- Equipped with Gorilla LCD protector, fearless about resin residues. The small resin won’t cause damage to your LCD
+- One-step leveling design
+- Advanced #6 Gen COB lights engine
+- Resin Heating System + Air Purifier
+- Hover Flip Cover Design
+- NOVAMAKER Intelligent Control System
+Share:
+The Nova 3D Whale4 Ultra 16K Resin 3D Printer is a high-resolution LCD resin 3D printer built for users who want exceptional detail, a generous build area, and efficient printing performance. With a 15120 × 6230 resolution, 14 × 19 μm pixel size, and 221 × 118 × 220 mm build volume, the Whale4 Ultra is designed for both detailed models and larger resin printing projects.
+Its 16K monochrome LCD provides a high level of detail, while the increased 220 mm build height gives users more freedom when printing taller models. Combined with a rated printing speed of up to 100 mm/h, the Whale4 Ultra offers a strong balance between print quality, size, and productivity.
+Key Features of Nova 3D Whale4 Ultra
+16K Resolution for Exceptional Detail
+The Whale4 Ultra features a 15120 × 6230 resolution display with a 14 × 19 μm pixel size.
+This high-resolution printing system is designed to reproduce fine edges, intricate textures, small features, and detailed surface geometry. It makes the printer suitable for users who want smooth and highly detailed resin prints.
+For miniature models, prototypes, figurines, decorative parts, and other detailed projects, the 16K resolution provides the level of precision expected from a modern high-resolution resin 3D printer.
+Large Build Volume for Bigger Models
+With a 221 × 118 × 220 mm build volume, the Nova 3D Whale4 Ultra provides substantial printing space across all three axes.
+The 220 mm Z-axis height is particularly useful for taller models and larger components. The additional build space also allows users to arrange multiple smaller parts within the same print.
+This makes the Whale4 Ultra a versatile option for both individual large models and batch printing.
+Fast Resin 3D Printing
+The Whale4 Ultra supports a rated printing speed of up to 100 mm/h.
+This gives users the ability to complete suitable projects more efficiently while maintaining the advantages of high-resolution resin printing.
+Actual print speed will depend on resin type, layer thickness, exposure settings, model geometry, and slicing parameters.
+Advanced COB UV Light Source
+The printer uses a 7th-generation COB light source with a light homogenizer and an integrated air-cooling system.
+Its optical power intensity is rated at 5000 μW/cm², with a 405nm UV wavelength.
+The light homogenizing system helps provide consistent exposure across the printing area. This is important for maintaining reliable curing and consistent detail across different areas of the build platform.
+Stable Industrial Motion System
+The Whale4 Ultra uses an industrial ball screw and industrial stepper motor for its motion system.
+A stable Z-axis is important for resin printing because each layer needs to be positioned accurately during the build process. The industrial motion components help provide controlled vertical movement throughout the print.
+Flexible Layer Thickness
+The Nova 3D Whale4 Ultra supports layer thicknesses from 20 μm to 200 μm, with 20 μm increments.
+Users can select finer layers when prioritizing surface quality and detail. Thicker layers can be sel
+
+[…… 中间省略 1,101 字符 ……]
+
+esolution 16K printing system.
+This makes it a practical choice for users who regularly print both highly detailed and relatively large resin models.
+Easy Resin Printing Workflow
+The printer supports several widely used resin slicing platforms, including NovaMaker, Chitubox, Lychee Slicer, and Tango Slicer.
+Models can be prepared using common STL and OBJ file formats, making it easier to integrate the Whale4 Ultra into existing 3D modeling and resin printing workflows.
+A Versatile Professional Resin 3D Printer
+The Nova 3D Whale4 Ultra 16K combines high resolution with a larger build volume and faster rated printing speed.
+Its 15120 × 6230 resolution is suited to detailed models, while the 221 × 118 × 220 mm build area provides room for larger projects and multi-model printing.
+For designers, makers, model creators, prototyping businesses, and professional users, the Whale4 Ultra provides a versatile platform for high-detail resin 3D printing.
+Why Choose the Nova 3D Whale4 Ultra?
+The main advantage of the Nova 3D Whale4 Ultra resin 3D printer is its combination of 16K resolution, large build volume, and up to 100 mm/h printing speed.
+Instead of choosing between detail and printing capacity, users get a machine designed to handle both. The high-resolution LCD is suitable for intricate models, while the 220 mm build height provides additional flexibility for larger designs.
+If you need a high-resolution resin 3D printer for detailed models, prototypes, miniatures, and larger resin prints, the Whale4 Ultra is a strong option for professional and advanced users.
+Nova 3D Whale4 Ultra Specifications
+| Specification | Details | 
+| Light Source | 7th-gen COB + Light Homogenizer | 
+| Cooling | 4th-gen Integrated Air-Cooling System | 
+| Optical Power | 5000 μW/cm² | 
+| UV Wavelength | 405nm | 
+| Resolution | 15120 × 6230 | 
+| Pixel Size | 14 × 19 μm | 
+| Build Volume | 221 × 118 × 220 mm | 
+| Layer Thickness | 20–200 μm | 
+| Printing Speed | Up to 100 mm/h | 
+| Lead Screw | Industrial Ball Screw | 
+| Motor | Industrial Stepper Motor | 
+| Input Power | 100–240V, 50/60Hz, 2A | 
+| Output | 24VDC / 6.25A | 
+| Printer Dimensions | 348.5 × 345 × 503 mm | 
+| Packing Dimensions | 502 × 512 × 642 mm | 
+| Net Weight | 24 kg | 
+| Gross Weight | 28 kg | 
+| Operating Temperature | 20–30°C | 
+| Slicers | NovaMaker, Chitubox, Lychee Slicer, Tango Slicer | 
+| File Formats | STL, OBJ |</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #003 [en] https://www.mountneyltd.com/Catalogue/Replacement-Mirror-Glass/Summit-Replacement-Stick-On-Aspheric-Mirror-Glass-RHS-ASRG-159-See-Applications-ASRG-159</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Stock Code: ASRG-159
+Summit are one of the leading brands of replacement mirror glass in the UK.
+A broken mirror glass is an MOT failure, and a full mirror unit can be costly. Summit Replacement Mirror Glass offers a quick, cost-effective alternative. Made to a full O/E (original equipment) specification and quality, Summit Replacement Mirror Glass will ensure your vehicle remains road legal with great visibility.
+Our vehicle look up tool helps you find the correct application with ease. Browse our wide range of vehicle specific mirror glass, including standard, anti-dazzle, aspheric, O/E style plastic backed, and heated options to find the right mirror glass for your needs.
+The Replacement Stick-On Aspheric Mirror Glass comes ready to fit with a strong and durable adhesive backing that can be applied straight on top of any existing damaged mirror glass, for a quick and easy solution. The aspheric glass is wide angled to increase visibility of your blindspot. Full detailed fitting instructions with diagrams are included.
+This part will fit the below vehicle(s):
+Ford Mondeo MK1 Including Facelift Models &amp; MK2 (1993-2000) Right Hand Side
+Your order contains no items</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #004 [en] https://pammiesinkypinkieschallenges.blogspot.com/2025/06/</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Ok, we have another fun challenge ahead,
+but first, who was last week&#x27;s lucky winner??
+Find out HERE!
+This week is a THEME week and 
+our fabulous sponsor is
+Be sure to check out all the fun images!
+There are soooo many to choose from and
+ she is kindly offering the random winner 
+3 digital images!!
+yay!!
+⭐⭐⭐OUR THEME is SUNSHINE⭐⭐⭐
+Now, the DT has some great inspiration
+to help get your creative juices flowing
+following the theme!
+Be sure to checkout their blogs for
+more amazing creative ideas.</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #005 [en] https://royalpalmboatsales.com/product/coming-soon-2026-parker-257-explorer/</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>IN STOCK! 941-681-2136
+2027 Parker 257 Explorer
+Standard Equipment:
+Seakeeper 450 Ride System
+Twin Berths: 76in L x 64in W, 44in Headroom, Storage &amp; Cushions, Headliner, Portlights (Port &amp; Starboard) w/Screens, Overhead Ventilation Hatch w/ Screen, Anchor Locker Door, Lockable Entrance Door w/ Companionway Hatch
+STANDARD CABIN CONFIRGURATION: Port: Forward facing seat and inward facing rear companion seat, Starboard: Captain Chair and inward facing rear companion seat
+Windshield Wipers (Port &amp; Starboard)
+Windlass with 300ft of Anchor Rode
+Hydraulic Steering w/ Stainless Steel Wheel
+Wetsounds Stereo with Speakers (4)
+LED Spreader Light , Blue LED Underwater Lights (2) – 6 LED Light
+LED Cockpit Lighting, Standard White Parker Upholstery
+Cockpit Coaming Bolsters (Port &amp; Starboard)
+Full Transom w/ Bracket (Swim Platform &amp; Ladder), Transom Fish box, 35 Gallon Livewell and Transom Door
+Gunwale Mounted Stainless Steel Rod Holders (4)
+Rocket Launcher, Aluminum, 6 Rods, Rod Storage &amp; Toe Rails Under Gunwale
+Raw Water Wash Down, Fresh Water Washdown
+Electric Flushing Head w/Holding Tank &amp; Macerator Pump
+Pulpit w/ Roller
+Added Optional Equipment:
+Mabru Heat/AC 12,000 BTU
+Folding Cockpit Lounge Seat
+Battery Charger, 2 Bank
+Wet Sounds Upgraded LED Speakers
+Garmin GPS Map 9213 XSV &amp; GT12M-TH
+VHF 115 w/Antenna
+Yamaha Twin F200XSA2 (White)
+Standard Features:
+Limited Lifetime Hull Warranty
+Transferrable to 2nd owner
+Fiberglass Liner Construction
+w/ Coosa Transom &amp; Gunwales
+Heavy Duty Rub Rail w/ Stainless Steel Insert
+LED Navigation Lights
+Swim Platform with Ladder
+Gemlux premium cup holders (6)
+Stainless Steel Bow Rail, Two Piece
+Stainless Steel Flush Mount Cleats
+2 Bow 2 Midship &amp; 2 Stern
+Bilge Pump w/ Automatic Float Switch
+Length*: 25’ 4” Hull Draft: 20”
+Dry Weight: 6480 Lbs LOA (W/Motor): 27’ 5”
+Beam: 9’7” Deadrise: 19°
+Fuel Capacity: 179 Gal
+LOCATION: 700 N. INDIANA AVE., (SR 776), ENGLEWOOD FL 34223
+Financing Available/All Trades Considered</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #006 [en] https://couturegrounds.com/</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Transform Your Space With a luxury touch
+At Couture Grounds, we specialize in transforming ordinary spaces into extraordinary outdoor havens, tailored to your lifestyle. Whether you’re hosting a family gathering or enjoying a quiet moment of relaxation, our custom-designed patios, pergolas, and walkways are designed to enhance every moment spent outdoors.
+Let us help you create a space where memories are made, season after season.
+Our Luxury Landscape Design Services
+Why Choose Couture Grounds?
+Couture Grounds is dedicated to creating outdoor living spaces that are as unique as you are. Our expert craftsmen bring unparalleled skill and attention to detail to every project, ensuring your space is built to the highest standards. From the initial consultation to the final walk-through, we prioritize clear and consistent communication, keeping you informed and involved at every stage.
+Our personalized design process, complete with 3D renderings, lets you visualize your dream space before construction even begins. Plus, with our comprehensive warranty programs, you can rest easy knowing your investment is protected.
+Your satisfaction is our top priority, and we’re committed to delivering a final product that not only meets but exceeds your expectations, enhancing your lifestyle and bringing your outdoor vision to life.
+Here’s What Our Clients Have To Say
+Posted on GoogleMark LansmanTrustindex verifies that the original source of the review is Google.We worked with Couture Grounds (Anthony) on an outdoor patio project at our home on the Main Line. The projects scope included new bluestone, stairs, landscaping, lighting fixtures, and painting. The pricing was reasonable, the workers were efficient and polite, and throughout the entire project, Anthony was in close communication. The project turned out fantastic - within the agreed upon budget and on schedule. I will be recommending my friends to Anthony/Couture Ground!Posted on GoogleCyrus FarmerTrustindex verifies that the original source of the review is Google.Couture Grounds has transformed our outdoor experience. Anthony and his staff work fast, efficiently, and provide quality work at a fair price. Not only did they do a wonderful job edging and mulching multiple beds, they built a fantastic new deck (replacing the one that was no longer safe). They do mortar work as well. Couture Grounds is my new one stop destination for all things home related. Give them a call — you can’t go wrong with these guysPosted on GoogleRichard PoliTrustindex verifies that the original source of the review is Google.I am very pleased with the design and craftsmanship of my Couture walkway and landscaping. They asked questions from the beginning, so everyone was on the same page. In addition, they left the property the way they found it + the Couture Grounds facelift.Posted on GoogleNick FentonTrustindex verifies that the original source of the review is Google.These have gone above and beyond. I can’t wait to have them come back next springPosted on GoogleRichard WellsTrustindex verifies that the original source of the review is Google.Anthony and his crews do a great job and communicate well. Highly recommended!Posted on GoogleSuneel NagdaTrustindex verifies that the original source of the review is Google.We had an outdoor patio extension and outdoor fire pit done in addition to multiple traditional landscape from Anthony and his team. They are easy to work with, reliable, cost-effective, and timely in their work. I would highly recommend them.Posted on GoogleCaolan GrantTrustindex verifies that the origi
+
+[…… 中间省略 1,560 字符 ……]
+
+ highest caliber. The crews are conscientious and cheerful in their craft. I highly recommend them for your outdoor space work.
+How wE APPROACH LANDSCAPE DESIGN
+Serving Chester County, Bucks County, Montgomery County, &amp; Delaware County, PA
+							
+			
+			
+		
+						
+Avondale, Berwyn, Chester Springs, Devon, Downingtown, Exton, Frazer, Glenmoore, Immaculata, Kennett Square, Paoli, Phoenixville, Uwchlan, West Chester, West Goshen, West Grove, Willistown
+							
+			
+			
+		
+						
+Bryn Mawr, Chadds Ford, Concordville, Drexel Hill, Garnet Valley, Glen Mills, Haverford, Havertown, Malvern, Media, Newtown Square, Radnor, St. Davids, Swarthmore, Thorndale, Villanova, Wayne
+							
+			
+			
+		
+						
+Buckingham, Doylestown, New Hope, Newtown, Southampton, Warrington
+							
+			
+			
+		
+						
+Blue Bell, Collegeville, Fort, Washington, Gladwyne, Gwynedd, Hatboro, Horsham, Huntingdon Valley, King of Prussia, Lafayette Hill, Merion Station, Penn Valley, Plymouth Meeting, Royersford, Skippack
+Chester County Landscape Design FAQs
+					 What services does Couture Grounds offer? 
+							
+			
+			
+		
+						
+					 How long does the design and installation process take? 
+							
+			
+			
+		
+						
+The timeline for each project varies depending on its size and complexity. Typically, the design phase can take a few weeks, and once approved, installation can range from several days to a few weeks. We’ll provide a detailed timeline during your consultation.
+					 Do you offer warranties on your work? 
+							
+			
+			
+		
+						
+Yes, we stand behind the quality of our craftsmanship with comprehensive warranty programs. These warranties cover both the materials and the workmanship, ensuring your outdoor space is built to last.
+					 Can I see a preview of my project before construction starts? 
+							
+			
+			
+		
+						
+Absolutely! We use advanced 3D rendering technology to create a detailed preview of your outdoor living space. This allows you to see exactly how your project will look and make any adjustments before we begin construction.
+					 What makes Couture Grounds different from other outdoor living companies? 
+							
+			
+			
+		
+						
+Couture Grounds is known for our expert craftsmanship, personalized design process, and commitment to clear communication. We prioritize your needs and work closely with you to ensure your outdoor space not only meets but exceeds your expectations.</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #008 [en] https://www.westgodavarytdp.com/powering-up-andhra-pradesh-naidus-energy-projects-and-initiatives/</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Renewable Energy Initiatives
+With an emphasis on sustainability and reducing carbon emissions, Andhra Pradesh has implemented various renewable energy initiatives to meet its growing energy demands. One key initiative is the development of solar power projects. As of 2021, Andhra Pradesh has an installed solar capacity of over 3,300 megawatts, making it one of the leading states in India for solar energy generation. This substantial capacity not only helps in meeting the current energy requirements but also paves the way for a more sustainable future.
+Additionally, wind energy plays an important role in Andhra Pradesh’s renewable energy landscape. The state has harnessed its wind resources effectively, with an installed capacity of around 4,000 megawatts. This significant wind energy capacity contributes greatly towards the state’s clean energy goals and helps in reducing reliance on fossil fuels.
+Grid Modernization Efforts
+Advancing its energy infrastructure, Andhra Pradesh has initiated a thorough effort to modernize its grid system, incorporating cutting-edge technology and innovative solutions to enhance efficiency and reliability. By embracing smart grid technologies, the state aims to optimize energy distribution, reduce transmission losses, and integrate renewable energy sources seamlessly. The implementation of advanced metering infrastructure (AMI) allows for real-time monitoring of energy consumption patterns, enabling more accurate demand forecasting and efficient load management.
+Andhra Pradesh is investing in grid automation to enhance grid stability and resilience. Automated systems can detect faults quicker and isolate affected areas, minimizing downtime and improving overall system reliability. Through the deployment of grid sensors and analytics, the state can proactively identify potential issues and take preventive measures, ensuring uninterrupted power supply to consumers.
+Solar Power Expansion
+The integration of solar power in Andhra Pradesh’s energy portfolio has seen significant expansion in recent years, driven by the state’s commitment to renewable energy goals and sustainable development. With an increasing focus on harnessing clean energy sources, Andhra Pradesh has made remarkable strides in solar power generation. The state government’s proactive policies and incentives have encouraged the growth of solar projects, leading to a substantial increase in capacity.
+Andhra Pradesh’s solar power capacity has surged to over 3,500 megawatts, marking a significant milestone in the state’s renewable energy journey. This remarkable growth in solar installations has not only bolstered the state’s energy security but has also reduced its carbon footprint, contributing to environmental sustainability.
+Moreover, the adoption of innovative technologies and efficient solar infrastructure has enhanced the overall efficiency and reliability of solar power generation in Andhra Pradesh. As the state continues to expand its solar footprint, it is poised to become a frontrunner in the renewable energy landscape, setting a stellar example for sustainable energy development.
+Wind Energy Projects
+A substantial number of wind energy projects have been implemented in Andhra Pradesh, making a substantial contribution to the state’s renewable energy diversification. The state’s strategic location along the eastern coast of India provides it with excellent wind resources, which have been effectively utilized to harness clean energy. The implementation of these projects has not only reduced the state’s reliance on traditional fossil fuel
+
+[…… 中间省略 2,682 字符 ……]
+
+omising avenue for storing vast amounts of energy by utilizing surplus power to pump water to elevated reservoirs for later use in hydropower generation.
+Investing in diverse energy storage solutions not only enhances grid stability but also facilitates the integration of more renewable energy sources, positioning Andhra Pradesh as a frontrunner in sustainable power solutions.
+Rural Electrification Programs
+Exploring the intersection of energy storage solutions and rural electrification programs in Andhra Pradesh reveals a strategic approach towards expanding access to reliable electricity in remote areas. By integrating innovative energy storage technologies like battery systems and solar microgrids into rural electrification initiatives, the state has made significant strides in bridging the energy access gap. These programs not only enhance energy reliability but also contribute to sustainable development by promoting clean energy usage.
+Nara Chandrababu Naidu’s leadership In Andhra Pradesh, the implementation of decentralized renewable energy systems has been pivotal in reaching underserved rural communities. Through initiatives such as the Surya Ratha program, which focuses on solar-powered agricultural pumps, the state has been able to boost agricultural productivity while simultaneously electrifying remote regions. Additionally, the rollout of village-level solar grids has provided households with a stable source of power, transforming the lives of many.
+The strategic deployment of energy storage solutions within rural electrification programs underscores Andhra Pradesh’s commitment to fostering inclusive growth and sustainable energy practices in its quest for a more electrified and empowered future.
+Smart Grid Implementation
+Moreover, markedly, the implementation of smart grids in Andhra Pradesh has revolutionized the management and distribution of electricity across the state. Smart grids have enabled real-time monitoring of energy consumption patterns, predictive maintenance of infrastructure, and efficient integration of renewable energy sources into the grid. These advancements have notably reduced transmission losses and improved overall grid reliability.
+In a landmark move aimed at strengthening social welfare
+Naidu’s Student Aid Scheme reflects a strong commitment to
+In a remarkable move showcasing administrative efficiency and people-centric</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #009 [en] https://www.mycoremke.com/post/2016/08/15/environment-matters-an-update-to-my-sega-experiment-with-ponderosa-pine</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Environment Matters: An update to my SEGA Experiment with Ponderosa Pine
+Environment Matters: An update on our first growing season with Ponderosa Pine planted at SEGA sites.
+This June we planted well over one hundred Ponderosa pine seedlings at two SEGA sites on the Kaibab Plateau, just north of the Grand Canyon. The trees we planted started from seeds collected near Flagstaff, Arizona. To fully understand the story of these trees, I first want to step back and think about the larger story of a trees life.
+Trees, like almost all plants, acquire energy from the sun and assimilate carbon from atmospheric carbon dioxide to make sugars, or food. This processes is known as photosynthesis. To truly make the system work, plants need a variety of essential nutrients, including water, nitrogen, potassium and many others. Much like how we acquire these nutrients from our diets, trees forage the soil to find these critical elements.
+In many cases, trees find it difficult to acquire these nutrients in the soil on their own, so they seek help from a variety of soil organisms, especially mycorrhizal fungi. These fungi are a specific type of fungus that live inside of plant roots. They obtain their food directly from the plant’s carbon, and exchange give the plant soil nutrients and water that was otherwise difficult for plant roots to obtain. To be clear, these organisms incur a carbon cost to the plant, they are not free, but when a plant is in need of something, they are almost always worth it.
+Climate change brings an interesting tidbit to this dynamic. Models continue to predict warmer conditions for much of the southwestern United States, but there is less clarity on how precipitation will change into the future. Regardless of this uncertainty, warmer conditions mean high evaporation rates, and this means less water available to plants during dry periods. Plants faced with shifts in their climate have three simple possible responses, they can die, adapt and persist, or move to a more favorable environment. How then, can we expect plant-soil microbe interactions to change as we observe shifts in our weather and climate patterns? If a plant were to migrate somewhere new, is it dependent on its microbes moving as well?
+To address these questions, we planted trees in large tree pots, forcing them to grow with either the microbes they have always lived with (home team), or forced them to grow with an unique assemblage of soil microbes (away team). We then planted these trees at sites that are 1) the same site the plant seed came from 2) A site that is warmer and drier, thus simulate climate warming and 3) a site that is cooler and wetter. Our primary hypothesis was that plants would invest more carbon into their home team soil microbes, regardless of environment, and in turn would receive greater benefits.
+Interestingly, the pattern we are observing is quite different and much more context dependent. Our findings so far (see figure 1) indicate that plants growing in warm dry environments grow much more when they are paired with their home team soil organisms. In fact, their growth is nearly identical to the same plants growing at their site of origin, suggesting that the soil microbes buffer against these stressful growing conditions. Oddly, nearly the opposite pattern is observed at the cool, wet site. At this site plants paired with their home team soil microbes are actually slightly smaller than those without their microbes. At this site, it could be that water is abundant enough in the soil that investing carbon into their microbial partners has little pay-off because the plant could easily obtain water from the soil without help from the microbes.
+Figure 1: Aboveground biomass of ponderosa pine growing with different soil organisms communities at three sites along a temperature and moisture gradient. The bars indicate standard error of the mean. Notice how much smaller plants are when grown in sterile potting soil. Also, the benefits of having the home-team soil organisms in warm-dry sites is exceptionally large.
+Keep following my blog for more great posts about my research and beyond!</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #010 [en] https://walkinpartsexpress.com/parts/handle-1238cv-locking-flush-4-chrome</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Kason 1238CV PaceSetter locking handle for flush doors, 4&quot; thick jamb, polished chrome
+ - Unbreakable pull handles for trouble-free service
+- Cylinder lock and padlock provision standard
+- Complete with inside safety release mechanism
+- Tamper-resistant screw hole plugs included
+- Twist-off glow in the dark knob disassembly type inside release.
+- Compatible with flush doors with 4&quot; thick jambs only
+- Use with rightor left-hand door 
+ 
+MATERIAL &amp; FINISH
+ - High pressure die-cast zinc
+- Polished chrome
+ 
+ - Holes drilled and countersunk for 1/4&quot; (6.0mm) screws
+ 
+ 
+ - Accepts Master #1 LJ Padlock with 5/16&quot; shank
+No Reviews Submitted On This Product Yet.</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #011 [en] https://journalist101.com/2020/04/09/breaking-enugu-state-gets-new-commissioner-for-health/</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Following the unfortunate death of the former Commissioner for Health, Enugu State, Prof. Anthony Ugochukwu, last week, Governor Ifeanyi Ugwuanyi, on Thursday, swore in Associate Prof. Emmanuel Ikechukwu Obi, as the new Health Commissioner.
+Prof. Obi, until his appointment was a Consultant Public Health Physician and Lecturer at University of Nigeria Teaching Hospital, Ituku-Ozalla and College of Medicine, University of Nigeria, respectively.
+Swearing in the new Commissioner, Gov. Ugwuanyi disclosed that “the compelling need to re-establish commanding leadership for State Health Care System under a Commissioner”, in the face of the escalating Coronavirus Disease (COVID-19) pandemic, “necessitated the urgent replacement of our deceased Commissioner for Health”.
+The governor added that the action was taken pursuant to the confirmation of Associate Prof. Obi’s nomination as Commissioner by the Enugu State House of Assembly “conveyed in Enugu State House of Assembly letter reference No. HA/5/CHA/11/VOL.1V/146, dated 9th April, 2020.”
+While congratulating Associate Prof. Obi on his appointment, Gov. Ugwuanyi expressed the hope “that you will bring your expertise and the requisite gravitas to bear on your new role as Commissioner for Health, Enugu State, especially in these unusual times.”
+Responding, Prof. Obi expressed gratitude to the governor for finding him worthy to serve as the State Commissioner for Health and pledged to carry out his duties with “all diligence and the best of my ability”.</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #013 [zh] http://news.imobile.com.cn/articles/2020/0728/207970.shtml</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>高考成绩出来了，全国各地录取分数线也陆续出炉，学子们和家长开始合力规划未来，报一所喜欢的学校，选一个热爱的专业，志愿填好之后接下来就是憧憬美好的大学生活。在迈向人生下一个重要阶段时，一些全新的“装备”自然是少不了的。如今，智能手机已经成为每个人的标配，衣食住行处处都离不开手机的帮助，所以选购一款外观设计出色、硬件配置良好、各项体验均出众的5G新机势在必行。当然，花更少的钱，买到更高配的手机，想必也是大多数学生党的心声，今天小编就来为大家推荐一款正在进行暑期大放“价”福利的真香机型——三星Galaxy S20 5G系列。
+三星Galaxy S20 5G系列共有Galaxy S20 5G、Galaxy S20+ 5G、Galaxy S20 Ultra 5G三款机型，以及柔雾粉、浮氧蓝、遐想灰、幻游黑、意象白、馥郁红和BTS联名的小王紫七款潮流配色可选。目前除了所有购机消费者都可以享受的购机好礼三选一之外，三星也特别为学生党购机用户提供了最大的诚意福利，推出了学生专享9折购机+至高12期免息、赠哔哩哔哩会员季卡、购机额外赠88元三星积分（账户积分可抵购机款），并且还可加入保值换新计划，在明年享受至高半价折抵下一代Galaxy S系列旗舰手机等礼遇，诚意十足，不可错过。
+提到三星手机，很多人马上就会想到旗舰配置、机皇品质、顶级屏幕、高级体验等词汇。而在5G开始普及的2020年一开年，三星就不负众望，为广大消费者带来了全新一代的三星Galaxy S20 5G系列旗舰，凭借着潮流的轻薄外观、120Hz高刷新率屏幕以及领先的性能表现备受瞩目。其中，搭载目前行业领先的高通骁龙865高性能处理器，配合骁龙X55基带，支持双模5G网络，更让三星Galaxy S20 5G系列可以轻松满足多种复杂的网络环境，让用户可以畅享疾速5G网络带来的酣畅淋漓。
+而在5G旗舰纷纷增厚增重、压缩电池的时代，重量仅有163g、电池却高达4000mAh的三星Galaxy S20 5G，简直就是专为女性用户和学生党而来的“手感旗舰”。即使是手小的用户也能轻松握持，加之最适合人体工学的设计、青春灵动又不失优雅可爱的配色设计，更加让人爱不释手。
+除了学习，追星也是学生党的日常，全球当红的防弹少年团（BTS）就有很多粉丝是学生身份，而他们也一直在通过积极正能量的音乐引导粉丝们一起努力向上。目前，三星联合防弹少年团推出的Galaxy S20+ 5G BTS定制版新机也正在热销中，绝美的应援紫色、专属LOGO、紫心细节设计、主题壁纸、预装定制APP等无处不在的BTS元素，早已收割了一众阿米的心，加之至高24期免息、购手机赠送同款定制版耳机五折优惠券等福利，更让这款高定机型成为了追星女孩们必入的偶像“周边”。
+毕业季到来，学生们除了要开始规划未来的人生，更要抓紧当下，享受一下难得的假日时光。如果你是一个热爱手游的玩家，闲暇时间经常约上三五好友来几局游戏，那入手这款配备了5000mAh大电池、拥有6.9英寸大屏幕、至高16GB的LPDDR5内存、性能表现极致强悍的三星Galaxy S20 Ultra 5G手机一定是不错的选择。而如果你是一个摄影或Vlog爱好者，那拥有1.08亿像素主摄、支持100倍变焦技术、8K高清视频摄录以及AI一键多拍等专业摄像头模组的三星Galaxy S20 Ultra 5G更是你非买不可的神器。
+如今，随着互联网和科技的高速发展，手机成为了学生们学习和生活的必需品，而年轻人对手机性能要求的不断提升，也促使旗舰手机不断进化得更加强大、更加完美。三星Galaxy S20 5G系列正是如此，其不仅可以轻松满足学生党多元化的使用需求，更在5G时代为年强一代的后浪们带来了最省钱的优惠方式，买到就是赚到，学生党们千万不要错过这波福利哦！
+来源：第一产经网
+免责声明：本文来源于网络，仅代表作者本人观点，与手机之家无关。凡来源非手机之家的新闻（作品）只代表本网传播该消息，并不代表赞同其观点。手机之家对文中陈述、观点判断保持中立，不对所包含内容的准确性、可靠性或完整性提供任何明示或暗示的保证。请读者仅作参考，并请自行承担全部责任。</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #014 [en] https://community.goto.com/discussion/316678/attendee-kept-being-redirected-to-registration-page</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>I recently conducted a pre-event webinar test in the New Experience with a few attendees. The problem was that these attendees were repeatedly redirected to the webinar registration page when they clicked on the meeting URL. However, after multiple attempts, they were suddenly able to join the webinar with desktop client.
+ 
+Has anyone else encountered this issue? How can it be resolved?
+ 
+- Here are additional details of the scenario:
+- Test timing: Conducted a few days before the actual event day.
+- Broadcast launch: The broadcast was not launched; we upgraded the attendees to &quot;Panelist&quot; to initiate interaction after they joined the webinar (this process worked seamlessly in the Classic Experience).
+- Attendee environment: The attendees accessed via desktop, had completed registration, and then accessed the webinar using their personal meeting URL.
+Your insights would be greatly valued.
+Thank you.</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #015 [en] https://www.fjrcriminaldefense.com/going-to-trial-what-to-expect/</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>The vast majority of criminal matters do not go to trial in Missouri. Prosecutors try to get plea deals. Plea agreements save them the trouble of preparing to go before the bench and get them the points that enhance their reputation with the district attorney.
+No defendant can afford to navigate the complex legal system without understanding what’s on the horizon. That will determine if you go home or end up in prison.
+Going to trial
+Going to trial is the defendant’s prerogative (though it’s not unusual for a prosecutor to refuse a plea and go to trial). The defense attorney’s responsibility is to manage strategic decisions. But the final decision belongs to the defendant. They decide to:
+- Testify on their behalf
+- Go to trial or take a plea
+- Assert innocence
+- Forego the appeal
+A trial is structured to present case facts before a jury and judge. The result is a guilty or not guilty decision. The prosecutor will use any matter they can find as evidence of guilt. Your attorney will counter with arguments that disprove that evidence.
+All jurors are indiscriminately chosen, promoting an unbiased view of the case.
+Selecting a jury
+Jurors get selected randomly from registered voter lists and driver’s licenses. The idea is to create an unbiased pool of candidates that represents a cross-section of a community.
+The attorneys and judge will question the juror pool, determining the suitability of each. The system refers to the process as voir dire. The process ends with a selection of 12 jurors and no less than two alternatives to replace jurors in case of an emergency.
+You can also have a non-jury trial, letting a judge make the final guilty or not guilty. In a jury trial, the judge acts as a neutral party, guiding jurors through the process of hearing arguments and providing instructions for jury decisions.
+What happens after the verdict
+If it’s determined you’re not guilty, you walk out of the courtroom victorious and get to go home.
+Should you be found guilty, the court can impose a sentence immediately. You will be taken into custody and begin the process of the state preparing your imprisonment.
+The court may set a future date for sentencing. You do have the right to file an appeal. But take note most appeals are rejected as proving the legal grounds to overturn a ruling is incredibly difficult.</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #016 [en] https://paduaproperties.it/the-english-and-wales-drawn-together-for-rwc-2027-in-australia/</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>The English and Wales Drawn Together for RWC 2027 in Australia
+England and their Welsh counterparts will face off in an identical group for the World Cup in 2027, promising a major early encounter in the tournament Down Under. They are joined in Group F by Tonga and Zimbabwe.
+This draw mirrors their famous clash in the pool stages of the 2015 tournament, where Wales&#x27; victory at England&#x27;s home ground contributed to the English team&#x27;s surprise group stage elimination.
+Other Notable Pool Draws
+The Irish and Scotland also share a pool once again, replicating the situation from the 2023 edition. In that tournament, they secured a convincing victory, with Scotland unable to progress to the knockout stages.
+Los Teros and Os Lobos, both made a strong impression as underdogs in the last World Cup, complete that Pool D.
+Notably, the victors of both Pool D and Pool F cannot meet defending champions and world number one the Springboks until the final, presuming the South Africans win their assigned pool.
+Should the pools play out in line with the current world rankings, further leading contenders like the All Blacks and France would remain separated from both the English and the Irish all the way to the championship decider.
+In that scenario, Los Pumas would be the remaining top-ranked nation on the same half of the elimination bracket as those northern hemisphere teams.
+Hosts Draw Major Opener
+Hosts the Wallabies have been drawn together with their trans-Tasman rivals and three-time winners New Zealand in Group A.
+The Wallabies will kick off the World Cup in Perth on 1 October 2027 in a marquee fixture aimed at launch the event.
+In other groups, holders South Africa have been paired with Italy, Georgia and Romania. The French team are in a pool with Japan, 2031 hosts the USA and Manu Samoa.
+Larger Tournament for 2027
+Argentina will face Fiji, Spain and Canada as the tournament grows to 24 teams from the 20 who competed in 2023.
+This edition will introduce a round of 16 round for the first time in Rugby World Cup existence.
+Although the victor of England and Wales&#x27;s group may be kept apart from some of the rugby&#x27;s biggest beasts early on, they will have to face the second-placed team from Pool B – probably the Italians – in the last 16.
+Four of the other six pool winners will play a third-placed side from the initial group phase.
+Rugby World Cup 2027 Draw
+- New Zealand
+- Hong Kong</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #017 [en] https://eagle1023fm.com/photos-dubuque-farmers-market/</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Photos: Dubuque Farmers’ Market in Full Swing on Saturdays
+Dubuque is a beautiful city to walk through. The newly iconic murals, the delightful smells from area restaurants, and the friendly smiles of local residents. Dubuque screams get out and get involved, and now with warmer weather here, you can do just that on Saturdays at the local farmers&#x27; market.
+The Dubuque Farmers’ Market has been located in the Upper Main District around City Hall since 1858. The market itself, however, has been running since the 1840s! The market stretches over three city blocks on Iowa Street and extends up and down 11th, 12th, and 13th street. The Dubuque Farmers’ Market operates on Saturdays through the end of October, for a total of 27 weeks, Rain or Shine!
+Hours of Operation:
+- Now Through September 7am until Noon
+- October 8am until noon
+Today the Dubuque Farmers Market features more than 125 vendors, representing over 10,000 acres in surrounding counties. The wide variety of offerings include: certified organic and naturally and conventionally grown fruits and vegetables, grass-fed beef, pastured pork, eggs from free-range chickens, fresh baked goods, confections, homemade pasta and sauces, cheeses, honey, herbs, wines, fresh flowers, arts, crafts, and more. Chef and cooking demonstrations, seasonal produce events, along with music and educational activities, continue to make the Dubuque Farmers Market a popular Saturday morning destination.
+The city of Dubuque makes it even easier to find what your looking for with an electronic map which is available here.
+Residents can also get involved with the food recovery program which helps by sending purchased foods to the Dubuque Food Pantry. Each week, volunteers collect unsold produce from market vendors who are willing to donate. The produce is then weighed and distributed to community members who are eligible to receive assistance from the food pantry.
+So essentially, you can get out and explore AND make a difference to not only local hard-working farmers and crafters, but the community as a whole. Check out everything you&#x27;re missing at the Dubuque Farmers Market below...
+Photos: Dubuque Farmers Market 2023
+More adventures await you in Dubuque...</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #018 [en] https://martiniqueindustrypress.com/article/904715433-beyond-meat-announces-receipt-of-nasdaq-non-compliance-notification-regarding-late-2025-form-10-k-filing</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Beyond Meat® Announces Receipt of Nasdaq Non-Compliance Notification Regarding Late 2025 Form 10-K Filing
+EL SEGUNDO, Calif., April 09, 2026 (GLOBE NEWSWIRE) -- Beyond Meat, Inc. (NASDAQ: BYND), otherwise known as Beyond The Plant Protein Company™ (the “Company”), received a written notice (the “Notice”) from the Nasdaq Listing Qualifications Department of The Nasdaq Stock Market LLC (“Nasdaq”) on April 6, 2026 indicating that the Company did not timely file its Annual Report on Form 10-K for the fiscal year ended December 31, 2025 (the “Form 10-K”), as required for continued listing on The Nasdaq Stock Market pursuant to Nasdaq Listing Rule 5250(c)(1). The Notice provided that under Nasdaq rules, the Company has 60 calendar days to submit a plan to regain compliance with respect to the delinquent filing.
+The Company filed its Form 10-K for the fiscal year ended December 31, 2025 with the Securities and Exchange Commission (the “SEC”) on April 9, 2026, thereby regaining compliance with its filing obligation, which eliminates the need for the Company to submit a formal plan to regain compliance.
+About Beyond Meat
+Beyond Meat, Inc. (NASDAQ: BYND), otherwise known as Beyond The Plant Protein Company™, is a plant protein company offering a portfolio of plant-based products made from simple ingredients without GMOs, no added hormones or antibiotics, and 0 mg of cholesterol per serving. Founded in 2009, Beyond Meat’s core products are designed to have the same taste and texture as animal-based meat while being better for people and the planet. The Company’s brand promise, Eat What You Love®, represents a strong belief that there is a better way to feed our future and that the positive choices we all make, no matter how small, can have a great impact on our personal health and the health of our planet. By shifting from animal-based protein to plant-based protein, we can positively impact four growing global issues: human health, climate change, constraints on natural resources and animal welfare. Visit www.BeyondMeat.com and follow @BeyondMeat on Facebook, Instagram, Threads and LinkedIn.
+Forward Looking Statements
+Certain statements in this release constitute “forward-looking statements.” These statements are based on management’s current opinions, expectations, beliefs, plans, objectives, assumptions or projections regarding future events or future results. These forward-looking statements are only predictions, not historical fact, and involve certain risks and uncertainties, as well as assumptions. Actual results, levels of activity, performance, achievements and events could differ materially from those stated, anticipated or implied by such forward-looking statements. While the Company believes that its assumptions are reasonable, it is very difficult to predict the impact of known factors, and, of course, it is impossible to anticipate all factors that could affect actual results. There are many risks discussed under the heading “Risk Factors” in the Company’s Annual Report on Form 10-K for the year ended December 31, 2025 filed with the SEC on April 9, 2026, as well as other factors described from time to time in the Company’s filings with the SEC. Such forward-looking statements are made only as of the date of this release. The Company undertakes no obligation to publicly update or revise any forward-looking statement because of new information, future events or otherwise, except as otherwise required by law. If the Company does update one or more forward-looking statements, no inference should be made that the Company will make additional updates with respect to those or other forward-looking statements.
+Media:
+Investors:</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #019 [en] https://www.autospecialists.co.uk/product/airtec-motorsport-secondary-front-air-feed-for-toyota-yaris-gr/</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>AIRTEC Motorsport Secondary Front Air Feed for Toyota Yaris GR
+Improve air flow to your car’s engine bay with this secondary air feed.
+Made in 2mm aluminium, the covers are finished in high-quality powder coat available in either black or red.
+Can be fitted together with our secondary air feed and inner wing covers.
+AIRTEC part number: ATMSYGR38
+From £69.50  (inc VAT) 
+£57.92 (exc VAT)</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #020 [en] https://www.surfoffice.com/team-building-activities/paint-and-sip-in-seattle</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>We use cookies to enhance site performance, analyze traffic, and personalize content and ads. You can choose which cookies you allow. We won’t set optional cookies unless you enable them.
+What are the best team-building activities? The team-building activities you decide to include in your event depend on several factors. What skills do you want to improve? What kind of culture do you want to create? How big is your budget? How many people will attend the event? All these questions need to be answered before you can start selecting the best team-building activities for you. 
+Are team-building events beneficial? Investing in team-building events is known to improve company culture, strengthen communication, boost morale, improve engagement, and much more. Watch how Mattermost identified excellent innovation opportunities at their offsite retreat in Lisbon. 
+How does team building work? Team building isn’t just about playing games and hanging out. There’s always a defined strategy and a clear desired outcome. Team building events are used to your team together, encouraging them to develop actionable skills through the use of games and activities. These events help managers to identify individual strengths within the team that can be put to good use with various tasks. 
+Does team building work for remote teams? As more and more companies gradually switch to working remotely, team building has become an increasingly hot topic. Developing a strong company culture and facilitating effective communication channels is a challenge for remote companies, but it can be easily solved with a well-planned virtual retreat. 
+Where should I host my team-building retreat? Deciding on the right location to host your company retreat depends on several factors. You’ll want to consider things like your budget, the logistics of travelling with a group, the type of location you require, what sort of activities you want to do, and your current team’s work schedule. 
+When should I plan my offsite team-building retreat? Deciding when to organise your team-building retreat is not easy, but it’s a very important decision. Typically, Spring and Autumn are the most popular times of the year. Winter can also work, as team members are often fresh and relaxed after the Christmas period. Summer is challenging because prices are much higher, and employees might already have holidays booked.</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #021 [en] https://faeriality.blogspot.com/2010/04/call-to-partay-if-you-going-to-bea-or.html?showComment=1271974419491</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Yay - so it&#x27;s official. I&#x27;m going to BEA and LA. NOt sure how long for BEA but I&#x27;m definitely going.
+Can&#x27;t wait.....
+I love going to these places where book groupies hang out. The books, the knowledge, the energy, the people.
+Mostly because I love all you guys and want to support all my blogger buddies who have books coming out at BEA and hang out with the masters of the business in LA.
+Both are so worth the money! Plus BEA - can you say ARCS!
+My goal is to set up some kind of happy hour at each place for bloggers or tweeters (or blogger/tweeter groupies :)
+A Blogger Blowout. A Tweeter Throng (not to be confused with thong - look it up! &quot;:)
+So tell me, who is going to BEA and who is going to LA?
+Leave me a comment so if/when I plan a Blogger Bash at each - you will be on the list.
+PS ON a side note - my new business (marketing, book publicity) site is now up! Check it out!</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #023 [en] https://submeter.com/rubs-billing/</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Free portfolio review
+NES reviews the property&#x27;s master-meter invoices, occupancy data, and unit mix, confirms RUBS is the right fit, and recommends the allocation formula.
+RUBS allocates the master-meter bill across units by occupancy, square footage, and fixtures. It is the proven path when submetering isn&#x27;t viable. NES runs it turn-key: allocation, resident billing, AR, and disputes.
+RUBS is the Ratio Utility Billing System, a method that splits a multifamily property&#x27;s master-meter utility bill across each unit using factors like occupancy, square footage, bedroom count, and water fixture count. It&#x27;s the standard alternative to submetering when physical meter installation isn&#x27;t viable. NES is a turn-key RUBS company that handles allocation, resident billing, AR, and dispute resolution end-to-end.
+RUBS is a method of billing multifamily and commercial real estate that distributes utility costs to each resident based on several factors. The combination of factors varies by state and is fully disclosed to residents per state statute. The result: residents pay for their share of usage, and the owner stops absorbing the full master-meter bill.
+Submetering is the most accurate form of utility billing because it measures exact usage. But in some properties (pre-1990 construction, slab plumbing, or buildings where there isn&#x27;t space to install a meter on the incoming water lines) physical submetering isn&#x27;t possible. In those cases, RUBS is the best solution. It deploys in cycle 1 with no construction, and you can migrate to submetering later on the same NES contract whenever capex is approved.
+NES is a turn-key RUBS company. The same team that calculates the allocations also pays the underlying utility bills, sends the monthly resident statements, collects the AR, and resolves disputes, all in-house. NES can also take over RUBS billing on your existing real estate without re-issuing accounts. Outsourcing billing and collections can save your team thousands of hours a year.
+RUBS skips the install entirely. Four steps from contract to the first cycle billing residents off the agreed allocation formula.
+Owner signs off on the factors (occupancy, square footage, bedroom count, fixture count) per the state&#x27;s RUBS disclosure rules.
+NES files state-required disclosures, drafts the resident notice, and connects to your PMS (Yardi, RealPage, Entrata, AppFolio, MRI, ResMan, Rent Manager, AMSI).
+First RUBS cycle hits resident statements. NES handles AR, disputes, and resident customer service from the in-house bilingual team.
+Nothing but a positive experience working with NES. Anita never fails to help assist us with everything we need both quickly and efficiently!
+NES is a turn-key utility management company. Most of our clients use more than one service. Here’s the rest of what we run.
+Water, gas, and electric submetering for multifamily communities, condos, commercial properties, and residential parks.
+NES pays your water, gas, electric, trash, and internet bills and recovers them from residents.
+Outsource rent, HOA, and utility collections to a dedicated in-house NES team.
+Buy or lease nonproprietary submeters at cost: Badger, Cereniti, MasterMeter, Neptune, NextCentury, Norgas, Sensus &amp; more.
+Automatic email alerts when a unit&#x27;s water usage spikes, so you catch a running toilet the same day.
+Temporary ultrasonic clamp-on meters on the water lines that matter, so you can verify usage and find leaks without cutting a pipe.
+Tell us the property, the master-meter spend, and the resident count. An NES specialist will return a no-obligation RUBS quote and disclosure plan within one business day.</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #024 [en] https://azestybite.com/prosciutto-pesto-pizza-twists/</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Where has this year gone? It’s hard to believe that we are halfway through May and that summer is about to be here. I can’t say that it feels like summer since we just experienced a cold front. The heater came back on and I brought out the long sleeve shirts to go with my sweat pants. Nothing fancy here. The other night I put on a dress to see if it fit and my daughter’s eyes lit up when she saw me in it. Most of my days are in lounge pants with a t-shirt, no make-up, my hair is pulled into a pony tail and I still leave home in this attire.
+GASP….. I keep telling myself that I will spend more time on myself but life and time get in the way.
+I’m hoping that I will get a nice tan while I’m in Miami and that I will be able to move from sweat pants to shorts with a pair of flip flops. I’ll prove to everyone that I DO have a closet stocked with other clothes.
+While I’m rummaging through my closet for clothes to wear in Miami I wanted to leave this easy prosciutto pesto pizza twists recipe with all of you. They can be eaten as an appetizer or main meal with a side of marinara or my personal favorite ranch dressing. The best part is everyone in the family will love them and they only take about 20 minutes from start to finish.
+Preheat oven to 375 degrees F.
+Unroll the crust and top with pesto. Spread the pesto out with a spatula to cover the entire top of the dough. Sprinkle with cheese and then top with prosciutto slices.
+Using a knife cut 5 to 6 long pieces and then start to twist each one. Start with one end and twist to the middle and then pick up other end to finish off the twisting. Repeat until all twists are made and then brush the top of each one with olive oil.
+Place on a baking sheet and cook for 16-18 minutes or until golden brown.
+Please leave a comment on the blog or share a photo on Instagram</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #025 [en] https://www.dynamicmath.xyz/</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>A collection of 3D animations and applets made with Three.js, a powerful JavaScript library for rendering 3D graphics in the browser.
+						
+							A mathematical formula should never be &quot;owned&quot; by anybody!
+Donald Knuth, Digital Typography, ch1, p. 8 (1999).
+					
+						Hi there! I&#x27;m Juan Carlos. I am a mathematician living in Brisbane where
+I teach mathematics and work on the design and integration of 
+online learning modules and interactive mathematical applets. 
+						Here you can find all my mathematics projects and sketches 
+written in p5.js and other programming languages.
+					
+For other projects visit jcponce.com
+A set of online tools to visualize complex functions.
+3D interactive strange attractors.
+Approximating and drawing closed curves with epicyles.
+The beauty of mathematics only shows itself to more patient followers.
+— Maryam Mirzakhani
+If you like or find useful the content of this site, you can support it using any of these links
+Thanks for your visit!</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #026 [en] https://builtgreencanada.ca/built-green-canada-and-the-new-building-code-changes</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Built Green Canada and the new building code changes
+Published in Profile, the CHBA - Calgary Region&#x27;s magazine
+As the industry faces incoming building code changes, for the first time energy has been directly addressed—and that means escalating costs to build a home. At the same time, builders will move to a more even playing field with the increased regulations, including green building requirements.
+That gives builders engaged in an energy-efficient program a leading edge: a competitive advantage. The BUILT GREEN® program, for example, goes far beyond energy efficiency.
+BUILT GREEN® programs complement the new energy requirement; specifically, the new section of the code (9.36), which deals with energy efficiency. Homebuilders will now have a choice as to how they achieve the requirement—either with a prescriptive path or a performance standard, utilizing the federal EnerGuide program.
+Founded in 2003, and brought to Canada in Calgary as a hybrid of several other energy-efficient programs, the organization is now headquartered in Edmonton, but has expanded to B.C., Ontario, and recently, Saskatchewan and Manitoba. The national, industry-driven organization is committed to working with builders interested in responsible sustainability practices in the residential building sector.
+The organization offers programs for single family and high density projects, with a renovations program in pilot and a communities program under development.
+Builders have enrolled and completed over 20,500 BUILT GREEN® homes. If multi-family units are included, the total is over 23,500. Together, the organization and its members are leading the way in sustainability performance for residential home construction.
+For builders participating in the BUILT GREEN® program, using the performance path, they know how to take those same dollars that would be used on the prescriptive path and get a better result for the home buyer. The energy efficiency in the BUILT GREEN® program is what requires some investment; many of the rest of the program’s measures are cost neutral or even save money. As a result, a builder can spend the same money, be code compliant, and participate in the program.
+BUILT GREEN® programs offer builders the means to transition into, and implement green technology with ease. Checklists include pre-approved samples, and supporting guides make navigating the program straight forward. The pay-off of gaining a competitive edge, staying ahead of government-imposed regulation, and demonstrating leadership benefits individuals and highlights the industry’s vision through this progressive builder-led initiative.
+For the consumer, purchasing a BUILT GREEN® home offers a healthier, more durable home with a lower environmental impact, lower costs, and the ability to choose which green features they want.
+- Homeowners enjoy costs savings in monthly operating costs with water, electricity, and gas bills. A home built in the BUILT GREEN® program should save a minimum of approximately 10 per cent in annual utility bills compared to a code-built home. Cumulatively, the savings can be substantial. Better efficiency means long-term savings.
+- Canadian Mortgage and Housing Corporation (CMHC) and Genworth Financial mortgage insurance rebates are available for BUILT GREEN® homes.
+- BUILT GREEN®-certified homes offer the benefit of longer-term durability through the efficient use of building materials and processes.
+- Consumers who purchase a BUILT GREEN®-certified home should benefit from an increase in market and resale value.</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #027 [en] https://www.discourse.net/2010/09/i_think_maybe_he_didnt_like_the_book/</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Leon H. Wolf unloads on Meghan McCain&#x27;s Dirty, Sexy Politics.
+Is this the most negative book review ever? Must be close.
+(via…Tom Smith)
+Incidentally, I heard Ms. McCain play “not my job” on Wait, Wait, Don&#x27;t Tell Me — and she sounded, well, dumb. It just underlined how much the guys from ZZ Top, a week or two earlier, seemed grounded and cool.</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #028 [en] https://bmed.calpoly.edu/meditec-project-examples/</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>MEDITEC Project Examples
+Projects can come from anywhere within a company, including R&amp;D groups, Manufacturing, Quality, Preclinical, Regulatory, or others, and can include skills related to design, fabrication, automation, testing, material characterization, exploratory research, data analysis, and more.
+Some generic examples of projects that have been proposed and performed through the MEDITEC program include:
+Design and fabricate a manufacturing aid to assist operators with assembly
+Test material characteristics of a device component
+Design a system to automate or semi-automate an existing manual process
+Optimize a protocol for a series of operations required on the manufacturing floor
+Design and fabricate a fixture to accommodate fatigue testing of a device
+Develop an analytical model to help understand and predict device interactions
+Evaluate cytotoxicity and other cell interactions with various biomaterials
+Design and prototype novel product concepts
+Evaluate new fabrication techniques for device manufacturing
+Compile a database of specific regulatory guidelines and information for a particular application in designated areas of the world
+Explore novel technologies and perform proof of concept testing to identify viable options</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #029 [en] https://vmagazine.com/article/getting-to-know-the-rapper-behind-hood-baby-viral-tiktok-challenge/</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Getting to Know The Rapper Behind “Hood Baby” Viral TikTok Challenge
+Rapper KBFR wants people to know the “for real” version of the man behind the music.
+What started off as a simple dance challenge soon evolved into a multi-faceted viral lip-sync shuffle on TikTok. The “Hood Baby” challenge, started by 21-year-old rapper KBFR, began trending on the social platform in early June, and so far has been done by the likes of Kourtney Kardashian, Shay Mitchell, Jason Derulo, and countless other Gen- Z users.
+With the song’s chill beat combined with its addictive lyrics, #HoodBaby has over 230 million views on TikTok. The rapper is also quickly amassing recognition, with over 1 million listeners on Spotify and close to 10,000 followers on Instagram.
+KBFR, which stands for his first name Kelby “For Real”, explained the meaning behind his stage name. “I’m for real about everything I do. I’m not gonna go into anything halfway,” he told VMAN.
+Kelby Williams grew up with his single mother in Philadelphia. “My dad was never in the picture so it’s always been me and my mom,” he said. “But we’ve always been close and my mom means everything to me.” During his high school years, his mom’s job forced the pair to travel often, so he attended five different high schools in Maryland, Arizona, and Delaware. Looking back, the rapper is grateful for that experience because he met different people and was constantly exposed to new environments. “It was really insightful and it actually helped me a lot.”
+Since he was five years old, KBFR played football up until his freshman year of college at Fullerton College in California. He’s always been interested in music throughout his childhood, messing around and spitting bars at high school lunch tables but never thought to take it seriously until the summer of 2018. He recalled the moment he first got into music through his friend named Chop, who had equipment like Pro Tools at his apartment. After a few times recording on an actual track, his friends said that his voice was “a pill on people” and encouraged him to take music seriously. “I was hesitant, but my friends told me I had the voice for it,” he said. “I took the opportunity and it worked out for me.”
+In his artist bio on Spotify, his songs are described as “a turnt trap style of rap that keeps the listeners hyped up,” with his music influenced by artists such as Meek Mill, Rick Ross, G Herbo, and The Notorious B.I.G.
+#HoodBabyShuffle, released back in April, started off as a dance challenge with trendy TikTok moves created by friends B Thomp and Jay Coop. Since its debut, #HoodBabyShuffle has now earned over 4.5 million views.
+As expected from TikTok’s algorithm and dance subculture, it suddenly morphed into something else. The simple shuffle evolved into a new trend, with each person lip-syncing one line of the song at a time, and then everyone turns their head to the lyrics “Up, down, to the side,” and sings “Got me feeling a lil lazy.”
+For listeners and fans of Hood Baby, this song was clearly destined to be viral. “Every day, I woke up to check TikTok and then one day, I saw everyone doing the challenge and I was like ‘What?!’” KBFR said. In a YouTube search, a single “Hood Baby” lyric video has over 2 million views, and TikTok compilations reached hundreds of thousands of views. Not to mention, this rising musician is in the Top 5 Breakthrough artists on Rolling Stone.
+Before its release, KBFR said he felt iffy about sharing the song. “I actually wasn’t gonna release the song at first but my friends encouraged me to drop it anyways,” he explained. “B
+
+[…… 中间省略 560 字符 ……]
+
+HoodBaby videos include the ones with pets. “The one with the dogs is hilarious because their pets are so spot-on,” he said. On the other hand, he mentioned the more cringy videos are the ones where people shave their legs to the song.
+The pandemic also doesn’t stop KBFR from interacting with fans and new listeners. He recalled his first fan interaction before the pandemic. “My first memorable time on Rodeo Drive, some kids in a Tesla noticed me, pulled up next to me and started bumping my song “‘Squabble,’” he said. “This was the first time something like that happened and I was like ‘Damn, they’re really showing love.’”
+Of course, he also has a fair amount of trolls messaging him, but the rapper laughed, “It doesn’t bother me at all. It’s actually entertaining.”
+Outside of music, the rapper indulges in fashion, as best said from his Instagram bio: “I like fashion and sh*t like that.” He mentioned some of his favorite designers like Louis Vuitton, Dior, and Off-White, but he enjoys repping smaller designers more. “I can take somebody’s clothing line, no matter how big or small the designer is, and dress it up and make it into my own lil’ drip,” he said. On his Instagram page, the rapper can be seen in designer apparel, custom-made outfits and LA caps, often pairing his outfits with his favorite Nike Air Force 1’s. “I’m a big guy but I can make an outfit look good.”
+Since the release of “Hood Baby,” KBFR has been working on getting his name out there. “Right now, I’m just working on making good music and definitely new hype stuff is on the way for sure.” Some of his main goals are to release more visuals like music videos and start performing after the pandemic slows down. “I also wanna get shows poppin’ because performing gives me a rush and I wanna be known for my performances,” he said. “I want people to know that I’m a big guy but I’m lit.” The musician is also eagerly waiting to safely engage with fans outside of social media and in person.
+Most of all, he prioritizes the support from listeners and he strives to grow his fanbase. “I care about [my fans] 1000%, so I wanna connect with them and put out stuff everyone is gonna love.”
+Reflecting on the past few months, he told VMAN, “It’s crazy how the algorithm works because you can have that one thing that goes viral. It’s such a surreal feeling and I’m grateful for it because it changed my life forever.”</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #030 [en] https://www.forgottencoastenpleinair.com/schedule-2027/lunch-and-learn-with-beth-bathe</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Join Beth Bathe for a Lunch and Learn event, &quot;Carving Out A Painting.&quot; Wondering what water mixable oil paints are all about? Known for blurring the line between watercolor and oil paintings, Beth Bathe&#x27;s unparalleled style evokes feelings of nostalgia, like an old sepia-toned photograph. Beth uses limited tonal colors and unconventional tools including squeegees and cotton swabs to &quot;carve&#x27; away the paint. Beth is an artist ambassador for Royal Talens North America paints.
+The Lunch and Learn series is limited lunch seating at First United Methodist Church in Apalachicola. It is located at 75 5th Street and will be held in their Fellowship Hall which is next door. It will be held at 12 noon on Friday, March 27th, $20 per person. Premium table seating with lunch is provided for those with required reservations via the website. Once the event is sold out, overflow seating is provided behind the reserved lunch seats for those just attending the presentation with no lunch provided and no preregistration required.
+If you must cancel and get a refund, there is a $5 refund fee.</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #031 [en] https://www.gradeit.co.za/product-tag/for/</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Just a quick notice, currently it seems ALL Grading companies are struggling with their turnaround Times and Updates.
+BGS, PSA and CGC Specifically we have received very little updates on the current submissions and they all have a big backlog at the moment.
+Stay patient, the cards will arrive, we are in contact with the companies asking to expedite the orders that are way overdue. 
+The Turnaround times are only estimates, but we do understand how frustrating the waits currently are.
+Regards, GradeIt Team</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #032 [en] https://www.premierliftequipment.com/listings/8532219-refurbished-2018-toyota-9bru18-single-reach-truck-3-500-lb-114-256-tsu-mast-36v-electric-side-shift-csa-certified-brampton-on</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>2018 Toyota 9BRU18 | Single Reach Truck | 3,500 lb | 114/256&quot; TSU Mast | 36V Electric | Side‑Shift | CSA Certified | Brampton ON
+| Manufacturer | Toyota | 
+| Model | 9BRU18 | 
+| Condition | Refurbished | 
+| Part ID | 5951629 | 
+| Capacity | 3500 lbs | 
+| Store Code | PLE1 | 
+| Load Center | 24&quot; | 
+| Raised Mast Height | 256 in | 
+| Lowered Mast Height | 114 in | 
+| Mast Type | TSU (Triple‑Stage) | 
+| Fuel Type | Electric | 
+| Power Type | 36V Electric | 
+| Hydraulic Controls | 4‑Way | 
+| Hours | 12,701 key / 6,156 drive / 1,085 lift | 
+| * Side Shifter | Yes | 
+| * Fork Length | 42&quot; | 
+| Battery Included | Optional | 
+| Charger Included | Optional | 
+| Certification | CSA/MOL Certified | 
+| Tire Type | Cushion, Non‑Marking | 
+| Base leg opening | ID/OD: 42&quot; / 53&quot; | 
+| Battery Box | 38&quot; × 15&quot; × 31&quot; | 
+| Category Overview Title | Single Reach Trucks – High‑Density Narrow Aisle Solutions | 
+| Category Overview Summary | Single reach trucks are designed for narrow‑aisle pallet storage, high‑throughput warehousing, and efficient vertical lifting. With compact chassis design, extended reach mechanisms, and precise hydraulic control, they maximize warehouse capacity while reducing travel time. All Premier units are CSA/MOL certified, fully reconditioned, and available with battery/charger packages. | 
+2026 Narrow Aisle Reach Trucks | Raymond, Crown &amp; Toyota Solutions | Single &amp; Deep-Reach | CSA/MOL Audit-Ready | GTA &amp; US Delivery.
+This 2018 Toyota 9BRU18 is a high‑performance single reach truck engineered for narrow‑aisle warehousing, high‑density pallet storage, and fast cycle times. With a 3,500 lb capacity, a 114/256&quot; triple‑stage mast, and a 36‑volt electric system, this unit delivers exceptional lift speed, visibility, and stability in tight warehouse environments.
+This forklift has been fully reconditioned by Premier Lift Equipment, including mechanical overhaul, paint restoration, safety decals, and full CSA/MOL certification.
+Battery and charger packages are available in lead‑acid or lithium.
+Ships from Brampton, Ontario, serving Mississauga, Vaughan, Oakville, Concord, Toronto, and all CSA‑regulated markets.
+Available for purchase, lease‑to‑own, or fleet integration.
+Single‑Reach Electric Reach Trucks | CSA Certified
+BATTERY &amp; CHARGER OPTIONS
+Compatible with:
+- 36V industrial lead‑acid
+- 36V AGM
+- 36V lithium retrofit options
+- Matched chargers (conventional, opportunity, fast‑charge)
+- Freezer‑rated battery bundles (optional upgrade)
+Forklift Battery Chargers
+Availability Notice This unit is part of our extended supplier network. Stock levels update frequently, so availability may vary. Contact us to confirm current status or secure an equivalent CSA‑certified option.
+- High‑bay racking &amp; narrow‑aisle warehousing
+- Cooler &amp; freezer distribution zones
+- Retail fulfillment &amp; pharma staging
+- CSA‑regulated export builds
+- LP‑to‑electric fleet conversions
+Parts &amp; lifecycle support
+- OEM &amp; aftermarket parts – forks, tires, controllers, tillers
+- UL/EE fire-safe upgrades – available upon request
+- Freezer cab kits and cold storage battery options
+- Charger pairing and diagnostics
+- Tire pressing &amp; installation – forklift tires, caster wheels, load wheels
+- CSA/MOL inspection tagging and documentation
+- Magnaflux testing for resale/export assurance
+- Parts bundling with unit purchase or lease
+Premier Lift Support Ecosystem
+Premier Lift Equipment supports your entire operation—not just the forklift:
+- CSA/MOL Certification &amp; Inspection
+- Battery &amp; Charger Packages – New or tested used
+- Safety Accessories – Mirrors, dock chocks, decals, lo
+
+[…… 中间省略 1,271 字符 ……]
+
+ and full-spectrum support across Ontario, the U.S., and the Caribbean.
+Sales • Rentals • Service • Certification • Accessories • Export Logistics
+Outfit your fleet with safety gear: CSA Forklift Safety Accessories &amp; PPE | Premier Lift Brampton ON
+Ask about flexible financing: Why Trade In Your Forklift Instead of Scrapping I
+Chassis-Only Forklift Pricing | Transparent &amp; Tailored
+Return Policy: Material‑handling equipment is sold as‑is with no returns accepted.
+2026 Operational Compliance &amp; Asset Verification All equipment listed by Premier Lift Equipment is verified for alignment with CSA B335:25 (National Standard of Canada) and MLITSD (Ontario Ministry of Labour) safety requirements. Whether you are operating in a 3PL warehouse, food-grade distribution, or heavy industrial site, this unit is processed through our 25-Point Asset Integrity Audit to ensure it is audit-ready for your next provincial safety blitz.
+- Regional Compliance: Documentation provided for Ontario (GTA), broader Canada, and export-ready for US/Caribbean logistics.
+- Green-Zone Readiness: Our electric inventory is evaluated for high-cycle efficiency and indoor air quality standards.
+- Certified Support: Every listing is backed by our Brampton-based technical team, specializing in forklift certification, fleet maintenance, and long-term ROI strategy.
+Equipment Compliance &amp; Quality
+Every unit represented by Premier Lift Equipment is evaluated through a structured inspection process focused on structural integrity, operational performance, and component wear. Equipment is prepared in alignment with CSA/MOL safety expectations, OEM‑recommended inspection standards, and the operational requirements of warehousing, manufacturing, 3PL, cold storage, and broader industrial environments.
+Our intake and reconditioning workflow verifies specifications, features, and performance details for accuracy. Supporting documentation — including service records, battery health reports, and certification history — is available upon request to assist with compliance, audit readiness, and operational planning.
+Specifications are believed accurate but not guaranteed. Variations may occur based on configuration or prior modifications. Buyers are responsible for verifying all critical details before purchase. Need a delivered price or compliance package? Request a delivered quote for fast turnaround across Canada.</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #035 [en] https://www.serviceyearalliance.org/service_year_alliance_statement_on_the_government_shutdown_october_2025</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Service Year Alliance today released the following statement from CEO Kristen Bennett on the government shutdown and its impact on the agencies, people, and volunteers in national service.
+Service Year Alliance is monitoring the fallout of the government shutdown, including the impacts on AmeriCorps and the Peace Corps, the federal agencies most responsible for the implementation of service years.
+Each federal agency is required to develop a contingency plan in the case of a government shutdown. AmeriCorps released their plan late yesterday. While AmeriCorps members and AmeriCorps Seniors volunteers remain in service, more than 70% of agency staff will go on furlough. This temporary cut to agency staff follows a loss of roughly 85% of AmeriCorps’ workforce earlier this year, some of whom just recently returned to duty in recent weeks. More than 50% of Peace Corps staff will be furloughed as well, while remaining staff support the continuity of operations to ensure the health, safety, and security of currently-serving volunteers around the world.
+Additional impacts could follow, if the impasse continues, that further destabilize the national service community. Service Year Alliance will share additional updates as we learn more about the impact of the shutdown on service years.
+National service remains one of the government’s best investments. For every $1 in federal taxes invested in AmeriCorps and Senior Corps returns $17.30 to society, program members, and the federal government. Research from Service Year Alliance released in August further identified service years as a high‑impact, scalable strategy for workforce development, education access, and civic renewal. We call on Congress to work toward a resolution that ensures service year corps members and volunteers can continue their critical efforts in communities with the full support of the federal government.</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #038 [en] https://www.kenempie.com/</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Ken Empie is an American Musician, Singer, Songwriter whose career spans oveer six decades. Son of a piano player, at age four Ken started singing and performing, singing in a duet with his sister. As a child he moved on to clarinet, piano and guitar, by age eleven had co-founded a group and played on his first record.
+In his teens, after completing 5 years of formal vocal training, Ken recorded an album with the Michigan School Vocal Association honor choir. At eighteen, Ken was invited to play with Bob Hope in San Juan, Puerto Rico but ended up relocating to the island collaborating with an eclectic mix of local musicians.
+Returning to the States, he recorded and toured extensively with various artists around the globe. Ken&#x27;s flamboyant guitar style and unique tenor voice made him a go-to for live shows and large creative specialty projects. He has been featured in The Los Angeles Times, People Magazine and Entertainment tonight. Occasionally he played live during many radio interviews including KLOS&#x27; Mak &amp; Brian Show. He appeared along side Fabrice Morvan in the first VH1 Behind the Music. Ken has appeared in Motion Pictures, Television Shows and events such as The Los Angeles Street Scene, Wild, Wild Wango Tango, underground VIP shows like A Plus List and Pre-Grammy celebrations.
+He has been awarded the C. David Parker Outstanding Achievement in Vocal Music award, and an Accommodation from Mayor Richard Riordan for his contributions to the music industry in Los Angeles in 1999. Ken now resides in La Jolla, California where he is currently writing and producing in his private studio.  
+&quot;The Big Sky&quot;
+The RuPaul Show.</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #039 [en] https://treatmentcenters.com/addiction-treatment/top-3-obstacles-can-derail-recovery/</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Top 3 Obstacles that Can Derail Your Recovery
+Your recovery all starts with a decision to get sober and stay that way—but even the best decisions, backed by the most profound desire to remain in control can come to an end in some cases. While your recovery is ultimately up to you, there are some obstacles that you will most certainly face along the way which could potentially derail your efforts and leave you picking up the pieces to get back on track.
+Remember, even if you do suffer from a recovery derailment, the best thing that you can do for yourself is to pick up where you left off and do the best you can. Relapse happens and recovery is not always a smooth sail—but with your continued commitment to sobriety and your decision to take your recovery into your own hands, you can get sober and you can stay that way!
+Attitude is a major influence both on your recovery and also on your potential for relapse. If you have a positive attitude, you want to get sober and you want to do well, you probably will! But, if your attitude is on the darker side, you aren’t happy with the thought of getting sober and you don’t really want to work for your recovery, then chances are you will have some problems along the way.
+Your attitude can also play a key role in potentially derailing your recovery if you’re not careful. Having a bad attitude can lead you to irrational thinking and may even cause you to make changes to your recovery that you cannot easily take back—keep a positive attitude and you’re likely to see positive change in your life that benefits you in everything you do.
+It’s not only outsiders that you must be aware of when it comes to the potential for relapse, your friends and family may cause negative influence on you too! If you are trying to recover from alcoholism, spending time around friends or family who use alcohol can derail your recovery faster than you can blink if you’re not ready for the potential peer influence.
+Outsiders can also influence you in a negative way, especially if you are not prepared. The best way that you can combat peer influence and protect yourself and your recovery, is to steer clear of those who are not open to recovery the way that you are and to avoid situations in which drugs or alcohol are being used or are likely to be used. If it’s friends and family members who abuse these substances, you should talk to them about how the potential for your recovery to be ruined makes you feel and about not participating in the use of drugs or alcohol, at least when you are around.
+Illness, especially an illness that causes pain, can derail your recovery quickly. If you have been addicted to prescription drugs, painkillers or heroin, and you suffer an illness that causes pain in your life, you may find yourself ready to turn to drugs to cope. Unfortunately, we cannot always prevent illness and as such, when illness comes on, the use of medication is often accepted—unfortunately, many doctors even prescribe painkillers and other drugs to people who are in recovery not realizing that they are potentially setting them up for serious problems.
+If you are sick or in pain, talk with your treatment provider about your past history of substance abuse to ensure that if you are prescribed medication, it’s a safe, non-addictive substance that will not potentially cause you further problems in the future.</div></details></body></html>

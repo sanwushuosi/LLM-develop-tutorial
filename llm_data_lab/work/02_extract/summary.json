@@ -1,0 +1,21 @@
+{
+ "docs": 28104,
+ "seconds": 250.5,
+ "workers": 8,
+ "wet_chars_median": 3646.0,
+ "wet_total_mchars": 181.4,
+ "trafilatura": {
+  "chars_median": 1202.0,
+  "total_mchars": 83.5,
+  "lt200_frac": 0.1012,
+  "ms_median": 31.5,
+  "kept_vs_wet_chars": 0.46
+ },
+ "resiliparse": {
+  "chars_median": 1026.0,
+  "total_mchars": 83.8,
+  "lt200_frac": 0.2449,
+  "ms_median": 2.2,
+  "kept_vs_wet_chars": 0.4617
+ }
+}

@@ -1,0 +1,61 @@
+共 60 个配比，4 个进程 × 2 线程，每个 800 步
+  [1/60] only_web_en      平均 BPB 4.057  (web_en=1.00)  269s
+  [2/60] only_web_zh      平均 BPB 4.044  (web_zh=1.00)  269s
+  [3/60] only_pdf         平均 BPB 3.348  (pdf=1.00)  269s
+  [4/60] only_code        平均 BPB 5.249  (code=1.00)  269s
+  [5/60] only_math        平均 BPB 3.849  (math=1.00)  523s
+  [6/60] uniform          平均 BPB 2.835  (web_en=0.20 web_zh=0.20 pdf=0.20 code=0.20 math=0.20)  535s
+  [7/60] swarm_0_000      平均 BPB 3.105  (web_en=0.21 pdf=0.10 code=0.61 math=0.07)  535s
+  [8/60] swarm_0_001      平均 BPB 2.887  (web_en=0.11 web_zh=0.36 pdf=0.04 code=0.12 math=0.37)  535s
+  [9/60] swarm_0_002      平均 BPB 2.900  (web_en=0.18 web_zh=0.12 pdf=0.50 code=0.08 math=0.12)  787s
+  [10/60] swarm_0_003      平均 BPB 3.006  (web_en=0.06 pdf=0.31 code=0.11 math=0.53)  798s
+  [11/60] swarm_0_004      平均 BPB 2.947  (web_zh=0.04 pdf=0.13 code=0.36 math=0.46)  798s
+  [12/60] swarm_0_005      平均 BPB 2.937  (web_en=0.29 web_zh=0.34 pdf=0.03 code=0.31 math=0.03)  798s
+  [13/60] swarm_0_006      平均 BPB 3.043  (web_en=0.07 pdf=0.18 code=0.51 math=0.24)  1052s
+  [14/60] swarm_0_007      平均 BPB 2.904  (web_en=0.27 web_zh=0.06 pdf=0.11 code=0.26 math=0.31)  1059s
+  [15/60] swarm_0_008      平均 BPB 2.873  (web_en=0.15 web_zh=0.17 pdf=0.43 code=0.09 math=0.17)  1061s
+  [16/60] swarm_0_009      平均 BPB 3.035  (web_en=0.16 pdf=0.33 code=0.03 math=0.47)  1064s
+  [17/60] swarm_0_010      平均 BPB 3.046  (web_en=0.43 web_zh=0.12 pdf=0.21 math=0.25)  1321s
+  [18/60] swarm_0_011      平均 BPB 2.892  (web_en=0.12 web_zh=0.18 pdf=0.29 code=0.28 math=0.14)  1330s
+  [19/60] swarm_0_012      平均 BPB 3.018  (web_en=0.23 pdf=0.35 code=0.06 math=0.36)  1332s
+  [20/60] swarm_0_013      平均 BPB 2.857  (web_en=0.23 web_zh=0.26 pdf=0.20 code=0.21 math=0.11)  1335s
+  [21/60] swarm_0_014      平均 BPB 2.965  (web_en=0.23 web_zh=0.03 pdf=0.14 code=0.43 math=0.17)  1597s
+  [22/60] swarm_0_015      平均 BPB 2.877  (web_en=0.12 web_zh=0.36 pdf=0.20 code=0.16 math=0.17)  1603s
+  [23/60] swarm_0_016      平均 BPB 2.856  (web_en=0.12 web_zh=0.23 pdf=0.19 code=0.11 math=0.34)  1605s
+  [24/60] swarm_0_017      平均 BPB 2.883  (web_en=0.10 web_zh=0.10 pdf=0.11 code=0.23 math=0.47)  1611s
+  [25/60] swarm_0_018      平均 BPB 3.025  (web_en=0.08 pdf=0.60 code=0.07 math=0.26)  1887s
+  [26/60] swarm_0_019      平均 BPB 2.985  (web_en=0.09 web_zh=0.06 pdf=0.11 code=0.03 math=0.71)  1891s
+  [27/60] swarm_0_020      平均 BPB 3.005  (web_en=0.59 web_zh=0.21 pdf=0.16 code=0.04)  1891s
+  [28/60] swarm_0_021      平均 BPB 2.945  (web_en=0.51 web_zh=0.18 pdf=0.22 code=0.06 math=0.02)  1897s
+  [29/60] swarm_0_022      平均 BPB 2.897  (web_en=0.07 web_zh=0.41 pdf=0.07 code=0.25 math=0.20)  2155s
+  [30/60] swarm_0_023      平均 BPB 2.937  (web_en=0.23 web_zh=0.05 pdf=0.05 code=0.43 math=0.23)  2159s
+  [31/60] swarm_0_024      平均 BPB 3.041  (web_en=0.63 web_zh=0.03 pdf=0.06 code=0.20 math=0.08)  2163s
+  [32/60] swarm_0_025      平均 BPB 2.891  (web_en=0.05 web_zh=0.21 pdf=0.15 code=0.06 math=0.54)  2166s
+  [33/60] swarm_0_026      平均 BPB 2.961  (web_en=0.12 web_zh=0.03 pdf=0.05 code=0.39 math=0.40)  2426s
+  [34/60] swarm_0_027      平均 BPB 2.980  (web_en=0.24 pdf=0.31 code=0.26 math=0.18)  2429s
+  [35/60] swarm_0_028      平均 BPB 3.022  (web_en=0.12 pdf=0.45 code=0.38 math=0.05)  2434s
+  [36/60] swarm_0_029      平均 BPB 2.920  (web_en=0.06 web_zh=0.12 pdf=0.04 code=0.49 math=0.30)  2437s
+  [37/60] swarm_0_030      平均 BPB 2.901  (web_en=0.17 web_zh=0.06 pdf=0.31 code=0.23 math=0.23)  2704s
+  [38/60] swarm_0_031      平均 BPB 3.097  (web_en=0.42 pdf=0.11 code=0.21 math=0.26)  2708s
+  [39/60] swarm_0_032      平均 BPB 2.979  (web_en=0.51 web_zh=0.04 pdf=0.09 code=0.12 math=0.24)  2714s
+  [40/60] swarm_0_033      平均 BPB 3.074  (web_en=0.63 web_zh=0.02 pdf=0.03 code=0.05 math=0.26)  2718s
+  [41/60] swarm_0_034      平均 BPB 3.051  (web_en=0.10 pdf=0.08 code=0.34 math=0.49)  2971s
+  [42/60] swarm_0_035      平均 BPB 2.870  (web_en=0.03 web_zh=0.26 pdf=0.16 code=0.13 math=0.43)  2971s
+  [43/60] swarm_0_036      平均 BPB 3.072  (web_en=0.13 pdf=0.05 code=0.38 math=0.44)  2981s
+  [44/60] swarm_0_037      平均 BPB 2.924  (web_en=0.30 web_zh=0.17 pdf=0.15 code=0.35 math=0.05)  2983s
+  [45/60] swarm_0_038      平均 BPB 2.916  (web_en=0.13 web_zh=0.13 code=0.13 math=0.61)  3266s
+  [46/60] swarm_0_039      平均 BPB 3.060  (web_en=0.35 pdf=0.17 code=0.32 math=0.15)  3269s
+  [47/60] swarm_0_040      平均 BPB 2.927  (web_en=0.13 web_zh=0.04 pdf=0.15 code=0.33 math=0.34)  3281s
+  [48/60] swarm_0_041      平均 BPB 3.032  (web_en=0.39 pdf=0.20 code=0.32 math=0.09)  3281s
+  [49/60] swarm_0_042      平均 BPB 2.949  (web_en=0.08 web_zh=0.08 pdf=0.04 code=0.06 math=0.74)  3535s
+  [50/60] swarm_0_043      平均 BPB 2.941  (web_en=0.11 web_zh=0.03 pdf=0.26 code=0.39 math=0.20)  3539s
+  [51/60] swarm_0_044      平均 BPB 2.934  (web_en=0.40 web_zh=0.11 pdf=0.28 code=0.04 math=0.16)  3550s
+  [52/60] swarm_0_045      平均 BPB 2.912  (web_en=0.16 web_zh=0.04 pdf=0.31 code=0.23 math=0.25)  3551s
+  [53/60] swarm_0_046      平均 BPB 2.873  (web_en=0.09 web_zh=0.21 pdf=0.35 code=0.09 math=0.26)  3803s
+  [54/60] swarm_0_047      平均 BPB 2.939  (web_en=0.23 web_zh=0.03 pdf=0.41 code=0.23 math=0.10)  3809s
+  [55/60] swarm_0_048      平均 BPB 2.897  (web_en=0.09 web_zh=0.12 pdf=0.17 code=0.44 math=0.18)  3819s
+  [56/60] swarm_0_049      平均 BPB 3.074  (web_en=0.49 web_zh=0.21 pdf=0.15 math=0.14)  3819s
+  [57/60] swarm_0_050      平均 BPB 2.906  (web_en=0.30 web_zh=0.08 pdf=0.25 code=0.25 math=0.12)  4068s
+  [58/60] swarm_0_051      平均 BPB 3.306  (web_en=0.68 pdf=0.03 math=0.29)  4072s
+  [59/60] swarm_0_052      平均 BPB 2.930  (web_en=0.13 web_zh=0.09 pdf=0.33 code=0.34 math=0.11)  4079s
+  [60/60] swarm_0_053      平均 BPB 2.980  (web_en=0.18 web_zh=0.02 pdf=0.60 code=0.12 math=0.08)  4079s

@@ -1,0 +1,335 @@
+<!doctype html><html lang='zh'><meta charset='utf-8'><title>第 6 步：质检结果 · clean_text_trafilatura_removed_n20_s0</title><style>
+body{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;margin:24px auto;max-width:1180px;color:#222;line-height:1.55}
+h1{color:#0b5aa6;border-bottom:3px solid #0b5aa6;padding-bottom:6px}
+h2{color:#0b5aa6;margin-top:34px;border-left:6px solid #0b5aa6;padding-left:10px}
+.cards{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0}
+.card{background:#f3f7fc;border:1px solid #cddcee;border-radius:8px;padding:10px 16px;min-width:150px}
+.card b{display:block;font-size:22px;color:#0b5aa6}
+.card span{font-size:13px;color:#555}
+table{border-collapse:collapse;margin:10px 0;font-size:13px}
+th,td{border:1px solid #ccd6e0;padding:4px 9px;text-align:left;vertical-align:top}
+th{background:#e8f0fa}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+.note{background:#fff7e6;border-left:4px solid #e67e22;padding:8px 12px;margin:10px 0;font-size:14px}
+img{max-width:100%}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+code{background:#f2f2f2;padding:1px 4px;border-radius:3px}
+</style><body><h1>第 6 步：质检结果 · clean_text_trafilatura_removed_n20_s0</h1><div class="cards"><div class="card"><b>20</b><span>样本（removed）</span></div><div class="card"><b>20</b><span>已判</span></div><div class="card"><b>75.0%</b><span>bad 比例</span></div><div class="card"><b>53%～89%</b><span>95% 置信区间</span></div></div><div class='note'>这批样本是被清洗规则<b>删掉</b>的文档：判为 good 的比例就是规则的“误杀率”估计。</div><h2>各规则命中</h2><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAk4AAAFBCAYAAACB5yC9AAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjExLjIsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvgI3uAAAAAAlwSFlzAAAQ6wAAEOsBUJTofAAAS4pJREFUeJzt3XlYVNX/B/A3wyYiICCbgmuKC6iAogjivoWa5i5mbqjlUmqapWUulVlpGmZuuZJmuFZmKrmwihKIIqLiBrKIgLKvc35/8ON+nUCdAXSA3q/nmeeRM3fOfO6dUd6ee+65GkIIASIiIiJ6IZm6CyAiIiKqKRiciIiIiJTE4ERERESkJAYnIiIiIiUxOBEREREpicGJiIiISEkMTkRERERKYnAiIiIiUhKDExEREZGSGJyoRsjOzsbhw4cr3U9YWBjOnTtX6X6uX7+O7OxslV+XkJCA33//vdznMjMzIZfLK1uaWqWmpiIkJAR5eXkqv/bSpUuIiIhQaCsqKkJGRkaZbYuKinD58mWl+w4LC8PJkydVrullqW7f59DQ0HKPs7Iq87lnZGQgMDAQRUVFFX7/ijh//jzCw8Nf6XtS7aDBW65QdVdYWIghQ4bgr7/+QlRUFNq2bVvhvt566y1cv34dFy9erHAfcrkc5ubm8PDwwK5du164fXR0NLy9vbFx40YcPHgQkyZNQmZmJm7evIlZs2bB19cXhoaGGD9+PIQQ2LdvX4VrK8+NGzcwfPhw+Pr6ok2bNlXa97+NGDEC586dQ1RUFCwsLFR67fDhw1GvXj3s2bNHahs0aBD09fXh6+ursO2hQ4cwYsQIXLx4EZ06dXph315eXggICEB0dLRKNb0M1e37vH37dkybNg3r16/H3LlzK9RHZT73wMBAuLm54dGjRzA1NQUAREZGYuvWrc99v549ewIAkpOTsWrVqmdu27x5c8ybN69Me69evdC6dWts2rQJubm56NWrF+bPn4/Ro0erVD/992ipuwCi53n8+DHeeustBAYGws7ODqNHj8Zff/2FRo0avfT3/uKLLyCXy/Hhhx9CW1tbav/nn3+QmpqKHj16KNWPjY0NDhw4gNdff12hfcWKFTAwMIChoSEA4OLFi5gyZUrV7QCAJ0+eYMiQIXBwcHjpoWnVqlU4dOgQHB0dy/1FZmJigoULF6JevXpK97lgwQL069cP58+fh7u7u9S+ceNG9O3bV6nQpIri4mI0aNCgUn3s2rULQ4cOLfc5dX6fy/Pjjz9i9uzZaNCgAW7evIk5c+ZIz2lqauK9995Ds2bNntvHy/jc79y5A29vb0yYMKHMc7/88gtee+01KTg9fvwY3t7eUsh+Wnh4OKysrDBv3jxERUWhb9++uHjxIqytrRW209PTw4QJEzBp0iS0bNkSDg4OStdK/z0MTlRtXbp0CaNHj0Z2djbOnj2L1157DR4eHnB0dMTGjRsxcuTIl/r+MpkMy5cvxy+//AJfX1/Y2toCAE6dOgUASgenevXqYcqUKThz5gxcXFwAAElJSQgICEBwcDAAID09Hbdu3aryf7BXrFiBgoIC7Nixo0r7/bdVq1bhk08+Qbdu3dCqVStkZWVJzxUWFuKXX35B69atsXjxYpX67du3L5ycnPD9999LwSkwMBB///23dOyqkkwme+7oRXnCwsKwY8cOrF69GvXq1UO7du3K3U7d3+enZWVl4YMPPsD27dvh4eEBHR0dJCUlSc+fPXsWT548weTJk5/bz8v63Es9PfpY6lmnujdt2oQmTZqguLgYMpkMGhoamDNnjnT6t6ioCElJSSguLi739bNnz8bZs2cxY8YMXLhwARoaGhWqmWo/BieqduLj4/Hpp59i165dcHd3x65du9C4cWMAJaFlwYIFGDVqFAYNGoRly5ahS5cuCq8/c+YMxo8fX27fjx8/RlFREaysrMp9/sMPP8T7778PAFi8eDGGDBmCkSNHwtnZWRolKJ0r06VLl3L/cS0uLkanTp3w119/ISUlBVOnTkVeXh50dXVx9uxZ5ObmwsvLC61bt4aXlxe6du0KZ2dnAMDevXvxxx9/KPQ3depUdOzYUenjV+r27dvw9vbGrl27oKenp/LrlZGSkoJ33nkHx44dg6OjI+7evYs9e/agefPmAEqOhaenJ3R1dXHgwIEydRQVFUmnUS5fvgxtbW3MmTMH7u7uSE5ORkxMDAwNDaGnpyeNhpw5cwZGRkbw8fHBL7/8gnXr1gEo+SWenJxcbp1BQUFISkpSGFH5t+XLl8PExASzZs1S6Rj88ssv2LFjB6ZNmyadanpadfk+A4AQAgcPHsSiRYtQWFiIM2fOwM3NTeE1W7duxcGDB7FmzRp06NCh3H4r+7kDwIABA3D79m3k5uYCADp37gxNTU1MmDBB4fteWFiI0NBQdOzYscyIUnmsra2xatUqTJ069YXb/tuaNWvQpk0b7Nu375nHnIjBiaqF4uJinD59Gnv37oWvry8MDAzQpUsXtG3bFl9//bXCtpqamnj99ddx7949dO3aFT169MC4ceMwfPhwmJubo6CgAElJSfjiiy+k02Cldu3aheTkZCxatKhMDR9++GGZCd/t2rVDSEgIvv32W7Rp0waJiYkIDAzEmDFj0L1793L35auvvgIAaGhoQE9PDwMHDgRQMvl7+fLlKC4uRnx8PKZMmQKZTIZmzZohJCQEenp6SE1NRWpqKtLS0hAaGoo+ffoo/C9eFTt27ICNjQ3GjBlTode/yLFjx/D222/DwsICwcHB6NChAyZNmgRXV1fs2rULbdu2xVtvvYWIiAgcPXq03FOFQgjcunULQMkkYR0dHdy6dQtt2rRBSkoK4uPjYWRkhMzMTJw/fx6ZmZlwd3dHy5YtER8fr3AKNTQ0FHfu3FHo//Hjx4iPj4ehoSHy8vKwefNm1K9fv9x5OBWZ2Pws1fX7PGbMGBw+fBgzZ87EkCFD8Mknn+C7775Dhw4dIITAunXrsHDhQsyfPx8ffPBBuftWFZ87AEycOBGPHz9GbGws1q1bhxkzZqBevXqwt7dHenq6tF1aWhrc3NwQERHxzCBXVZo3b47x48dj8+bNDE70bIKoGoiMjBQymUyYm5uLr7/+WmRnZ4tNmzaJkSNHlvtYtWqVkMvl4tdffxXt27cXAMThw4eFEEKcOHFCABBJSUll3mfChAmiU6dO5dbQoEEDsWrVqufWuWTJEqGtrS0SEhKEEEJs3rxZvPfee9LzqampQktLS2zevFnhdbm5uaJXr17CyMhI6OrqCmdnZ+Hu7i5u3LghhBCibdu2QltbW+Tk5AghhNi9e7cwMTFR6tg9S9u2bcWiRYsq1cfzpKSkiCVLlojs7GypTS6Xi5kzZwoNDQ1hYGAgWrRoIa5fv/7CvuRyuTA3Nxd9+/Z95jbTpk0Tbm5uKtVY+nlPnTpVtG7dWkydOlV07tz5ha9LSUkRs2fPfuYjJCRE2nb//v0CgHj06JHUVl2/z/fv3xfXrl0TQgiRmZkpxo4dK3R1dcWaNWtE//79hb6+vtixY8cLj01Vfe5CCBEQEFDm+B05ckSU/npKSkoSAERERIQQQoj69euL7777Ttr2+vXrAoC4e/euEEIIS0tLsW3bNiGEELNnz5a+MxEREQrb9ezZU8ycObNMPb///ruQyWQiOTlZqfrpv4fBiaqNP//8U+EfY2XJ5XJx8eJF6eeXFZwSEhKEkZGRGD9+vNQ2efJk0bJlS+nnLVu2CF1dXZGSkiK1RUREiM6dOwsXFxfx008/iXr16on8/HwxY8YMYW1tLc6cOSM0NDSEtra28Pf3F0IIsWDBAtG/f3/lD8K/pKamCgDi9OnTFe5DVeHh4WLu3LnCxMRE6Ovri8aNGwttbW0xbNgwcfjwYZGfn//M1164cEEAEADEgQMHyt1G1eAUGxsrNDU1xb59+8S0adNE69atRWRkpAAgTp069dzX3rp1SwAQnTp1Ej179lR4aGhoiJ07d0rblhechKj+32chhHjw4IHo2LGjACDat28vIiIixLJly154fJ5Wmc9dCCHOnz8vAIjU1FSpTZ3BKS8vT8hkMnHo0CGljwH9t/BUHVUbAwcOxNatWxEZGanQXr9+faxcufK5lx2XznN5mTZt2oS8vDyFGp48eQJdXV3pZ29vb3h6ekpXZsXHx6NLly548803sXnzZpw9exampqbQ0dHBjz/+iPv372PixIkYMWIE8vPzpUuzw8PD0bVr1wrXmpCQAADSXJpSt2/frvSx6tOnD4YNG4a7d+8iJCQEFy5cwJkzZ3D58mW0aNECS5cuxZQpU2BgYIBjx45hw4YNGD58OExMTODm5gYnJyc4OjqiS5cuMDMzAwBpXlebNm0we/Zs9OnTB0+ePFG4Ou3BgwfIz8+Hvb291Pbll19i8ODB5db56aefwsbGBiNHjoSfnx8AwN7eHv369cOSJUvQq1cvaGpqPndft23bVub00NOnB5+nun6f8/Ly4O/vjy1btuDIkSNo1qwZtmzZgrfeegvTpk3DwYMHMWjQoGe+vio+99u3b2Ps2LFSPQDg4OAAmUwGe3t7hflJpXOgtLReza8rXV1dmJubS3+HiP6NwYmqlePHjyMqKgpOTk4AgFu3biEpKQkrV66ULjvu168fjIyMAJT8Mg0ODsY333zzUv9hDQsLw2effYbhw4crXJ6dmpqKO3fuID8/Hzo6Oli0aJHClXHW1ta4ePEi7O3tIZfL8csvv+DgwYPS80ZGRnj48CE2btyIixcvYvPmzXjnnXcQGBioMKlXVaVXSJmbmyu0P3z4EHv37q1wv0DJL/6WLVvC3t4eMpkMHTp0QM+ePbF69WoMGDAAGhoaWL9+PW7cuIGNGzdi2LBhiIqKwokTJxAUFIRNmzYhOTkZfn5+6NWrF4CSeTMWFhZwcnJCeno6li5dii+++AIzZ86U3tfHxwfJyckKba1atSq3xj///BM+Pj44fPhwme/F2rVr4eDggLVr12LhwoWVOhYvUp2+zydPnsSXX36J4OBgFBUVoVu3bvj5558xYsQI5ObmYvz48Th8+DCMjIwUjjFQsqTAgQMHkJSUVCWfu62trTSHKjw8HDt37pTmaZWG6VKl852UXc6g9Kq6yrC0tERiYmKl+qDai8GJqp0BAwbg+++/BwBs3ry5zP/K161bJ13yffToUQwbNqzcfj766KMyV+GEhoYiPT293KurnjUJOy4uDj179sS3336L6dOnS+35+fkICwtDdnY2/v77bwwaNAienp5lXn/mzBls2bIFjx49wv79+wEAxsbGAIAGDRogIiICOjo6sLKywvTp0+Ht7Q19fX0MGDCg3HqUYWBgIO1T6S9lAOjatavCxNvKCAoKQtu2bctMWAZKVla/dOmS9HO7du3Qrl07LFiwAEDJiFjDhg0BlKyLlZycLF1NNm/ePOTn56N+/foKV7hFRERAU1PzhVe9paamYubMmRg0aFC53w07OzvMnTsXn376Kfr06QNHR0eV910V1eX7bGtrCxsbG8yYMQP9+/eHiYkJAODChQvw8vJCZmYm1q1bpzCilp2djU8//RSOjo4wMTGBqalplX3upZ/jxo0bcejQIYXP9ejRo9Kfk5KSoKGhAUtLy3KPy789fvxY2reKyszMLHf/iAAGJ6rFLl++DB0dHYW2tLQ05ObmKvzjXupZt3yYM2cO6tSpU2adnbNnzyIrKwv6+vo4dOjQc09vyOVyHDp0CH369JFC059//om2bdtKNZqYmMDd3R0rVqzA9OnTy9SuitJfTgkJCS9tccWuXbvi5MmTWLJkSZnn7t27h+zsbHTu3LnMc6NHj1YY6Vm/fj3efPNNPHjwAEDJqcCKys/PxxtvvIHc3Fz8+OOPz9xuxYoVOHXqFF5//XUEBgaiRYsWFX7PV6Wy3+cmTZpg9+7d0s/379/H559/jq1bt2LChAnw9vZWCAtCCIwePRpCCHh7e0tLb1TV517qzp07SE9Px4oVK/Dpp5+Wef706dPQ0tLCDz/8UO4K4E979OgRCgsLK72I6dMBj+jfGJyo1tHQ0ICWlhaOHz9e5rLz0ltUlLd4Yvv27aWRmlKHDx/G0aNHsXXr1jL/i921axeMjIywYcMGeHl5YenSpWjSpEmZfufOnQsfHx/4+Pjg119/hbGxMa5du4atW7diw4YNCtt6eHjAz88P48aNq+juAwCsrKxgZGSEsLCwcn+JVZVmzZph0qRJZdr379+P+/fvl/vc03OUrly5gr179yIwMFBaxgEouY/Yr7/+qvC6oKCgckdXvLy80L59e+Tk5GDcuHEIDQ3F6dOny8zvepq+vj6OHj2Kzp07o1+/fjhy5Ajat29fZrv+/fuXCSuv+p5qVfl9BkpCwbx583Dw4EF06NABx44dQ0REBJYvX441a9ZAU1MThYWFWLBgAQ4ePIi9e/eWGZWr7Of+NH9/f7i6uuLzzz9HixYt4OnpiTfeeAPi/+8G9ttvvwEouc3OvHnznjtieurUKejp6Un16ujoqLyGWXR0NHJzc1/6SvtUczE4UY1W3i+x/v37o7CwUOW+/j2J99GjR3jnnXfQtWvXMovpnT9/Hvv378dHH32E8ePHY+nSpfjkk08U/kf/tE2bNgEoWVxw5syZmDJlCnr37q1wG5asrCxs2bIFQMl8ntJVxitCS0sLHh4e0po9L0vLli3RsmVL5OXlYf78+Zg5cybat2+Pq1evIi8vD7NmzUJcXBxWr16Nr7/+GnXr1lV4fVZWFlxdXctMhE9PT8f169cV2h4/foycnJwy7VlZWUhMTMTAgQMRHR2NnTt3YsqUKdIIFlCyiKJcLi/zS3TPnj3SZ3zgwIEyE82nTJlS5vYcAMosUllVXub3uZSFhQUaNGiAo0ePwsPDA0BJwBg5ciSioqLwxRdf4J133kFERAS2bNlS7npGlf3cSyUnJ+PSpUs4d+4crl+/Lh3v0lX5fX19ERsbi7feeguxsbHS66Kjo/Haa69BW1sbtra2KCoqgqamJt5991307t0bx44dQ69evfDtt99KrzEzM8MHH3zwwlNwhw4dgrW1tTQvjagMNV/VR6Rg2LBhwszMTHTq1El06tRJNG7cWFhbWwsh/nfZ8dWrV8X7778v2rZtK0xNTUXDhg2V7v95l2+XV4uOjo64evWqQvvt27eFmZmZaNOmjcjNzRVCCHHo0CEBQGzYsKHcvgoKCsRPP/0kWrVqJfT09ISurq6Ij49X2GbcuHHCzMxMrFy5UmhoaKh0SXh5jh07JrS0tMTNmzcr1c+LyOVyMXLkSNG4cWNp7ZuZM2dKx/n27dvC2tpa9OjRo9zL80svsx82bJiYMGHCM9/necsR5Ofni6FDhwo/Pz8hhBA7duwQ3t7e0sPFxUVYWFgotHl7e4usrCwRGxsrXn/9dYV1e+7fvy86duwoYmJiXrj/z1qOoHSfqsv3+UV+++03IZPJBADRrFkzERgY+NztK/u5CyHEe++9J5o1aybkcrkQQoipU6eKUaNGCSGEuHnzpmjQoIGYN2+eWL16tcJnP2nSJLFy5UqFvnbu3Cn9vencubNo1qyZiI6Ofmb95S1HUFBQIF577TWxYMGC5+47/bdxxImqnTZt2ijcoby82yxMnDgRtra2MDQ0VLj5a1VJTU1FTEwMlixZonDvsdDQULzxxhvQ1tbGoUOHUKdOHQDA8OHD8fbbb+O9996DTCbDu+++q3A7Fm1tbbRs2RJ6enowMzNDVlYWRowYAV9fX5iammLBggXw9fWFn58funfvjoiICHh6euLIkSMVHnkaMmQIOnXqhI8++qjMaa+qkpeXBy8vLxw/fhyBgYFlruIDSk7r+Pn5oUePHhg1ahR+++03haueylvFW1U6OjoKE4r/faooIiIC6enp5U4sb968eZnb3NjY2CA8PFyp9xb/f0rpWarD9/lZkpKScPDgQfzyyy8ICAiAqakp5s2bh/nz50vf7fJUxeceEhKCH3/8Ed9++630d6V0Ev3FixcxfPhw2NnZYfXq1Vi3bp3CcX76YgIAOHfuHObMmYP33nsPffv2RdeuXTFy5Eh0794dfn5+5Z6GLe9z27RpEx4+fIgPP/xQiaNH/1lqDm5ECiZNmiQ++uijcp97+n/oFaXK/9CzsrJEQUGBEEKI7OxssWTJEqGjoyOaN29e7ihOUVGR8PT0FACEo6OjCAsLE1lZWWLbtm2iT58+QiaTiZkzZ4qMjAyRkJAgli1bJkJDQ0Xbtm1F3bp1xf79+6W+UlNThZOTk9DR0RF79uyp8P4GBwcLLS0t4evrW+E+niUtLU04OTkJfX39MqNjM2bMKHOcL168KOrUqSM+/vjjcvurzIjTi5QugFkV4uPjhZeXl5g9e7aYM2eO6NKli6hbt64oLi4us211+j7HxsaK/fv3i2XLlonRo0cLe3t7IZPJhK6urhg5cqQ4evSo9H1/nqr43GNjY0X9+vVF7969FY5bZmam+OCDD4SOjo4YPny4NKK7detWUa9ePTFz5kwxY8YMUadOHRERESHy8vLExx9/LLS1tcXQoUOl7YUoGYUcMGCAsLe3l0a0Fi5cKObNmyfmzJkjjIyMxIoVK6TtY2JihJGRkfj222+VOp7038URJ6pWduzYoe4SJE+PDJw5cwZff/01Zs2ahZUrV5Y7aqCpqYk9e/agX79++Oqrr2BqagqZTIYffvgB3bt3x3fffQc7OzsAJcsFfPbZZ1i9ejW0tLRw6dIlhcmoJiYmOH/+PCZNmlSpq3u6du2KdevW4e2330a7du3QunXrCvf1b/Xr10fPnj2xdetWae2qv/76C59//jkiIyOleSqlOnXqhK1btyIuLq7KalCHRo0aISYmBsnJydDR0YGNjQ327NlT7tpB1en77Ofnh+nTp8PU1BQdO3ZEv3798OGHH8LDwwP169dXup+q+NybNm2KOXPmYMGCBQrHTUtLC5GRkdi8ebPCqKGnpyeys7ORlJQEmUyGffv2oUOHDiguLkZ0dDTWrFmDuXPnKvSlo6ODw4cP4/79+9KIVl5eHgIDA6Gvr4+xY8finXfeAVCyyObQoUPRv3//F165R6QhxAvGmYmqiYKCAty5cwfNmjWr8KX6ycnJKCwsLHfC74s8evSo0pc5/1tRURGKioqee1qkKvj7+8PNzU3h9OHL8PjxY+zbtw9GRkYYOHCgSuvp3L9/HzKZ7JmfTUJCAvLz8xUWIFVWSkoKcnNzn3ul3av2qr/P+fn5SElJqdB3/0Uq87lXFxcvXkS7du2eOZGdqBSDExEREZGSKrcuPREREdF/CIMTERERkZIYnIiIiIiUxOBEREREpCQGJyIiIiIl1Zp1nPLy8nDlyhWYmZlBS6vW7BYRERG9REVFRUhJSYG9vb1SS8PUmoRx5coVODs7q7sMIiIiqoFCQ0PRuXPnF25Xa4KTmZkZgJIdt7KyUnM1REREVBMkJibC2dlZyhEvUmuCU+npOSsrq5eyMi4RERHVXspO8+HkcCIiIiIlMTgRERERKYnBiYiIiEhJDE5ERERESmJwIiIiIlISgxMRERGRkhiciIiIiJRUa9ZxKhX8Rh+Y62qruwwiIiKqAj2Crqq7BAUccSIiIiJSEoMTERERkZIYnIiIiIiUxOBEREREpCQGJyIiIiIlMTgRERERKYnBiYiIiEhJKgWnlJQU3L9/v0z7nTt3kJGRodCWmZmJ27dvV646IiIiompEpeC0ZcsWtGvXDkIIqS09PR0tWrTAqlWrFLb9/vvv0b9/f4W24uJiPH78+Jn9Z2VlPfd5IiIiIgBISEjAvXv3Xvn7qhScHB0dkZWVhTt37khtQUFB0NbWRkBAgMK2ly9fhoODg/TzsmXLYGxsDBMTEzg7OyuMXAUEBMDZ2Rn169eHsbEx2rdvj5CQkIruExEREdVSqampGDBgAPr164dRo0bB3d0dBQUFr+z9VQ5OABAZGSm1+fv7Y8SIEbh06RJyc3Ol9qeD09atW/Hdd9/ht99+Q0pKCpo3b47+/ftDCIHCwkK88847GDlyJO7du4ewsDBYWVnhjTfeeKUHgoiIiKq/xYsXw87ODlFRUQgNDcXPP/8MHR2dV/b+KgUnCwsLNGrUqExwGj58OAwMDHDhwgUAQE5ODm7evCkFJ29vb8yePRs9evSAqakpNm7ciNjYWJw8eRLa2toIDw/HokWL0KhRIzg6OmLJkiV4+PAhrl+/XoW7SkRERDVZQUEB9uzZg2XLlkEulwMArK2tX2kNKl9V5+joKAWnvLw8XLp0CY6OjnB0dJRO1125cgVyuRwODg5IT09HZGQk+vXrJ/VhamoKR0dHnDt3DgCgpaV4r+Ho6Gjo6OigUaNGz6wjIyMD8fHx0iMxMVHVXSEiIqIa5O7duzAzM8OaNWvg7OyMJk2aYPv27a+0Bq0Xb6LI0dERP//8MwAgNDQU9evXR4sWLdCtWzf4+/sDKDlNZ2lpCUtLS0RFRQEArKysFPqxtLTEgwcPpJ8fP36MgIAABAUFYceOHdi2bRtMTU2fWcfatWuxfPlyVcsnIiKiGio9PR3JyclwdHTEqlWrcOPGDbRv3x4eHh6wtLR8JTWoPOLk5OSE2NhY5OTkICgoCK6urgAAV1dXBAcHQy6X48qVK9JpuszMTABA3bp1FfqpV68enjx5Iv0cGRmJiRMn4ssvv0T37t0xaNCg59Yxf/58xMXFSY/Q0FBVd4WIiIhqkEaNGsHExARvvvkmAKBVq1Zo0aKFwhSil61Cp+rkcjmuX7+OS5cuwc3NDQDg4uIizW26fv26FJzMzc0BlKTEp6WmpiqkQ3d3d6SlpeHhw4ewtrbGa6+9hps3bz6zDkNDQ1hbW0uPf49oERERUe3SsGFDaGlpSflALpfj4cOHMDY2fmU1qBycGjVqBHNzc0RFRSEsLEwacTIwMIC9vT3CwsIQExMjBaeGDRtCU1MTsbGxCv3cvn0bjRs3LtO/mZkZ1q5dC319fezYsaMi+0RERES1kEwmw4cffoiZM2ciKioK69evh6WlpcLyRy+9hoq8yMnJCefPn8fDhw+lJQqAktN1/v7+iI+Pl3aiTp068PDwwK+//iptFxERgZs3b2LEiBHIzc1FcHCwQv9ZWVnIysqCoaFhRcojIiKiWmrOnDkYN24cFi1ahOjoaJw8ebLMRWYvU4XeydHREd9//z06d+4MbW1tqd3NzQ3vvvsuDAwM0Lx5c6l98eLF6NOnDxYvXgx7e3usWLEC48aNg62tLfz8/PDGG2/gzTffhLu7O1JTU/Hzzz9DT08PEyZMqPweEhERUa0ybdo0TJs2TS3vXaERJ1dXV5ibm+P1119XaHdzc4OpqSkGDhwIDQ0Nqd3FxQV//vknbt68CW9vb4wdOxa7d+8GAPTp0wchISGwtLTE3r17cejQIbi7u+PixYuvfG0GIiIioufREE/feK4Gi4+Ph42NDQ44toK5rvaLX0BERETVXo+gqy+1/9L8EBcXp9SATYVGnIiIiIj+ixiciIiIiJTE4ERERESkJAYnIiIiIiUxOBEREREpicGJiIiISEmvbqnNV8TlqB/XfyIiIqKXgiNOREREREpicCIiIiJSEoMTERERkZIYnIiIiIiUxOBEREREpCQGJyIiIiIl1brlCILf6ANzXW11l0FEVGO87LvPE9UmHHEiIiIiUhKDExEREZGSGJyIiIiIlMTgRERERKQkBiciIiIiJTE4ERERESmJwYmIiIhISQxOREREREpSKTgdPXoUn332WZn2hQsX4syZMwptgYGBWLJkSaWKIyIiIqpOVApOycnJWLlyJXJycqS269ev45tvvsFPP/2ksO3Bgwfx999/Sz+npqZix44d+Pzzz3HhwoVy+z937hzmz5+PO3fuqFIWERG9BEVFRXj33Xdx9OhRdZdCVG2oFJwcHR0hl8sRFRUltfn7+6NJkybw9/dX2Pby5ctwcHAAADx48AAuLi7w9vbG1atX0bt3b/zwww/Stvfv34eFhQV69uyJdevWISEhoTL7REREVeD777+Hj48Prl7lLVmISqkUnOzt7aGtrY3IyEipzd/fH1OmTEFcXBzi4uKk9qeD06pVq2BiYoKQkBDs27cPO3bswPz585GamgoAsLKyQlBQEP7666+q2CciIqqkxMREbNiwAWPGjFF3KUTVikrBSVdXF+3atVMITgEBAXB3d0fLli0REBAAAIiPj0dqaiocHBxQVFQEHx8feHl5QVu75Oa7I0eOhJGREfbv3w8A0NbWRosWLdCkSZOq2i8iIqqEBQsWYP78+dDV1VV3KUTVispX1Tk6OkrB6cGDB7h37x4cHBzQuXNn6XTd5cuXoaWlBTs7OyQlJSEzMxMdO3b835vKZLCzs8ONGzcqXHhGRgbi4+OlR2JiYoX7IiKi/zlz5gxiYmLw7rvvqrsUomqnUsEpICAA9vb2MDIygqurq0JwatOmDerUqSMFGlNTU4V+zMzM8ODBgwoXvnbtWtjY2EgPZ2fnCvdFREQlCgsLMWfOHPz444/Q1NRUdzlE1Y6Wqi9wcnJCWloaEhISEBISAldXVwCAq6srZs2ahaysLERFRUnzm7S0St5CLpcr9FNUVCSduquI+fPnY9q0adLPiYmJDE9ERJW0Y8cOJCcnY8OGDQCA0NBQ6OnpwcDAAHPnzlVzdUTqp3Jw6tChAzQ1NREVFYWwsDC88847AIB27drB0NAQ4eHhuHHjBjw9PQEADRs2BACkpKSgefPmUj8pKSno1KlThQs3NDSEoaFhhV9PRERl9e/fHy1atJB+zszMhLGxMXr16qXGqoiqD5WDk56eHlq3bo2rV68iIiJCGnGSyWRwcXFBWFgYbty4IY04mZmZwdLSEiEhIejSpQsAID8/H+Hh4ZgyZUoV7goREVVW06ZN0bRpU+nnI0eOwNLSEvb29uoriqgaqdAtV5ycnHD48GEYGRmhcePGUrurqyt+//13ZGRkSJPBZTIZJk+ejE2bNiEjIwMAsGnTJmhoaGDUqFGV3wMiInppJk6ciDfeeEPdZRBVGyqPOAElE8R3796NsWPHKrS7ublh6dKlaN68OYyMjKT2jz76CP7+/mjdujWaNGmCy5cv48CBA6hbty4AYPXq1Th37hyysrIAlFwGa2xsjMmTJ2P06NEV3TciIqqkzp07q7sEomqlQsFp6NChAAAXFxeFdmdnZ3z33XcKo1AAYGBgAD8/PwQGBiIhIQE9evSAtbW19HyHDh2gp6cHoGSNp1JPz4kiIiIiUjcNIYRQdxFVIT4+HjY2Njjg2ArmuhW/Wo+I6L+mRxBvqUL/XaX5IS4uTmFQ51kqNMeJiIiI6L+IwYmIiIhISQxOREREREpicCIiIiJSEoMTERERkZIYnIiIiIiUVKF1nKozl6N+Sl1OSERERKQqjjgRERERKYnBiYiIiEhJDE5ERERESmJwIiIiIlISgxMRERGRkhiciIiIiJRU65YjCH6jD8x1tdVdBhFRjdEj6Kq6SyCqMTjiRERERKQkBiciIiIiJTE4ERERESmJwYmIiIhISQxOREREREpicCIiIiJSEoMTERERkZIYnIiIiIiUpFJwWrZsGczNzRXacnJyoKenh+XLlyu0r1u3Ds2aNat8hUREpDZZWVnIz89XdxlE1YZKwaljx45ISUnBgwcPpLaQkBDk5+fj/PnzCtuGh4fD3t5e+tnHxwdOTk6wsrLCxIkTkZmZqfCctrZ2mcfT70NERK/W3bt3YW5ujm+++UbdpRBVGyoFJ0dHRwBAZGSk1BYQEICBAwciJCQERUVFUvvly5fh4OAAADh27BimTJmC6dOnw9fXF7GxsRg8eLC0bWpqKiwtLXH27FmFh5mZWaV2joiIKm7u3Llo06aNussgqlZUCk5NmjSBqampQnDy9/fHmDFjIJPJ8M8//wAACgoKEB0dLQWnb775Bl5eXpgxYwZcXV3x888/w9/fH6GhoQCAtLQ02NjYwNXVVeGho6NTVftJREQq+O2335Ceno7u3buruxSiakXlyeGOjo5ScCoqKkJISAicnJzQsWNH+Pv7AwCio6NRWFgIBwcHZGZmwt/fH0OGDJH6aNKkCezt7fH7778DANLT08vMnXqRjIwMxMfHS4/ExERVd4WIiMqRm5uL+fPnw9vbG8XFxeouh6haqVBwunLlCgAgIiICMpkMbdu2hYuLCwICAqR2Y2NjNGnSBAkJCQAAGxsbhX5sbGykOUxpaWm4evUqHBwcULduXTg7O+P06dPPrWPt2rWwsbGRHs7OzqruChERleOLL77A0KFD0aFDB3WXQlTtqBycnJyccP36dRQUFCAgIADdunWDTCaDq6urFJwiIyOl03RpaWkAAENDQ4V+jIyM8OjRIwDA6NGjMXv2bPz555+Ijo6Gra0tBg8ejGvXrj2zjvnz5yMuLk56lJ72IyKiirt58yZ27dqFefPm4cmTJ8jPz0dubi5ycnLUXRpRtaCl6gscHR1RWFiIGzdu4NKlS3B1dQUAuLq64tGjR7h37x6uX78uBSdTU1MAwJMnT2BtbS318/jxY1hZWQGAwmk8ANi+fTuOHz+OX3/9FcuWLSu3DkNDwzJhjIiIKufvv/+Gvr4++vXrBwBISkqClpYWMjMzsX79ejVXR6R+Ko84NW/eHEZGRoiKikJYWBjc3NwAAA0aNICtrS3CwsIQExMjBaeGDRsCAOLi4hT6iYuLQ6NGjcp9Dx0dHTRu3JjLERARvWIzZsxAdHS09JgwYQLef/99hiai/6dycNLQ0ICjoyMuXLiAO3fuKMwtcnV1RVBQEO7evSsFp3r16sHd3V2aCA4A9+7dw5UrV+Dh4YGioqIyoSolJQUxMTGws7Or6H4REVEV0NPTg66urrrLIKo2VD5VB5Scrtu7dy86dOiAunXrSu2urq749NNPoaOjA1tbW6l9wYIFGDVqFDp16gR7e3vMmzcP3bt3h7OzM3799VdMnz4dixcvhru7O7Kzs7FkyRKYm5vj7bffrvweEhFRha1Zs0bdJRBVKxW6V52joyOSk5Ol03Sl3Nzc8ODBA7Rv3x6amppS+9ChQ7FlyxZ8/fXX6Nu3L6ysrPDbb78BAEaNGoXt27fD398fw4YNw5gxY9CkSROcPXsWRkZGldg1IiIioqqlIYQQqr5ICAG5XA6ZTAYNDQ2F54qLi6GhoQGZ7NXePzg+Ph42NjY44NgK5rrar/S9iYhqsh5BV9VdApHalOaHuLg4hYvYnqVCp+o0NDQURpSe9qx2IiIiopru1Q4LEREREdVgDE5ERERESmJwIiIiIlISgxMRERGRkhiciIiIiJTE4ERERESkpAotR1CduRz1U2odBiIiIiJVccSJiIiISEkMTkRERERKYnAiIiIiUhKDExEREZGSGJyIiIiIlMTgRERERKSkWrccQfAbfWCuq63uMmqFHkFX1V0CERFRtcIRJyIiIiIlMTgRERERKYnBiYiIiEhJDE5ERERESmJwIiIiIlISgxMRERGRkhiciIiIiJRUJes4JSQkICwsDDKZDF27doWpqWlVdEtERERUrVRqxOnJkycYM2YMGjVqhHHjxsHT0xMNGjTA+++/j4KCAoVti4qKEBwcjIMHDyI5Obnc/uLi4rBlyxYkJSVVpix6SYqLi3H8+HHs3LlT3aUQERGpRYVHnIqLi9GjRw+kpKTAz88PPXr0gIaGBs6ePYsNGzZACCFtm5WVhcGDByMqKgrW1ta4ceMGfH19MWjQIABAUlISxowZg+DgYBQWFqJdu3awtLSs/N5RlXJ3d8fNmzfRokULTJo0Sd3lEBERvXIVHnHasmULrly5glOnTqF3797Q1NSETCZD7969ceTIEejq6krbfv7550hMTMTNmzcRHh6OlStXYuzYscjJyQEAGBgYYNGiRdiwYUPl94hemsDAQGzatEndZRAREalNhYPTtm3bMHz4cLRt2/a528nlcuzYsQPvvvsu6tevDwCYNWsWhBD49ddfAQD6+vrw8PBAr169KloOERER0UtX4VN1N27cwKhRo1643cOHD5GcnIyuXbtKbbq6unB0dERkZGRF3x4ZGRnIyMiQfk5MTKxwX0RERETKqFBwSklJQVZWFqytraW2qKgo/Pjjj9LP48ePh4uLixRozMzMFPowMzPDgwcPKvL2AIC1a9di+fLlFX49ERERkaoqdKrO2NgYWlpaSE1NldrkcjmKiopQVFSE7du349q1awBKrqYDAJlM8a1kMpn0XEXMnz8fcXFx0iM0NLTCfREREREpo0IjTlpaWmjevLkUjgDA3t5emjh85MgRqb1hw4YAgNTUVDRt2lRqf/ToEezs7Cry9gAAQ0NDGBoaVvj1RERERKqq8ORwDw8P/Pzzz0hLS3vudhYWFjA0NER4eLjUVlxcjCtXrsDW1raib0+vWGxsLDZv3oyTJ08iOTkZmzdvRkBAgLrLIiIieqUqHJyWLl0KbW1tvPnmm3j06JHU/vjxY+Tl5Uk/a2lpwdPTE9u3b5dOzR06dAgZGRkYM2ZMJUqnVyknJwfx8fEwNzeHp6cn4uPj8fjxY3WXRURE9EpV+Ko6ExMTnDp1CmPHjkWTJk3g5OQEAwMDBAcHw8LCAi4uLtK2S5YsQY8ePeDm5oY2bdrg119/xZo1a6Rbs+zevRvh4eHS6NX69evh6+uLwYMHo0+fPpXcRaoK9vb2sLe3V3cZREREalWpe9U5OTkhPDwcp0+fxj///AMtLS1Mnz4dAwcOVFgAs1GjRggKCsLBgweRkJCA48ePw93dXXq+sLAQeXl5qFu3LmbOnAkAyMvLq9TkcSIiIqKqpiGevjdKDRYfHw8bGxsccGwFc11tdZdTK/QIuqruEoiIiF6q0vwQFxensMzSs1TqJr9ERERE/yUMTkRERERKYnAiIiIiUhKDExEREZGSGJyIiIiIlMTgRERERKSkSq3jVB25HPVT6nJCIiIiIlVxxImIiIhISQxOREREREpicCIiIiJSEoMTERERkZIYnIiIiIiUxOBEREREpKRatxxB8Bt9YK6rre4yaoUeQVfVXQIREVG1whEnIiIiIiUxOBEREREpicGJiIiISEkMTkRERERKYnAiIiIiUhKDExEREZGSGJyIiIiIlMTgRERERKQklYLTd999B3d3d4W2wsJCODg4YPPmzQrte/fuRa9evSpfIREREVE1oVJwsrCwgL+/Px49eiS1hYWFISIiAr///rvCtufOnYO29v9W8A4MDISnpyd69eqFL774AsXFxQrb5+XlYcWKFejbty8GDx6MH374AUKIiuwTvSQ+Pj54/fXX4eHhoe5SiIiI1EKl4OTk5AQAuHLlitTm7++Prl27IjAwUCHoXL58GQ4ODgCA4OBg9OvXD+bm5pgwYQJ++uknvP3229K2OTk56NatG/bv3w8PDw/06dMH3t7eOHnyZKV2jqpWeno6zMzMkJaWpu5SiIiI1EKl4NSyZUsYGBggMjJSavP398dbb72FnJwcXL1acm8zuVyOq1evSsHpyy+/xLBhw7Bu3TpMnToVvr6+8PHxQUxMDADg+++/R1paGkJDQzFv3jzMmzcPUVFRGDBgQFXtJ1WB2bNnY+jQoeoug4iISG1UCk4aGhro2LGjFJyEEAgMDESXLl1gb2+PgIAAAMCNGzeQm5sLBwcH5Obm4vjx4xg9erTUT8eOHdGqVSv4+voCAH788UfMnTsX9erVU3iv58nIyEB8fLz0SExMVGVXiIiIiFSm8lV1Tk5OUnC6du0acnJyYG9vjy5dusDf3x9AyWk6fX19tGzZEgkJCSguLkbz5s0V+mnevDni4uJQUFCA+/fvw87ODl999RV69OiB4cOH48yZM8+tY+3atbCxsZEezs7Oqu4KERERkUpUDk6Ojo64evUqiouLERAQgC5dukBHRwdubm4KwalDhw6QyWR4+PAhAMDY2FihHxMTEyQlJeH+/fuQy+VYuHAh0tLS8PHHH6NFixbo27cvLl68+Mw65s+fj7i4OOkR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"><h2>模型建议的清洗规则（按命中规则归类）</h2><h3>W03（6 条）</h3><ul><li>可拦：删除 .gov 横幅模板句（“Official websites use .gov…”“Secure .gov websites use HTTPS…”）后正文为空或少于50词的页面</li><li>可拦：短行（&lt;6词）占比&gt;80%且含 View on map/From:/accommodations available/Page 1 of 等界面词多次的页面删除</li><li>可拦：正文少于3句且同时包含“cookie”与“policy/privacy”的页面删除</li><li>可拦：短行（≤4词）占比&gt;80%、或连续多行块在文中完整重复出现的页面删除；结尾仅为“Click Here For More Information”且无成句段落的也删除</li><li>可拦：短行（≤4词）占比&gt;85%且无任何≥10词句子的页面删除；URL 以 /sitemap/ 结尾的页面可直接丢弃</li><li>可拦：短行（≤8字/≤4词）占比&gt;80%且无完整句子的页面删除；含“Daily Archives:”“Placeholder content for popup link”等模板串的也删除</li></ul><h3>W01（4 条）</h3><ul><li>可拦：正文少于3个完整句子且命中 Login/Register/Password/Forgotten your password 等登录词≥3个的页面直接删除</li><li>可拦：URL 匹配 google.*/url?q= 或正文以“Redirect Notice”开头且少于50词的页面删除</li><li>可拦：正文少于20词且匹配“request is being verified|verify you are human|checking your browser”等验证提示的页面删除</li><li>可拦：正文少于20词且匹配“request is being verified|verify you are human|checking your browser”等验证提示的页面删除</li></ul><h3>W05（4 条）</h3><ul><li>可拦：以“...”或“…”结尾的行占比&gt;50%且无超过50词的完整段落的页面删除（摘要列表页）</li><li>可拦：统计“...”/“…”结尾且下一行为日期的条目，≥3条且占正文行数&gt;50%时判为摘要列表页删除；也可按 URL 含 list_ 辅助</li><li>可拦：短行（≤4词）占比&gt;80%、或连续多行块在文中完整重复出现的页面删除；结尾仅为“Click Here For More Information”且无成句段落的也删除</li><li>可拦：短行（≤8字/≤4词）占比&gt;80%且无完整句子的页面删除；含“Daily Archives:”“Placeholder content for popup link”等模板串的也删除</li></ul><h3>G01（1 条）</h3><ul><li>可拦：正文少于60词且匹配“nothing here yet|no .* available right now|check back later|be the first to”等空状态短语的页面删除</li></ul><h3>W06（1 条）</h3><ul><li>可拦：URL 含 /forums/reply/ 或 /reply/数字 且正文少于100词的页面删除（单楼层回复页）</li></ul><h3>W04（1 条）</h3><ul><li>可拦：正文少于80词且包含指向 imblogs/blogspot 等站群的长 slug 外链、或词间多重空格占比高的页面删除；URL/外链含 escort 等推广词的直接丢弃</li></ul><h2>逐条结果（bad 在前；黄色高亮为证据原文）</h2><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #000 [en] https://www.wythenshawecc.co.uk/photos/1175061/31430405.html</summary><p><b>W01</b> 主体是登录表单，相册图片/正文不在，仅剩“Photo 28 of 66”</p><p style='color:#555'>规则建议：可拦：正文少于3个完整句子且命中 Login/Register/Password/Forgotten your password 等登录词≥3个的页面直接删除</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>28/66
+Photo 28 of 66
+<mark>Login
+Don’t have an account?
+Register
+Email address
+Password
+Login
+Forgotten your password?</mark>
+Login with facebook
+Powered By</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #001 [en] https://profiles.nlm.nih.gov/spotlight/dh/catalog?f%5Breadonly_creator_ssim%5D%5B%5D=Bier%2C+Otto&amp;per_page=20&amp;sort=readonly_title_ssim+desc&amp;view=list</summary><p><b>W03</b> 全文只剩美国政府网站通用横幅模板，目录检索结果正文完全缺失</p><p style='color:#555'>规则建议：可拦：删除 .gov 横幅模板句（“Official websites use .gov…”“Secure .gov websites use HTTPS…”）后正文为空或少于50词的页面</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'><mark>Official websites use .gov A .gov website belongs to an official government organization</mark> in the United States.
+Secure .gov websites use HTTPS A lock ( ) or https:// means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #002 [en] https://www.vacanceselect.com/uk/camping/castiglione-del-lago</summary><p><b>W03</b> 主体是预订搜索结果卡片的UI碎片（价格、按钮、分页），营地名称都缺失，无成句正文</p><p style='color:#555'>规则建议：可拦：短行（&lt;6词）占比&gt;80%且含 View on map/From:/accommodations available/Page 1 of 等界面词多次的页面删除</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Camping Castiglione del Lago
+2 adults  
+3
+results found
+View on map
+At Lake Trasimeno
+Private beach
+New wwimming pool with water slide
+Playground for the kids
+From:
+£506
+ Sat 26 Jun - 7 nights, 
+2 adults 
+5accommodations available
+- Your holiday specialist for 40 years
+- Largest choice, best prices
+- No Booking Fee
+<mark>View on map
+Directly on the beautiful Lake Trasimeno
+Miniclub</mark>
+Fun entertainment program for the whole family
+Swimming pool for adults and children
+ -20% 
+£736
+From:
+£591
+ Sat 26 Jun - 7 nights, 
+2 adults 
+36accommodations available
+No availability
+View on map
+Direct access to the lake
+Cozy pool
+Near Perugia
+Bike hire on site
+From:
+£0
+No accommodations available
+0accommodations available
+Page 1 of 1</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #003 [en] http://alt1.toolbarqueries.google.com.au/url?q=http://www.nrhbhs-piece.xyz/</summary><p><b>W01</b> 抓到的是谷歌跳转提示中间页，没有任何实际正文</p><p style='color:#555'>规则建议：可拦：URL 匹配 google.*/url?q= 或正文以“Redirect Notice”开头且少于50词的页面删除</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'><mark>Redirect Notice
+The previous page is sending you to
+http://www.nrhbhs-piece.xyz/</mark>
+.
+If you do not want to visit that page, you can
+return to the previous page
+.</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #004 [en] https://www.edaskliokys.ch/trip-reports/2010/940_100523-Stockflue/trip-report.html</summary><p><b>W01</b> 整页只有人机验证等待提示，游记正文未抓到</p><p style='color:#555'>规则建议：可拦：正文少于20词且匹配“request is being verified|verify you are human|checking your browser”等验证提示的页面删除</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'><mark>Please wait while your request is being verified...</mark></div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #005 [en] https://rentalocalfriend.com/asia/philippines/ignit_144945</summary><p><b>G01</b> 整页只是“暂无内容”的空状态占位文字加引导语，无实际正文</p><p style='color:#555'>规则建议：可拦：正文少于60词且匹配“nothing here yet|no .* available right now|check back later|be the first to”等空状态短语的页面删除</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'><mark>Hmm... nothing here yet
+Looks like there are no Tips or Traps in this location</mark> — but they might join soon!
+Join the conversation! Be part of the community and contact directly any Local Friend member.
+Looks like there are no Tips &amp; Traps available right now. — check back later!</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #006 [en] https://blog.sherisranch.com/forums/reply/18226/</summary><p><b>W06</b> 只抓到论坛单个回复楼层（楼号#18226+用户名），主帖不在，脱离上下文</p><p style='color:#555'>规则建议：可拦：URL 含 /forums/reply/ 或 /reply/数字 且正文少于100词的页面删除（单楼层回复页）</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>April 13, 2016 at 12:39 pm
+		
+		#18226
+		
+		
+		
+	
+		
+		Angel ParrParticipant
+		
+		
+	
+<mark>Montana, he was referring to me, we have been talking about it for a bit</mark> and I’m trying to get it approved. I think it would be a very fun party idea for all of us!</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #008 [en] https://job.my/</summary><p><b>W05</b> 首页只有订阅提示+文章标题和被截断的摘要（以...结尾），没有一段完整正文</p><p style='color:#555'>规则建议：可拦：以“...”或“…”结尾的行占比&gt;50%且无超过50词的完整段落的页面删除（摘要列表页）</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Get daily news updates to your inbox!
+Subscribe to our mailing list to receives daily updates!
+Hiring Trends Malaysia: What Job Seekers and Employers Should KnowHiring trends Malaysia continue to shift as employers respond to technology...
+Leadership Career Malaysia: How to Build a Strong Path to ManagementA leadership career Malaysia can be rewarding for professionals who...
+Career Mistakes to AvoidMany professionals make the same career mistakes to avoid, often without realising the long-term impact on their...
+Salary Comparison KL vs Penang vs <mark>JohorIf you are evaluating a job offer, relocation plan, or career move, a salary...</mark>
+Labour Office Complaint Malaysia: How to File and What to ExpectIf you are dealing with unpaid wages, illegal deductions, wrongful...
+Copyright © 2026 Job.My -All Rights Reserved | Sitemap</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #010 [zh] http://www.020py.com/list_29_0_5.html</summary><p><b>W05</b> 列表页：10条互不相关的文章摘要均在句中截断以“...”+日期结尾，无一篇完整正文</p><p style='color:#555'>规则建议：可拦：统计“...”/“…”结尾且下一行为日期的条目，≥3条且占正文行数&gt;50%时判为摘要列表页删除；也可按 URL 含 list_ 辅助</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>在現在這個注重節能環保的時代，怎么樣才能減少能源消耗、提高能源利用效率是各行各業較為關注的問題。在供熱、制冷、石油化工等領域，管道的選擇是能源傳輸的重要環節，聚氨酯直埋保溫管道作為一種高效的管道保溫解決方案，在被廣泛應用...
+ 2025-05-01
+現代城市的集中供熱體系當中，鋼套鋼預制蒸汽保溫管起著至關重要的作用。就如同城市的“動脈血管”一般，這種特殊的管道系統能夠將熱源廠所產生的高溫蒸汽，以安全且高效的方式，輸送至千家萬戶。伴隨我國城鎮化進程的不斷加快，以及節能...
+ 2025-04-16
+聚氨酯噴涂纏繞保溫管道的結構與傳統的“管中管”法生產的聚氨酯預制保溫管的結構沒有區別。即用于輸送介質的鋼管、聚氨酯硬質泡沫保溫層和高密度聚乙烯外護套管三部分組成。與傳統的“管中管”法生產出的聚氨酯預制保溫管道相比，工藝略...
+ 2025-03-29
+說到聚氨酯直埋式預制保溫管道，最常見的技術就是“管中管”工藝，也叫&quot;二步法&quot;。在國內，這個技術已經有超過40年的發展歷史了，真算得上是非常成熟的一種工藝。它作為一種經過市場考驗的保溫材料，通過工作鋼管或管件和外護管...
+ 2025-03-14
+在管道施工過程中，聚氨酯預制直埋發泡保溫管被廣泛使用，主要用于輸送一些液體和氣體。預制直埋保溫管性能優良，制造工藝可靠，而且采用預制直埋保溫管的工程造價很低。這種優越的性能使許多施工人員對預制直埋保溫管非常好奇。為什么預...
+ 2025-03-01
+1、降低整體工程預算經相關部門測算，選用雙管制供熱管道，通常能把工程預算降低約25%。2、節能降損聚氨酯直埋保溫管的導熱系數只有0.03W/(m·K),比以前常見的保溫材料還要低好幾倍,保溫效果提升到4~9倍。由于聚氨酯泡沫閉孔率可達90%，讓...
+ 2025-02-23
+我們發現，在蒸汽管道系統，很多本來該直著走的管子，突然之間來了個大拐彎？為什么會出現這種情況呢？現在，元豐就帶您一起了解一下這些“彎”的真正用途吧。在蒸汽管道運行工作時，有兩種溫度狀態，即輸送高溫蒸汽的工作狀態和非工作時...
+ 2025-01-04
+溫泉作為一種自然資源，其療愈和保健作用，一直受到人們的喜愛，因此越來越多的人選擇泡溫泉，享受其帶來的身心放松。近幾年，PERT-II型熱力保溫管道在熱水輸送領域的應用逐漸增加，其中，溫泉水輸送就是其重要應用的一項。傳統的溫泉設備...
+ 2024-12-08
+鋼套鋼直埋蒸汽保溫管主要部件包括工作鋼管、保溫層、滑動（導向）支架、外套管(鋼管)和防腐層。捆扎的保溫材料緊貼在工作鋼管上，通過滾動導向管托在外套管內部自由移動，這樣能保護到保溫層而不受損害。<mark>內置式固定支架代替了傳統龐大的...
+ 2024-11-10</mark>
+預制直埋鋼套鋼蒸汽保溫管道作為工程領域的明星產品，它不僅具備了保溫、防腐、耐壓等一系列優點，而且性能卓越，應用前景廣闊，可謂是行業中的佼佼者。它是由鋼管與保溫材料復合而成的一種管道，內外兩層鋼管構造，中間填充耐高溫保溫材...
+ 2024-10-22</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #011 [en] https://www.kzibank.kz/en/internet-fraudsters-have-become-more-active-</summary><p><b>W03</b> 全文只剩cookie告知横幅，新闻正文（网络诈骗提醒）完全缺失</p><p style='color:#555'>规则建议：可拦：正文少于3句且同时包含“cookie”与“policy/privacy”的页面删除</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'><mark>Cookies to provide you with the best service on our site.</mark> For details, our Securiy policy and Cookie policy.</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #012 [en] https://www.yeebo.com.hk/en/announcement/next-day-disclosure-return/5297-next-day-disclosure-return/</summary><p><b>W03</b> 站点导航菜单（含语言切换）完整重复两遍，占全文绝大部分；<b>W05</b> 导航之后只剩公告标题、日期和“点击查看更多”提示，公告正文一段都没有</p><p style='color:#555'>规则建议：可拦：短行（≤4词）占比&gt;80%、或连续多行块在文中完整重复出现的页面删除；结尾仅为“Click Here For More Information”且无成句段落的也删除</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'><mark>Home
+Our Businesses
+Yeebo Display
+Suanova Technology
+Equity Investment
+Jianghai Capacitor</mark>
+MetaX Technology
+Biren Technology
+Yeebo News
+Yeebo Display Ltd.
+Suanova Technology
+Equity Investment
+Nantong Jianghai Capacitor Ltd.
+MetaX Technology
+Biren Technology
+Investor Relations
+Financial Reports
+Annual &amp; Interim Reports
+Results Announcements
+YB Announcements
+Next Day Disclosure Returns
+Monthly Returns of Equity Issuer
+Other
+Nantong Jianghai Announcements
+Annual General Meeting
+Board Members
+Shareholders Communication Policy
+Replacement of Lost Share Certificates
+ESG
+Contact
+ENGLISH
+Change &gt;&gt;
+繁體中文
+简体中文
+ENGLISH
+日本語
+Home
+Our Businesses
+Yeebo Display
+Suanova Technology
+Equity Investment
+Jianghai Capacitor
+MetaX Technology
+Biren Technology
+Yeebo News
+Yeebo Display Ltd.
+Suanova Technology
+Equity Investment
+Nantong Jianghai Capacitor Ltd.
+MetaX Technology
+Biren Technology
+Investor Relations
+Financial Reports
+Annual &amp; Interim Reports
+Results Announcements
+YB Announcements
+Next Day Disclosure Returns
+Monthly Returns of Equity Issuer
+Other
+Nantong Jianghai Announcements
+Annual General Meeting
+Board Members
+Shareholders Communication Policy
+Replacement of Lost Share Certificates
+ESG
+Contact
+YB Announcement
+Next Day Disclosure Returns
+Next Day Disclosure Returns
+<mark>Next Day Disclosure Return
+17th Sep 2024
+Click Here For More Information</mark></div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #013 [en] https://townballroom.com/sitemap/</summary><p><b>W03</b> 导航重复两遍+站点地图链接名+演出售票卡片（BUY TICKETS）+订阅框，全文无一句正文</p><p style='color:#555'>规则建议：可拦：短行（≤4词）占比&gt;85%且无任何≥10词句子的页面删除；URL 以 /sitemap/ 结尾的页面可直接丢弃</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'><mark>Skip to content
+HOME
+ABOUT
+FUNTIME
+CALENDAR
+FAQ
+MERCH
+OUTER HARBOR
+HOME
+ABOUT</mark>
+FUNTIME
+CALENDAR
+FAQ
+MERCH
+OUTER HARBOR
+Sitemap
+Pages
+ZIP CODE ERROR HELP
+BAR MENU
+MERCH
+Funtime Presents
+FAQ
+Blog
+Sitemap
+test
+Home
+Events
+Contact
+About Us
+Privacy Policy
+Just Announced
+fri, Dec 11
+Funtime Presents
+Willie Nile and His Band
+Town Ballroom
+BUY TICKETS
+sat, Feb 06
+MNM Presents
+LEVEL UP: The Ritual Tour
+Town Ballroom
+PRE SALE ENDS 10/9
+PRE SALE ENDS: Oct 9 at 10:00 am
+fri, Jan 01
+MNM Presents
+Mersiv – New Years Day
+Town Ballroom
+BUY TICKETS
+2-NIGHT PACKAGES
+thu, Dec 31
+MNM Presents
+Mersiv – New Years Eve
+Town Ballroom
+BUY TICKETS
+2-NIGHT PACKAGES
+thu, Dec 31
+MERSIV 2-NIGHT PACKAGES
+Town Ballroom
+BUY TICKETS
+SIGN UP
+Join our email list!
+Thanks for joining our mailing list
+You&#x27;ve been successfully subscribed - thanks!
+SUBSCRIBE</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #016 [en] https://www.veritaskliniken.se/om-oss/beatriz-rivera-amador</summary><p><b>W01</b> 整页只有人机验证等待提示，人员介绍页正文未抓到</p><p style='color:#555'>规则建议：可拦：正文少于20词且匹配“request is being verified|verify you are human|checking your browser”等验证提示的页面删除</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'><mark>Please wait while your request is being verified...</mark></div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #017 [en] https://socialicus.com/story7519047/i-do-not-fulfill-such-request-the-copyright-you-provided-connect-to-conceivably-illegal-and-abusive-practices-producing-content-titles-about-bangalore-discretionary-services-bangalore-female-escorts-and-companion-services</summary><p><b>W04</b> 外链群发垃圾页：伪原创拼凑的残句后直接接护航类推广外链，没有可辨认的信息</p><p style='color:#555'>规则建议：可拦：正文少于80词且包含指向 imblogs/blogspot 等站群的长 slug 外链、或词间多重空格占比高的页面删除；URL/外链含 escort 等推广词的直接丢弃</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Brainstorming   Subject  Development  Topics
+I  realize  you may be  investigating  content   development  concepts , but I  firmly   urge against pursuing   subjects  that  depict  <mark>possibly illegal  and  damaging  https://bangaloreindependentesco336569.imblogs.net/92839086/</mark>i-am-am-unable-to-fulfill-this-request-the-phrases-the-user-gave-pertain-to-potentially-illicit-and-exploitative-activities-generating-listings-labels-about-bangalore-independent-escorts-bangalore-lady-services-and-compan 
+1</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#9b1c1c;font-weight:bold'>bad</span> #018 [zh] https://tinkaping.org/2019/09/22/?arcf=post:post+avada_portfolio</summary><p><b>W03</b> 站点导航菜单占全文大半，另有插件广告和弹窗占位文字；<b>W05</b> 日期归档页只剩一条文章标题，正文一段都没有</p><p style='color:#555'>规则建议：可拦：短行（≤8字/≤4词）占比&gt;80%且无完整句子的页面删除；含“Daily Archives:”“Placeholder content for popup link”等模板串的也删除</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'><mark>首頁
+關於我們
+歡迎詞
+使命
+歷史與簡介
+創辦人簡介
+管治架構</mark>
+屬下機構
+命名/受惠機構
+友情連接
+聯絡我們
+最新動態
+項目交流
+田園芬芳
+田中獎助學金
+活動通告
+資源中心
+基金會影片
+40周年特輯
+简
+<mark>Daily Archives:
+2019-09-22
+第四屆東北三省田家炳中學年會順利召開
+[ Placeholder content for popup link ]</mark>
+WordPress Download Manager - Best Download Management Plugin</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #007 [en] https://www.986pharmacy.com/locations/986-pharmacy-in-la-verne</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Get in Touch
+Contact this pharmacy
+Opening Hours
+When we&#x27;re open
+- Monday9:00 AM - 6:00 PM
+- Tuesday9:00 AM - 6:00 PM
+- Wednesday9:00 AM - 6:00 PM
+- Thursday9:00 AM - 6:00 PM
+- Friday9:00 AM - 6:00 PM
+- Saturday9:00 AM - 4:00 PM
+- SundayClosed
+Hours may vary on holidays. Please call ahead to confirm before visiting.
+Need Something Else?
+Browse our other locations
+We have 45 pharmacies across California and Nevada, each with the same family-first care you expect from your neighborhood pharmacy.</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #009 [en] https://gbank.gsj.jp/geolis/geolis_link/199809336/en</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Geological Literature Search (GEOLIS) (Geological Survey of Japan / AIST)
+Authors=TAKAHASHI Kazuharu, HIRANO Hiromichi
+Journal/Book_names=Abstracts, the 105th Annual Meeting of the Geological Society of Japan
+volume=105
+pages=70-70
+Publish_year=1998
+Publish_Country=JPN
+Publisher=Geological Society of Japan
+Language_of_Text=JA
+DOI=10.14863/geosocabst.1998.0_138
+ID=199809336</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #014 [en] https://www.phyllisbrowning.com/property/1807-wanda-way-arlington-tx-76001/36356590/</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Property Details
+Primary Information
+- North Texas: 20262232
+- Virtual Tour: Virtual Tour
+- Mls Status: Closed
+- Status: SLD
+Interior Features
+Interior Features
+- Bedrooms: 4
+- Bathrooms: 6
+- Half Baths: 1
+- Full Baths: 5
+- Fireplace: Yes
+- Square Feet: 6,163
+Exterior Features
+Exterior Features
+- Acreage: 0.89
+- Foundation: Slab
+- Garage Spaces: 3
+- Parking Spaces: 3
+- Other Amenities: Fireplace
+- Water Access: Public, Well
+Utilities and Appliances
+Utilities and Appliances
+- Cooling: Central Air, Electric
+- Heat System: Central, Electric
+- Waste Water Disposal: Public Sewer
+Community
+Schools
+- High School: Legacy
+- High School District: Mansfield ISD
+- Junior High District: Mansfield ISD
+- Elementary School: Carol Holt
+Other Details
+Water
+- Water Access: Public, Well</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #015 [en] https://www.lizbakerfidm.uk/blog/building-your-influence-network</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>| Trusted by Peers and Decision-Makers Why Build an Influence Network? Because reach fades without credibility, you can have 10,000 followers but still lack influence.  Or 10 trusted peers who quietly open doors, advocate for your expertise and shape your next opportunity.  This blog, along with the accompanying worksheet, helps you identify, connect with, and support those key relationships. Start with Reflection The Qualities of Trusted Influence Influence is earned, not claimed. It comes from consistency, generosity and clarity. Think about the peers you admire - chances are they: Aim to embody these behaviours in your own network.  The worksheet invites you to: Growing Your Influence Intentionally Influence doesn’t scale overnight. But it can be grown. Some strategies include: Think of it as long-term visibility with depth. Less broadcast. More conversation.  Being Visible in the Right Spaces Visibility without relevance is noise. Focus your efforts on spaces where your voice fits the room. That might be: Use the worksheet to:  Navigating Imposter Syndrome Many professionals hold back from influence networks because they feel they haven’t ‘earned’ a place. This blog encourages a mindset shift. Ask: Influence isn’t just bestowed upon you. It’s demonstrated one thoughtful contribution at a time.  Maintaining Integrity Be clear on what you stand for. The influence that lasts is rooted in consistent values. Don’t chase trends. Don’t dilute your perspective to please a crowd. The worksheet includes space to reflect on the following: From Influence to Opportunity Over time, your influence network becomes a source of: But those results emerge from trust, not tactics. Be reliable. Be thoughtful. Be available.  Download the Free Worksheet A free worksheet accompanies this blog to help you: Influence, like reputation, is built moment by moment. Use it to check in with your direction and presence this month. Final Thoughts: Influence That Fuels Operational Growth Building influence isn’t about being everywhere. It’s about showing up in the right places, for the right reasons, with a clear and consistent voice. An influence network built on trust becomes a quiet force behind your opportunities – surfacing referrals, opening doors and reinforcing your credibility across every touchpoint. But influence needs structure behind it. Without operational alignment, even the strongest professional reputation risks stalling. To convert influence into measurable growth, it must be supported by the systems that make engagement, onboarding and delivery seamless. That’s where Revenue Operations becomes essential. In my blog Revenue Operations: The Engine Room of Scalable Growth, I explore how aligned teams and integrated platforms create the consistency that influence alone cannot sustain. Your reputation opens the door. RevOps ensures the experience beyond that door meets expectations.  Together, your influence network and your revenue engine build not just reach but results. #growthstrategy #networking #contentplanning | About Archived articles from the digital crafter blog and new articles from me Archives Categories | 
+| What Does Influence Really Mean? Influence is often mistaken for popularity.  In professional settings, it’s something quite different.  It’s about being trusted.  It’s about being the person people quote when you’re not in the room, recommend when you’re not watching, and include in conversations because your insight makes things clearer.  Your influence network isn’t always large.  But it’s pivotal.  It includes mentors, collaborators, peers, industry leaders and decision-makers who respect your voice.  It’s a network built on mutual trust and professional substance. |  | 
+| Begin by thinking about the people who influence you. Who do you follow? Who challenges your thinking? Who do you turn to for clarity? Now reverse it. Use the worksheet to explore both sides of the dynamic. List current contacts, aspirational relationships and those who sit quietly at the edges of your network, observing.  |  |</div></details><details style='border:1px solid #dde;border-radius:6px;margin:8px 0;padding:6px 10px'><summary><span style='color:#1b6b34;font-weight:bold'>good</span> #019 [en] https://locksmithhouston24hr.com/emergency-locksmith-services-dobbin-texas</summary><p></p><p style='color:#555'>规则建议：</p><div style='white-space:pre-wrap;font-size:12.5px;max-height:420px;overflow:auto;background:#fafbfc;border:1px solid #eee;padding:6px'>Locksmith Houston 24 Hr Emergency Locksmith Services Services
+Locksmith Houston 24 Hr: Your Trusted Emergency Locksmith in Dobbin, Texas Locked out of your home or car? Need immediate assistance to regain access without causing any damage? Look no further than Locksmith Houston 24 Hr – the leading provider of professional emergency locksmith services in Dobbin, Texas. At Locksmith Houston 24 Hr, we understand that emergencies can strike at any time and leave you feeling vulnerable. That&quot;s why our team of highly skilled and certified locksmiths is available round-the-clock to provide prompt and reliable solutions for all your lock-related predicaments. Our Services: 1. Emergency Residential Unlocking: If you find yourself locked out of your own house due to a misplaced key or a faulty lock, don&quot;t panic! Our expert residential locksmiths will swiftly arrive at your location equipped with state-of-the-art tools to unlock doors efficiently while ensuring minimal disruption. We prioritize both speed and precision when it comes to regaining access safely. 2. Automotive Lockout Assistance: Being stranded outside your vehicle can be incredibly frustrating, especially during inconvenient hours or unfavorable weather conditions. With our specialized automotive locksmith services, we guarantee quick response times so that you can get back on the road as soon as possible. From traditional keys to modern transponder systems, our technicians possess extensive knowledge about various locking mechanisms found in different vehicles. 3. Commercial Security Solutions: Securing your business premises is crucial for safeguarding valuable assets from potential threats such as break-ins or unauthorized entry attempts. Our commercial locksmith experts are well-versed in installing high-quality locks designed specifically for businesses across diverse industries including offices, retail stores, warehouses etc., providing enhanced security measures tailored according to individual requirements. 4.Key Replacement &amp; Duplication: Whether you need an</div></details></body></html>

@@ -1,0 +1,161 @@
+{
+ "crawl": "CC-MAIN-2026-43",
+ "n_files": 64,
+ "files": [
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054475.59/wet/CC-MAIN-20261010193147-20261010223147-00445.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054242.5/wet/CC-MAIN-20261007210144-20261008000144-00772.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054656.11/wet/CC-MAIN-20261011230657-20261012020657-00750.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170346426.84/wet/CC-MAIN-20261016073418-20261016103418-00319.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170053990.22/wet/CC-MAIN-20261006051644-20261006081644-00328.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054094.31/wet/CC-MAIN-20261006142707-20261006172707-00494.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170055137.36/wet/CC-MAIN-20261014093556-20261014123556-00239.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054170.15/wet/CC-MAIN-20261006233730-20261007023730-00337.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054583.75/wet/CC-MAIN-20261011104901-20261011134901-00931.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170057013.95/wet/CC-MAIN-20261015035910-20261015065910-00387.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054048.74/wet/CC-MAIN-20261006082016-20261006112016-00602.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054911.64/wet/CC-MAIN-20261013211541-20261014001541-00510.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054343.76/wet/CC-MAIN-20261009003822-20261009033822-00140.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170053974.20/wet/CC-MAIN-20261005230946-20261006020946-00914.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054149.39/wet/CC-MAIN-20261006203358-20261006233358-00265.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054673.9/wet/CC-MAIN-20261012143428-20261012173428-00838.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054667.50/wet/CC-MAIN-20261012082528-20261012112528-00810.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054094.31/wet/CC-MAIN-20261006142707-20261006172707-00156.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054362.13/wet/CC-MAIN-20261009095437-20261009125437-00544.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054149.39/wet/CC-MAIN-20261006203358-20261006233358-00889.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170055286.28/wet/CC-MAIN-20261014154306-20261014184306-00226.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054671.42/wet/CC-MAIN-20261012112958-20261012142958-00642.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054048.74/wet/CC-MAIN-20261006082016-20261006112016-00747.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170055358.49/wet/CC-MAIN-20261014215206-20261015005206-00115.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054208.24/wet/CC-MAIN-20261007115124-20261007145124-00226.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054345.86/wet/CC-MAIN-20261009034247-20261009064247-00260.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170344035.85/wet/CC-MAIN-20261015222031-20261016012031-00657.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170344035.85/wet/CC-MAIN-20261015222031-20261016012031-00238.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170057013.95/wet/CC-MAIN-20261015035910-20261015065910-00414.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054090.73/wet/CC-MAIN-20261006112343-20261006142343-00108.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170055395.40/wet/CC-MAIN-20261015005537-20261015035537-00642.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170057013.95/wet/CC-MAIN-20261015035910-20261015065910-00748.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054656.11/wet/CC-MAIN-20261011230657-20261012020657-00993.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170053990.22/wet/CC-MAIN-20261006051644-20261006081644-00499.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054343.76/wet/CC-MAIN-20261009003822-20261009033822-00977.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170053990.22/wet/CC-MAIN-20261006051644-20261006081644-00105.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170055286.28/wet/CC-MAIN-20261014154306-20261014184306-00963.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054236.14/wet/CC-MAIN-20261007145448-20261007175448-00455.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054432.19/wet/CC-MAIN-20261010041422-20261010071422-00959.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054667.50/wet/CC-MAIN-20261012082528-20261012112528-00937.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054241.55/wet/CC-MAIN-20261007175816-20261007205816-00907.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170055137.36/wet/CC-MAIN-20261014093556-20261014123556-00868.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054200.8/wet/CC-MAIN-20261007084758-20261007114758-00439.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170055358.49/wet/CC-MAIN-20261014215206-20261015005206-00830.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054465.78/wet/CC-MAIN-20261010132346-20261010162346-00433.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170055310.3/wet/CC-MAIN-20261014184637-20261014214637-00434.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170348605.90/wet/CC-MAIN-20261016195124-20261016225124-00391.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054301.0/wet/CC-MAIN-20261008091516-20261008121516-00688.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054174.61/wet/CC-MAIN-20261007024057-20261007054057-00507.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170057013.95/wet/CC-MAIN-20261015035910-20261015065910-00231.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170055358.49/wet/CC-MAIN-20261014215206-20261015005206-00868.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170344220.79/wet/CC-MAIN-20261016012506-20261016042506-00743.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054302.67/wet/CC-MAIN-20261008121942-20261008151942-00624.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054600.65/wet/CC-MAIN-20261011135327-20261011165327-00810.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054170.15/wet/CC-MAIN-20261006233730-20261007023730-00770.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170055212.25/wet/CC-MAIN-20261014123931-20261014153931-00793.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170349490.60/wet/CC-MAIN-20261017081029-20261017111029-00337.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054090.73/wet/CC-MAIN-20261006112343-20261006142343-00229.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170055310.3/wet/CC-MAIN-20261014184637-20261014214637-00972.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054048.74/wet/CC-MAIN-20261006082016-20261006112016-00812.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170343870.96/wet/CC-MAIN-20261015191658-20261015221658-00134.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054319.37/wet/CC-MAIN-20261008182931-20261008212931-00995.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170054822.47/wet/CC-MAIN-20261013181109-20261013211109-00066.warc.wet.gz",
+  "crawl-data/CC-MAIN-2026-43/segments/1791170348605.90/wet/CC-MAIN-20261016195124-20261016225124-00181.warc.wet.gz"
+ ],
+ "curves": {
+  "en": [
+   {
+    "files": 1,
+    "docs": 6578,
+    "exact_frac": 0.0032,
+    "near_frac": 0.0108
+   },
+   {
+    "files": 2,
+    "docs": 13124,
+    "exact_frac": 0.0046,
+    "near_frac": 0.0144
+   },
+   {
+    "files": 4,
+    "docs": 25958,
+    "exact_frac": 0.0044,
+    "near_frac": 0.0159
+   },
+   {
+    "files": 8,
+    "docs": 52319,
+    "exact_frac": 0.0057,
+    "near_frac": 0.0201
+   },
+   {
+    "files": 16,
+    "docs": 104386,
+    "exact_frac": 0.0067,
+    "near_frac": 0.0245
+   },
+   {
+    "files": 32,
+    "docs": 207354,
+    "exact_frac": 0.0085,
+    "near_frac": 0.0312
+   },
+   {
+    "files": 64,
+    "docs": 413983,
+    "exact_frac": 0.0116,
+    "near_frac": 0.0408
+   }
+  ],
+  "zh": [
+   {
+    "files": 1,
+    "docs": 688,
+    "exact_frac": 0.0058,
+    "near_frac": 0.0174
+   },
+   {
+    "files": 2,
+    "docs": 1380,
+    "exact_frac": 0.0072,
+    "near_frac": 0.0145
+   },
+   {
+    "files": 4,
+    "docs": 2692,
+    "exact_frac": 0.0063,
+    "near_frac": 0.0145
+   },
+   {
+    "files": 8,
+    "docs": 5521,
+    "exact_frac": 0.0076,
+    "near_frac": 0.0194
+   },
+   {
+    "files": 16,
+    "docs": 11234,
+    "exact_frac": 0.0091,
+    "near_frac": 0.0228
+   },
+   {
+    "files": 32,
+    "docs": 22518,
+    "exact_frac": 0.0095,
+    "near_frac": 0.0272
+   },
+   {
+    "files": 64,
+    "docs": 45139,
+    "exact_frac": 0.0119,
+    "near_frac": 0.0346
+   }
+  ]
+ },
+ "seconds": 193.6
+}
