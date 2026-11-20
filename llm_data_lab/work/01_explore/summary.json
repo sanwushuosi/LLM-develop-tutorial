@@ -1,6 +1,6 @@
 {
- "docs": 28104,
- "distinct_hosts": 27534,
+ "docs": 28062,
+ "distinct_hosts": 27493,
  "docs_per_host": 1.021,
  "docs_from_hosts_with_10plus": 13,
  "lang_top": [
@@ -25,12 +25,12 @@
    1362
   ],
   [
-   "zho",
-   1291
-  ],
-  [
    "spa",
    1262
+  ],
+  [
+   "zho",
+   1249
   ],
   [
    "por",
@@ -53,30 +53,30 @@
    410
   ]
  ],
- "zh_share": 0.0459,
- "en_share": 0.4323,
+ "zh_share": 0.0445,
+ "en_share": 0.433,
  "html_kb_median": 97.2,
- "html_total_gb": 4.628,
- "wet_chars_median": 3646,
- "wet_total_mchars": 181.4,
+ "html_total_gb": 4.624,
+ "wet_chars_median": 3648,
+ "wet_total_mchars": 181.0,
  "text_to_html_bytes_median": 0.0453,
  "empty_wet": 239,
  "truncated": 50,
  "exact_dup_docs": 667,
- "exact_dup_frac": 0.0237,
+ "exact_dup_frac": 0.0238,
  "largest_dup_cluster": 314,
- "lines_15plus_chars": 1663895,
+ "lines_15plus_chars": 1662004,
  "line_occurrences_in_3plus_docs_frac": 0.089,
  "pii_doc_frac": {
   "<EMAIL>": 0.293,
-  "<PHONE>": 0.0136,
-  "<IP>": 0.009,
+  "<PHONE>": 0.0134,
+  "<IP>": 0.0091,
   "<ID>": 0.0014
  },
  "charset_top": [
   [
    "utf-8",
-   27014
+   26974
   ],
   [
    "utf8",
@@ -96,7 +96,7 @@
   ],
   [
    "gb18030",
-   47
+   46
   ]
  ]
 }

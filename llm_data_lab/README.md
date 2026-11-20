@@ -10,10 +10,38 @@
 ## 快速开始
 
 ```bash
+python3 -V                               # 需要 ≥ 3.10；不够见下面「Python 版本不够怎么办」
 pip install -r requirements.txt          # 国内可加 -i https://pypi.tuna.tsinghua.edu.cn/simple
 # 把课程数据包解压到 data/（cc_sample/、finepdfs/、extra/、models/），可选的 work/ 预计算结果解压到 work/
 python 00_check.py                       # 环境与数据自检
 ```
+
+### Python 版本不够怎么办
+
+**加装一个 3.10+，不要降级依赖**：trafilatura 2.1 以上要求 Python ≥ 3.10，退回 2.0 虽然能装上，但正文提取结果和新版不同（同一批网页实测，中位提取长度 712 对 860 字符，不足 200 字符的比例 16.5% 对 13.2%），后续所有数字都会和讲义对不上。
+**也不要动系统自带的 `python3`**，很多系统工具依赖它。下面任选一种，都是「另装一个、互不干扰」：
+
+```bash
+# 方式 A：uv（推荐，免管理员权限，自动下载独立的 Python）
+curl -LsSf https://astral.sh/uv/install.sh | sh     # Windows: irm https://astral.sh/uv/install.ps1 | iex
+exec $SHELL -l
+uv venv --python 3.12 .venv && source .venv/bin/activate    # Windows: .venv\Scripts\activate
+uv pip install -r requirements.txt
+
+# 方式 B：conda
+conda create -n llmdata python=3.12 -y && conda activate llmdata && pip install -r requirements.txt
+
+# 方式 C：pyenv（Linux/macOS，源码编译 5–10 分钟）
+curl -fsSL https://pyenv.run | bash      # 按提示改 ~/.bashrc 后重开终端
+pyenv install 3.12 && pyenv local 3.12
+python -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
+
+# 方式 D：系统包管理器（需 sudo，新装一个而不是替换 python3）
+sudo add-apt-repository ppa:deadsnakes/ppa && sudo apt update && sudo apt install python3.12 python3.12-venv
+python3.12 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
+```
+
+装完 `python 00_check.py` 第一项打勾即可。**每次重开终端都要先激活环境**，否则用的还是旧 Python。
 
 | 步骤 | 命令 | 本机实测耗时* | 产出 |
 |---|---|---|---|
